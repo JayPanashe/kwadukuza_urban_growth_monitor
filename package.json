@@ -1,0 +1,29 @@
+{
+  "name": "urban-growth-monitor-kzn292",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:data": "python3 scripts/build_data.py --sources config/sources.json",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "offline:validate": "npm run build:data && npm run test && npm run build",
+    "offline:smoke": "bash scripts/offline_smoke.sh",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/node": "^25.2.3",
+    "jsdom": "^28.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "d3-geo": "^3.1.1",
+    "maplibre-gl": "^5.18.0"
+  }
+}

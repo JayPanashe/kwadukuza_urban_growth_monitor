@@ -1,0 +1,11 @@
+{
+  "ghsl_ward_outlook_csv": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/GHSL Analysis 9 2022 Census - Codex/output/analytics/ward_5yr_outlook.csv",
+  "landcover_ward_gpkg": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/Land Cover Analysis 6 - Codex/output/ward_data/lc5_ward_indicators.gpkg",
+  "viirs_ward_summary_csv": "/Users/shumba/Documents/New project/VIIRS Latest Working Fri 1AM/VIIRS 2am Latest NEW/VIIRS Night Lights - Codex/output/csv/ward_summary_v1.csv",
+  "viirs_ward_monthly_csv": "/Users/shumba/Documents/New project/VIIRS Latest Working Fri 1AM/VIIRS 2am Latest NEW/VIIRS Night Lights - Codex/output/csv/ward_monthly_clean_v1.csv",
+  "smod_zonal_csv": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/GHSL Analysis 9 2022 Census - Codex/input/zonal_stats/smod_zonal.csv",
+  "protected_areas_gpkg": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/Non Urban Economic Activity/Tourism_Conservation/WDPA/WDPA_ZAF_merged.gpkg",
+  "ghsl_dashboard_xlsx": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/GHSL Analysis 9 2022 Census - Codex/output/reports/municipal/GHSL_KwaDukuza_Local_Municipality_Dashboard.xlsx",
+  "landcover_dashboard_xlsx": "/Volumes/SpatialEcon/GHSL - Global Human Settlement Layer/Land Cover Analysis 6 - Codex/output/reports/municipal/KwaDukuza_Local_Municipality_Dashboard.xlsx",
+  "viirs_dashboard_xlsx": "/Users/shumba/Documents/New project/VIIRS/KwaDukuza/VIIRS_Dashboard_KZN292.xlsx"
+}

@@ -1,0 +1,275 @@
+{
+  "status": "pass",
+  "generated_at": "2026-02-19T14:36:30+00:00",
+  "checks": [
+    {
+      "name": "landcover_ward_count_28",
+      "passed": true,
+      "detail": "Expected 30, got 30",
+      "severity": "critical"
+    },
+    {
+      "name": "viirs_month_coverage_start",
+      "passed": true,
+      "detail": "Expected earliest date 2014-01-01, got 2014-01-01",
+      "severity": "critical"
+    },
+    {
+      "name": "viirs_month_latest_present",
+      "passed": true,
+      "detail": "Latest date detected: 2025-10-01",
+      "severity": "critical"
+    },
+    {
+      "name": "viirs_rows_per_latest_month_111",
+      "passed": true,
+      "detail": "Expected 30, got 30 for 2025-10-01",
+      "severity": "critical"
+    },
+    {
+      "name": "unmatched_ghsl_ids_zero",
+      "passed": true,
+      "detail": "Missing GHSL IDs: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "unmatched_viirs_summary_ids_zero",
+      "passed": true,
+      "detail": "Missing VIIRS IDs: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "protected_area_recompute_coverage_111",
+      "passed": true,
+      "detail": "missing_recomputed=[] (total=0), recomputed_count=30",
+      "severity": "critical"
+    },
+    {
+      "name": "smod_transition_coverage_111",
+      "passed": true,
+      "detail": "Missing S-Mod 2020/2030 wards: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "required_component_fields_non_null",
+      "passed": true,
+      "detail": "Rows with null component fields: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "census_pop_2022_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing census_pop_2022: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "protected_area_recomputed_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing recomputed protected_area_pct: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "protected_area_recomputed_range_0_100",
+      "passed": true,
+      "detail": "Rows outside 0..100 protected_area_pct: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "tourism_active_ward_count_range_0_28",
+      "passed": true,
+      "detail": "tourism_active_ward_count=7",
+      "severity": "critical"
+    },
+    {
+      "name": "tourism_active_ward_share_range_0_100",
+      "passed": true,
+      "detail": "tourism_active_ward_share_pct=23.333333333333332",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_density_2022_fields_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing density_2022/gap: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "smod_fields_non_null_111",
+      "passed": true,
+      "detail": "Missing S-Mod fields: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_density_consistency_tolerance",
+      "passed": true,
+      "detail": "Density mismatches (>0.1 persons/km2): [] (total=0), max_diff=0.0, worst_ward=52902001",
+      "severity": "critical"
+    },
+    {
+      "name": "score_fields_numeric",
+      "passed": true,
+      "detail": "Invalid score fields: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "score_fields_range_0_100",
+      "passed": true,
+      "detail": "Out-of-range score fields: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "bivariate_class_non_null",
+      "passed": true,
+      "detail": "Missing bivariate class: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "action_tag_non_null",
+      "passed": true,
+      "detail": "Missing action tag: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "class_count_total_111",
+      "passed": true,
+      "detail": "Expected 30, got 30",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_anomaly_ids_match_flags",
+      "passed": true,
+      "detail": "props=['52902001', '52902011', '52902013', '52902020', '52902022', '52902030'], audit=['52902001', '52902011', '52902013', '52902020', '52902022', '52902030']",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_negative_growth_unclamped",
+      "passed": true,
+      "detail": "anomaly_rows=[{'ward_id': '52902001', 'ward_label': 'KZN292_1', 'census_pop_2022': 12589.4339337, 'ghsl_pop_2030': 12458.345791732254, 'ghsl_pop_change_2022_2030': -131.0881419677462, 'ghsl_pop_pct_change_2022_2030': -1.041255251491835, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.2526757111592375, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 2.752864362511697, 'service_pressure_E2030': 72.1}, {'ward_id': '52902011', 'ward_label': 'KZN292_11', 'census_pop_2022': 19965.654288, 'ghsl_pop_2030': 15844.107378578723, 'ghsl_pop_change_2022_2030': -4121.5469094212785, 'ghsl_pop_pct_change_2022_2030': -20.643184791086266, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.475533100415558, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 4.269389697580999, 'service_pressure_E2030': 77.1}, {'ward_id': '52902013', 'ward_label': 'KZN292_13', 'census_pop_2022': 13404.7075996, 'ghsl_pop_2030': 12857.792258874337, 'ghsl_pop_change_2022_2030': -546.9153407256636, 'ghsl_pop_pct_change_2022_2030': -4.080024399353432, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.298267678864239, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 2.8433232568916913, 'service_pressure_E2030': 81.3}, {'ward_id': '52902020', 'ward_label': 'KZN292_20', 'census_pop_2022': 11577.4402437, 'ghsl_pop_2030': 11166.148877605327, 'ghsl_pop_change_2022_2030': -411.29136609467423, 'ghsl_pop_pct_change_2022_2030': -3.5525241973801913, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.3887410522566224, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 3.7146792240737803, 'service_pressure_E2030': 76.7}, {'ward_id': '52902022', 'ward_label': 'KZN292_22', 'census_pop_2022': 12477.7471937, 'ghsl_pop_2030': 9535.669869497637, 'ghsl_pop_change_2022_2030': -2942.0773242023624, 'ghsl_pop_pct_change_2022_2030': -23.57859378404311, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.475533100415558, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 4.2622119638514, 'service_pressure_E2030': 56.4}, {'ward_id': '52902030', 'ward_label': 'KZN292_30', 'census_pop_2022': 9680.3641198, 'ghsl_pop_2030': 9523.415618174115, 'ghsl_pop_change_2022_2030': -156.9485016258859, 'ghsl_pop_pct_change_2022_2030': -1.6213078318497054, 'forecast_confidence': 'High', 'reliability_tier': 'High', 'anchor_ratio_final': 1.2976839398340305, 'anchor_fallback_level': 'province_degurba_tier', 'momentum_label': 'High Growth, Improving', 'momentum_signal': 'High Growth, Improving', 'pp_change': 3.154018276371044, 'service_pressure_E2030': 52.6}]",
+      "severity": "critical"
+    },
+    {
+      "name": "landcover_story_class_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing landcover_story_class: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "content_ward_coverage_111",
+      "passed": true,
+      "detail": "Missing content IDs: [] (total=0), ward insights=30",
+      "severity": "critical"
+    },
+    {
+      "name": "content_required_kpi_labels_resolved",
+      "passed": true,
+      "detail": "Resolved labels flags: {'ghsl': True, 'viirs': True, 'landcover': True}",
+      "severity": "critical"
+    },
+    {
+      "name": "content_kpi_values_non_null",
+      "passed": true,
+      "detail": "Empty KPI values: []",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_cluster_raw_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing ghsl_cluster_raw: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "ghsl_cluster_display_non_null_111",
+      "passed": true,
+      "detail": "Rows with missing ghsl_cluster_display: [] (total=0)",
+      "severity": "critical"
+    },
+    {
+      "name": "cluster_interpretation_audit_total_111",
+      "passed": true,
+      "detail": "Expected 30, got 30",
+      "severity": "critical"
+    },
+    {
+      "name": "cluster_interpretation_audit_share_range",
+      "passed": true,
+      "detail": "Counts by raw cluster: {'Rapid Urbanisers': {'display_label': 'Rapid Urbanisers', 'ward_count': 22, 'negative_census_to_2030_count': 5, 'negative_census_to_2030_share_pct': 22.73, 'negative_modeled_2020_to_2030_count': 5, 'negative_modeled_2020_to_2030_share_pct': 22.73}, 'Declining': {'display_label': 'Slowing', 'ward_count': 7, 'negative_census_to_2030_count': 1, 'negative_census_to_2030_share_pct': 14.29, 'negative_modeled_2020_to_2030_count': 1, 'negative_modeled_2020_to_2030_share_pct': 14.29}, 'Economic Hubs': {'display_label': 'Economic Hubs', 'ward_count': 1, 'negative_census_to_2030_count': 0, 'negative_census_to_2030_share_pct': 0.0, 'negative_modeled_2020_to_2030_count': 1, 'negative_modeled_2020_to_2030_share_pct': 100.0}}",
+      "severity": "critical"
+    },
+    {
+      "name": "viirs_growth_rank_top10_non_negative_descending",
+      "passed": true,
+      "detail": "top10_len=10, non_negative=True, descending=True",
+      "severity": "critical"
+    }
+  ],
+  "failed_checks": [],
+  "density_consistency": {
+    "tolerance_persons_per_km2": 0.1,
+    "max_abs_diff_persons_per_km2": 0.0,
+    "worst_ward_id": "52902001"
+  },
+  "ghsl_negative_growth_audit": {
+    "ward_count": 6,
+    "ward_ids": [
+      "52902001",
+      "52902011",
+      "52902013",
+      "52902020",
+      "52902022",
+      "52902030"
+    ]
+  },
+  "cluster_interpretation_audit": {
+    "method_note": "Raw GHSL workbook cluster labels are preserved; display labels are mapped for interpretation clarity (Declining -> Slowing).",
+    "counts_by_raw_cluster": {
+      "Rapid Urbanisers": {
+        "display_label": "Rapid Urbanisers",
+        "ward_count": 22,
+        "negative_census_to_2030_count": 5,
+        "negative_census_to_2030_share_pct": 22.73,
+        "negative_modeled_2020_to_2030_count": 5,
+        "negative_modeled_2020_to_2030_share_pct": 22.73
+      },
+      "Declining": {
+        "display_label": "Slowing",
+        "ward_count": 7,
+        "negative_census_to_2030_count": 1,
+        "negative_census_to_2030_share_pct": 14.29,
+        "negative_modeled_2020_to_2030_count": 1,
+        "negative_modeled_2020_to_2030_share_pct": 14.29
+      },
+      "Economic Hubs": {
+        "display_label": "Economic Hubs",
+        "ward_count": 1,
+        "negative_census_to_2030_count": 0,
+        "negative_census_to_2030_share_pct": 0.0,
+        "negative_modeled_2020_to_2030_count": 1,
+        "negative_modeled_2020_to_2030_share_pct": 100.0
+      }
+    },
+    "total_wards": 30
+  },
+  "protected_area_recompute": {
+    "method": "unioned_intersection",
+    "max_delta_vs_legacy_pct_points": 0.003934000000000021,
+    "max_delta_ward_id": "52902011",
+    "wards_changed_count": 0,
+    "sanity_wards": {
+      "52902001": {
+        "legacy_pct": 0.0,
+        "recomputed_pct": 0.0,
+        "delta_pct_points": 0.0
+      },
+      "52902002": {
+        "legacy_pct": 0.0,
+        "recomputed_pct": 0.0,
+        "delta_pct_points": 0.0
+      }
+    }
+  },
+  "budget_guard": {
+    "data_size_bytes": 2437802,
+    "limit_bytes": 10485760,
+    "pass": true,
+    "note": "Data bundle within near-zero-cost guardrail"
+  }
+}

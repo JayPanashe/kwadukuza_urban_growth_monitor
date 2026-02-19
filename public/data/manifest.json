@@ -1,0 +1,62 @@
+{
+  "dataset_version": "kzn292-v1.0.0",
+  "generated_at": "2026-02-19T14:36:30+00:00",
+  "latest_viirs_month": "2025-10-01",
+  "ward_count": 30,
+  "source_files": [
+    {
+      "source_key": "ghsl_ward_outlook_csv",
+      "file_name": "ward_5yr_outlook.csv",
+      "size_bytes": 3795752,
+      "modified_at": "2026-02-10T11:45:59.420000+00:00"
+    },
+    {
+      "source_key": "landcover_ward_gpkg",
+      "file_name": "lc5_ward_indicators.gpkg",
+      "size_bytes": 65048576,
+      "modified_at": "2026-02-08T16:03:06.330000+00:00"
+    },
+    {
+      "source_key": "viirs_ward_summary_csv",
+      "file_name": "ward_summary_v1.csv",
+      "size_bytes": 2160861,
+      "modified_at": "2026-02-09T08:55:28.373831+00:00"
+    },
+    {
+      "source_key": "viirs_ward_monthly_csv",
+      "file_name": "ward_monthly_clean_v1.csv",
+      "size_bytes": 91141171,
+      "modified_at": "2026-02-09T08:55:18.458531+00:00"
+    },
+    {
+      "source_key": "ghsl_dashboard_xlsx",
+      "file_name": "GHSL_KwaDukuza_Local_Municipality_Dashboard.xlsx",
+      "size_bytes": 64241,
+      "modified_at": "2026-02-10T11:46:30.240000+00:00"
+    },
+    {
+      "source_key": "landcover_dashboard_xlsx",
+      "file_name": "KwaDukuza_Local_Municipality_Dashboard.xlsx",
+      "size_bytes": 45140,
+      "modified_at": "2026-02-08T16:03:20.090000+00:00"
+    },
+    {
+      "source_key": "viirs_dashboard_xlsx",
+      "file_name": "VIIRS_Dashboard_KZN292.xlsx",
+      "size_bytes": 236004,
+      "modified_at": "2026-02-19T14:36:15.851608+00:00"
+    },
+    {
+      "source_key": "smod_zonal_csv",
+      "file_name": "smod_zonal.csv",
+      "size_bytes": 7580903,
+      "modified_at": "2026-02-07T14:40:57.300000+00:00"
+    },
+    {
+      "source_key": "protected_areas_gpkg",
+      "file_name": "WDPA_ZAF_merged.gpkg",
+      "size_bytes": 10125312,
+      "modified_at": "2026-02-07T23:43:55.360000+00:00"
+    }
+  ]
+}

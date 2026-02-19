@@ -1,0 +1,1832 @@
+{
+  "dataset_version": "kzn292-v1.0.0",
+  "generated_at": "2026-02-19T14:36:30+00:00",
+  "ward_count": 30,
+  "city_headline_kpis": {
+    "ghsl_population_e2020": {
+      "key": "ghsl_population_e2020",
+      "label": "Population E2020",
+      "source": "ghsl_dashboard",
+      "display": "296,975",
+      "value": 296975.0
+    },
+    "ghsl_built_per_capita": {
+      "key": "ghsl_built_per_capita",
+      "label": "Built Per Capita",
+      "source": "ghsl_dashboard",
+      "display": "81.0 m\u00b2",
+      "value": 81.0
+    },
+    "ghsl_pop_cagr_20yr_pct": {
+      "key": "ghsl_pop_cagr_20yr_pct",
+      "label": "Pop CAGR 20yr",
+      "source": "ghsl_dashboard",
+      "display": "2.4%",
+      "value": 2.4
+    },
+    "ghsl_built_cagr_20yr_pct": {
+      "key": "ghsl_built_cagr_20yr_pct",
+      "label": "Built CAGR 20yr",
+      "source": "ghsl_dashboard",
+      "display": "2.6%",
+      "value": 2.6
+    },
+    "viirs_total_wards": {
+      "key": "viirs_total_wards",
+      "label": "Total Wards",
+      "source": "viirs_dashboard",
+      "display": "30",
+      "value": 30.0
+    },
+    "viirs_latest_avg_radiance": {
+      "key": "viirs_latest_avg_radiance",
+      "label": "Latest Avg Radiance",
+      "source": "viirs_dashboard",
+      "display": "2.46",
+      "value": 2.46
+    },
+    "viirs_mean_cagr_pct": {
+      "key": "viirs_mean_cagr_pct",
+      "label": "Mean CAGR",
+      "source": "viirs_dashboard",
+      "display": "5.2%",
+      "value": 5.2
+    },
+    "viirs_sum_cagr_pct": {
+      "key": "viirs_sum_cagr_pct",
+      "label": "Sum CAGR",
+      "source": "viirs_dashboard",
+      "display": "6.1%",
+      "value": 6.1
+    },
+    "viirs_total_light_output": {
+      "key": "viirs_total_light_output",
+      "label": "Total Light Output",
+      "source": "viirs_dashboard",
+      "display": "10,840",
+      "value": 10840.0
+    },
+    "viirs_yoy_change_pct": {
+      "key": "viirs_yoy_change_pct",
+      "label": "YoY Change",
+      "source": "viirs_dashboard",
+      "display": "+14.1%",
+      "value": 14.1
+    },
+    "landcover_area_km2": {
+      "key": "landcover_area_km2",
+      "label": "Area",
+      "source": "landcover_dashboard",
+      "display": "740.0 km2",
+      "value": 740.0
+    },
+    "landcover_agriculture_pct": {
+      "key": "landcover_agriculture_pct",
+      "label": "Agriculture",
+      "source": "landcover_dashboard",
+      "display": "57.7%",
+      "value": 57.7
+    },
+    "landcover_irrigation_pct": {
+      "key": "landcover_irrigation_pct",
+      "label": "Irrigation",
+      "source": "landcover_dashboard",
+      "display": "1.0%",
+      "value": 1.0
+    },
+    "landcover_ndvi_mean": {
+      "key": "landcover_ndvi_mean",
+      "label": "NDVI",
+      "source": "landcover_dashboard",
+      "display": "0.629",
+      "value": 0.629
+    },
+    "landcover_protected_area_pct": {
+      "key": "landcover_protected_area_pct",
+      "label": "Protected Area %",
+      "source": "landcover_dashboard",
+      "display": "0.0%",
+      "value": 0.0
+    },
+    "ghsl_census_2022": {
+      "key": "ghsl_census_2022",
+      "label": "Census 2022",
+      "source": "ghsl_ward_outlook_csv",
+      "display": "324,912",
+      "value": 324911.65351489995
+    },
+    "viirs_momentum_note": {
+      "key": "viirs_momentum_note",
+      "label": "Economic Proxy Method",
+      "source": "viirs_ward_summary_csv",
+      "display": "VIIRS nighttime lights (non-metro, no S&P quarterly GDP)",
+      "value": null
+    }
+  },
+  "required_labels_resolved": {
+    "ghsl": true,
+    "viirs": true,
+    "landcover": true
+  },
+  "top_lists": {
+    "viirs_growth_rank": [
+      {
+        "ward_id": "52902029",
+        "ward_label": "KZN292_29",
+        "value": 10.90941966254824,
+        "cluster": "Rapidly Growing",
+        "rank": 1
+      },
+      {
+        "ward_id": "52902029",
+        "ward_label": "KZN292_29",
+        "value": 10.90941966254824,
+        "cluster": "Rapidly Growing",
+        "rank": 2
+      },
+      {
+        "ward_id": "52902025",
+        "ward_label": "KZN292_25",
+        "value": 10.36323009820088,
+        "cluster": "Volatile",
+        "rank": 3
+      },
+      {
+        "ward_id": "52902025",
+        "ward_label": "KZN292_25",
+        "value": 10.36323009820088,
+        "cluster": "Volatile",
+        "rank": 4
+      },
+      {
+        "ward_id": "52902009",
+        "ward_label": "KZN292_9",
+        "value": 10.141101005232871,
+        "cluster": "Volatile",
+        "rank": 5
+      },
+      {
+        "ward_id": "52902009",
+        "ward_label": "KZN292_9",
+        "value": 10.141101005232871,
+        "cluster": "Volatile",
+        "rank": 6
+      },
+      {
+        "ward_id": "52902001",
+        "ward_label": "KZN292_1",
+        "value": 9.724006499438765,
+        "cluster": "Volatile",
+        "rank": 7
+      },
+      {
+        "ward_id": "52902001",
+        "ward_label": "KZN292_1",
+        "value": 9.724006499438765,
+        "cluster": "Volatile",
+        "rank": 8
+      },
+      {
+        "ward_id": "52902011",
+        "ward_label": "KZN292_11",
+        "value": 9.271936247698953,
+        "cluster": "Volatile",
+        "rank": 9
+      },
+      {
+        "ward_id": "52902011",
+        "ward_label": "KZN292_11",
+        "value": 9.271936247698953,
+        "cluster": "Volatile",
+        "rank": 10
+      },
+      {
+        "ward_id": "52902003",
+        "ward_label": "KZN292_3",
+        "value": 8.98104480522466,
+        "cluster": "Steadily Growing",
+        "rank": 11
+      },
+      {
+        "ward_id": "52902003",
+        "ward_label": "KZN292_3",
+        "value": 8.98104480522466,
+        "cluster": "Steadily Growing",
+        "rank": 12
+      },
+      {
+        "ward_id": "52902027",
+        "ward_label": "KZN292_27",
+        "value": 8.547499541683678,
+        "cluster": "Steadily Growing",
+        "rank": 13
+      },
+      {
+        "ward_id": "52902027",
+        "ward_label": "KZN292_27",
+        "value": 8.547499541683678,
+        "cluster": "Steadily Growing",
+        "rank": 14
+      },
+      {
+        "ward_id": "52902014",
+        "ward_label": "KZN292_14",
+        "value": 8.436784123577334,
+        "cluster": "Rapidly Growing",
+        "rank": 15
+      },
+      {
+        "ward_id": "52902014",
+        "ward_label": "KZN292_14",
+        "value": 8.436784123577334,
+        "cluster": "Rapidly Growing",
+        "rank": 16
+      },
+      {
+        "ward_id": "52902005",
+        "ward_label": "KZN292_5",
+        "value": 8.205695139808578,
+        "cluster": "Rapidly Growing",
+        "rank": 17
+      },
+      {
+        "ward_id": "52902005",
+        "ward_label": "KZN292_5",
+        "value": 8.205695139808578,
+        "cluster": "Rapidly Growing",
+        "rank": 18
+      },
+      {
+        "ward_id": "52902010",
+        "ward_label": "KZN292_10",
+        "value": 8.166463821972103,
+        "cluster": "Rapidly Growing",
+        "rank": 19
+      },
+      {
+        "ward_id": "52902010",
+        "ward_label": "KZN292_10",
+        "value": 8.166463821972103,
+        "cluster": "Rapidly Growing",
+        "rank": 20
+      }
+    ],
+    "viirs_decline_rank": [],
+    "ghsl_pop_density": [
+      {
+        "ward_id": "52902023",
+        "value": 14823.2534010541,
+        "rank": 1
+      },
+      {
+        "ward_id": "52902008",
+        "value": 13674.82449116384,
+        "rank": 2
+      },
+      {
+        "ward_id": "52902018",
+        "value": 9721.650512454386,
+        "rank": 3
+      },
+      {
+        "ward_id": "52902014",
+        "value": 5575.625578186044,
+        "rank": 4
+      },
+      {
+        "ward_id": "52902013",
+        "value": 4066.462695878254,
+        "rank": 5
+      },
+      {
+        "ward_id": "52902005",
+        "value": 4030.515720769763,
+        "rank": 6
+      },
+      {
+        "ward_id": "52902024",
+        "value": 3795.033164779205,
+        "rank": 7
+      },
+      {
+        "ward_id": "52902004",
+        "value": 3649.601794069733,
+        "rank": 8
+      },
+      {
+        "ward_id": "52902028",
+        "value": 3623.863569527462,
+        "rank": 9
+      },
+      {
+        "ward_id": "52902016",
+        "value": 2610.547236012967,
+        "rank": 10
+      },
+      {
+        "ward_id": "52902010",
+        "value": 2307.516131863113,
+        "rank": 11
+      },
+      {
+        "ward_id": "52902029",
+        "value": 2288.994038121877,
+        "rank": 12
+      },
+      {
+        "ward_id": "52902006",
+        "value": 1734.672081869883,
+        "rank": 13
+      },
+      {
+        "ward_id": "52902026",
+        "value": 1702.713441302574,
+        "rank": 14
+      },
+      {
+        "ward_id": "52902002",
+        "value": 1598.596106977922,
+        "rank": 15
+      },
+      {
+        "ward_id": "52902015",
+        "value": 1481.730346398112,
+        "rank": 16
+      },
+      {
+        "ward_id": "52902007",
+        "value": 1285.494399679065,
+        "rank": 17
+      },
+      {
+        "ward_id": "52902019",
+        "value": 1011.481067801595,
+        "rank": 18
+      },
+      {
+        "ward_id": "52902017",
+        "value": 703.9426243688093,
+        "rank": 19
+      },
+      {
+        "ward_id": "52902020",
+        "value": 299.2574092930336,
+        "rank": 20
+      }
+    ],
+    "landcover_agriculture": [
+      {
+        "ward_id": "52902021",
+        "value": 79.18,
+        "rank": 1
+      },
+      {
+        "ward_id": "52902003",
+        "value": 74.8,
+        "rank": 2
+      },
+      {
+        "ward_id": "52902017",
+        "value": 67.27,
+        "rank": 3
+      },
+      {
+        "ward_id": "52902030",
+        "value": 66.33,
+        "rank": 4
+      },
+      {
+        "ward_id": "52902012",
+        "value": 64.94,
+        "rank": 5
+      },
+      {
+        "ward_id": "52902007",
+        "value": 63.44,
+        "rank": 6
+      },
+      {
+        "ward_id": "52902001",
+        "value": 59.589999999999996,
+        "rank": 7
+      },
+      {
+        "ward_id": "52902011",
+        "value": 54.55,
+        "rank": 8
+      },
+      {
+        "ward_id": "52902020",
+        "value": 53.99,
+        "rank": 9
+      },
+      {
+        "ward_id": "52902027",
+        "value": 51.78,
+        "rank": 10
+      },
+      {
+        "ward_id": "52902002",
+        "value": 42.32,
+        "rank": 11
+      },
+      {
+        "ward_id": "52902019",
+        "value": 41.78,
+        "rank": 12
+      },
+      {
+        "ward_id": "52902009",
+        "value": 41.49,
+        "rank": 13
+      },
+      {
+        "ward_id": "52902025",
+        "value": 32.96,
+        "rank": 14
+      },
+      {
+        "ward_id": "52902029",
+        "value": 31.540000000000003,
+        "rank": 15
+      },
+      {
+        "ward_id": "52902015",
+        "value": 28.73,
+        "rank": 16
+      },
+      {
+        "ward_id": "52902022",
+        "value": 27.98,
+        "rank": 17
+      },
+      {
+        "ward_id": "52902004",
+        "value": 26.8,
+        "rank": 18
+      },
+      {
+        "ward_id": "52902026",
+        "value": 23.369999999999997,
+        "rank": 19
+      },
+      {
+        "ward_id": "52902005",
+        "value": 9.519999999999989,
+        "rank": 20
+      }
+    ]
+  },
+  "ward_insights": [
+    {
+      "ward_id": "52902001",
+      "ward_label": "KZN292_1",
+      "viirs": {
+        "ward_id": "52902001",
+        "ward_label": "KZN292_1",
+        "viirs_cagr_pct": 9.724006499438765,
+        "viirs_trend_slope": 0.006085071116099084,
+        "viirs_cluster": "Volatile",
+        "viirs_z_score": 0.9498686937177016,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 1.037817691690413
+      },
+      "ghsl": {
+        "ward_id": "52902001",
+        "ghsl_pop": 9588.721101426938,
+        "ghsl_pop_density": 150.3957809213563,
+        "ghsl_built_per_cap": 95.82362343016376,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902001",
+        "landcover_agriculture_pct": 59.589999999999996,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 2.802795321200344e-05,
+        "landcover_ndvi_2024_mean": 0.6296527081498052,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 8,
+        "ghsl_pop_density_rank": 26,
+        "landcover_agriculture_rank": 7
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Volatile with CAGR 9.7%",
+        "Settlement cluster: Rapid Urbanisers and density 150 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902002",
+      "ward_label": "KZN292_2",
+      "viirs": {
+        "ward_id": "52902002",
+        "ward_label": "KZN292_2",
+        "viirs_cagr_pct": 2.8443596380631764,
+        "viirs_trend_slope": 0.00324578321797752,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 0.42110208850544384,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 4.084460784115044
+      },
+      "ghsl": {
+        "ward_id": "52902002",
+        "ghsl_pop": 9697.86188683249,
+        "ghsl_pop_density": 1598.596106977922,
+        "ghsl_built_per_cap": 56.14505613235125,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902002",
+        "landcover_agriculture_pct": 42.32,
+        "landcover_mining_pct": 0.03,
+        "landcover_irrigation_ratio": 0.0167448091091761,
+        "landcover_ndvi_2024_mean": 0.6224015943047141,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 58,
+        "ghsl_pop_density_rank": 15,
+        "landcover_agriculture_rank": 11
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 2.8%",
+        "Settlement cluster: Rapid Urbanisers and density 1599 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902003",
+      "ward_label": "KZN292_3",
+      "viirs": {
+        "ward_id": "52902003",
+        "ward_label": "KZN292_3",
+        "viirs_cagr_pct": 8.98104480522466,
+        "viirs_trend_slope": 0.006404678891994093,
+        "viirs_cluster": "Steadily Growing",
+        "viirs_z_score": 1.336041381141893,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 1.423122523541193
+      },
+      "ghsl": {
+        "ward_id": "52902003",
+        "ghsl_pop": 9851.633277842097,
+        "ghsl_pop_density": 89.29466044156504,
+        "ghsl_built_per_cap": 103.2999271591757,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902003",
+        "landcover_agriculture_pct": 74.8,
+        "landcover_mining_pct": 0.22,
+        "landcover_irrigation_ratio": 0.0015302739190315,
+        "landcover_ndvi_2024_mean": 0.6300292532589884,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "Emerging",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 12,
+        "ghsl_pop_density_rank": 29,
+        "landcover_agriculture_rank": 2
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Steadily Growing with CAGR 9.0%",
+        "Settlement cluster: Rapid Urbanisers and density 89 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902004",
+      "ward_label": "KZN292_4",
+      "viirs": {
+        "ward_id": "52902004",
+        "ward_label": "KZN292_4",
+        "viirs_cagr_pct": 6.915321424112619,
+        "viirs_trend_slope": 0.04101295144119942,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.7970216981943203,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 12.48238885667588
+      },
+      "ghsl": {
+        "ward_id": "52902004",
+        "ghsl_pop": 9577.781747544312,
+        "ghsl_pop_density": 3649.601794069733,
+        "ghsl_built_per_cap": 46.25465600253284,
+        "ghsl_cluster": "Economic Hubs",
+        "ghsl_cluster_raw": "Economic Hubs",
+        "ghsl_cluster_display": "Economic Hubs",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902004",
+        "landcover_agriculture_pct": 26.8,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.4817832401820591,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 28,
+        "ghsl_pop_density_rank": 8,
+        "landcover_agriculture_rank": 18
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 6.9%",
+        "Settlement cluster: Economic Hubs and density 3650 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902005",
+      "ward_label": "KZN292_5",
+      "viirs": {
+        "ward_id": "52902005",
+        "ward_label": "KZN292_5",
+        "viirs_cagr_pct": 8.205695139808578,
+        "viirs_trend_slope": 0.03235867293903739,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.3700131941243032,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 9.526562525580324
+      },
+      "ghsl": {
+        "ward_id": "52902005",
+        "ghsl_pop": 9981.78129009379,
+        "ghsl_pop_density": 4030.515720769763,
+        "ghsl_built_per_cap": 43.1524181387822,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Town-to-city transition"
+      },
+      "landcover": {
+        "ward_id": "52902005",
+        "landcover_agriculture_pct": 9.519999999999989,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.567763968689801,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Mixed Urban"
+      },
+      "ranks": {
+        "viirs_growth_rank": 18,
+        "ghsl_pop_density_rank": 6,
+        "landcover_agriculture_rank": 20
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 8.2%",
+        "Settlement cluster: Rapid Urbanisers and density 4031 per km2",
+        "Settlement transition: Town-to-city transition (2020 to 2030)",
+        "Landcover story: Mixed Urban"
+      ]
+    },
+    {
+      "ward_id": "52902006",
+      "ward_label": "KZN292_6",
+      "viirs": {
+        "ward_id": "52902006",
+        "ward_label": "KZN292_6",
+        "viirs_cagr_pct": 3.3818941165409067,
+        "viirs_trend_slope": 0.02364413708859761,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.12114611317742756,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 15.64499998313409
+      },
+      "ghsl": {
+        "ward_id": "52902006",
+        "ghsl_pop": 6351.876064044447,
+        "ghsl_pop_density": 1734.672081869883,
+        "ghsl_built_per_cap": 185.1020057925004,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902006",
+        "landcover_agriculture_pct": 0.0,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": null,
+        "landcover_ndvi_2024_mean": 0.5028172810872396,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "Moderate",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 52,
+        "ghsl_pop_density_rank": 13,
+        "landcover_agriculture_rank": 27
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 3.4%",
+        "Settlement cluster: Slowing and density 1735 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902007",
+      "ward_label": "KZN292_7",
+      "viirs": {
+        "ward_id": "52902007",
+        "ward_label": "KZN292_7",
+        "viirs_cagr_pct": 5.984051885283148,
+        "viirs_trend_slope": 0.007357036953508094,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 1.1181346661735057,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 2.638371210432414
+      },
+      "ghsl": {
+        "ward_id": "52902007",
+        "ghsl_pop": 10052.64192205425,
+        "ghsl_pop_density": 1285.494399679065,
+        "ghsl_built_per_cap": 43.38292394989441,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902007",
+        "landcover_agriculture_pct": 63.44,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0090689680392013,
+        "landcover_ndvi_2024_mean": 0.5983980745882601,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 32,
+        "ghsl_pop_density_rank": 17,
+        "landcover_agriculture_rank": 6
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 6.0%",
+        "Settlement cluster: Rapid Urbanisers and density 1285 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902008",
+      "ward_label": "KZN292_8",
+      "viirs": {
+        "ward_id": "52902008",
+        "ward_label": "KZN292_8",
+        "viirs_cagr_pct": 3.2470771767841855,
+        "viirs_trend_slope": 0.009492923339253077,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.04940866620936365,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 11.61687500278155
+      },
+      "ghsl": {
+        "ward_id": "52902008",
+        "ghsl_pop": 9351.800713742075,
+        "ghsl_pop_density": 13674.82449116384,
+        "ghsl_built_per_cap": 29.18325661056501,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902008",
+        "landcover_agriculture_pct": 0.84,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5290402659663448,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 56,
+        "ghsl_pop_density_rank": 2,
+        "landcover_agriculture_rank": 23
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 3.2%",
+        "Settlement cluster: Slowing and density 13675 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902009",
+      "ward_label": "KZN292_9",
+      "viirs": {
+        "ward_id": "52902009",
+        "ward_label": "KZN292_9",
+        "viirs_cagr_pct": 10.141101005232866,
+        "viirs_trend_slope": 0.01121395406690482,
+        "viirs_cluster": "Volatile",
+        "viirs_z_score": 1.7943472854673361,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 2.375534069746678
+      },
+      "ghsl": {
+        "ward_id": "52902009",
+        "ghsl_pop": 9884.42467812188,
+        "ghsl_pop_density": 293.9653743453722,
+        "ghsl_built_per_cap": 82.51324953745004,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902009",
+        "landcover_agriculture_pct": 41.49,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0014692698475943,
+        "landcover_ndvi_2024_mean": 0.6233667061153778,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 6,
+        "ghsl_pop_density_rank": 22,
+        "landcover_agriculture_rank": 13
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Volatile with CAGR 10.1%",
+        "Settlement cluster: Rapid Urbanisers and density 294 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902010",
+      "ward_label": "KZN292_10",
+      "viirs": {
+        "ward_id": "52902010",
+        "ward_label": "KZN292_10",
+        "viirs_cagr_pct": 8.166463821972103,
+        "viirs_trend_slope": 0.03219188539012224,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.3825174288518352,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 7.897933340867358
+      },
+      "ghsl": {
+        "ward_id": "52902010",
+        "ghsl_pop": 10899.78302002,
+        "ghsl_pop_density": 2307.516131863113,
+        "ghsl_built_per_cap": 56.27873498704515,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902010",
+        "landcover_agriculture_pct": 0.0,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": null,
+        "landcover_ndvi_2024_mean": 0.6116078904837616,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "Emerging",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 20,
+        "ghsl_pop_density_rank": 11,
+        "landcover_agriculture_rank": 28
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 8.2%",
+        "Settlement cluster: Rapid Urbanisers and density 2308 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902011",
+      "ward_label": "KZN292_11",
+      "viirs": {
+        "ward_id": "52902011",
+        "ward_label": "KZN292_11",
+        "viirs_cagr_pct": 9.271936247698953,
+        "viirs_trend_slope": 0.01063217127178881,
+        "viirs_cluster": "Volatile",
+        "viirs_z_score": 1.3337755994050775,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 2.204700519903174
+      },
+      "ghsl": {
+        "ward_id": "52902011",
+        "ghsl_pop": 10360.51682006939,
+        "ghsl_pop_density": 214.798732318568,
+        "ghsl_built_per_cap": 108.9249715626099,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902011",
+        "landcover_agriculture_pct": 54.55,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.6547029678965988,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "Emerging",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 10,
+        "ghsl_pop_density_rank": 24,
+        "landcover_agriculture_rank": 8
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Volatile with CAGR 9.3%",
+        "Settlement cluster: Rapid Urbanisers and density 215 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902012",
+      "ward_label": "KZN292_12",
+      "viirs": {
+        "ward_id": "52902012",
+        "ward_label": "KZN292_12",
+        "viirs_cagr_pct": 6.042322510245923,
+        "viirs_trend_slope": 0.01170156886790458,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 1.029108333176125,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 3.510000002617929
+      },
+      "ghsl": {
+        "ward_id": "52902012",
+        "ghsl_pop": 9346.653609709723,
+        "ghsl_pop_density": 295.1737951379776,
+        "ghsl_built_per_cap": 79.89618864491031,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902012",
+        "landcover_agriculture_pct": 64.94,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0010686436574329,
+        "landcover_ndvi_2024_mean": 0.6312891188121977,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 30,
+        "ghsl_pop_density_rank": 21,
+        "landcover_agriculture_rank": 5
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 6.0%",
+        "Settlement cluster: Rapid Urbanisers and density 295 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902013",
+      "ward_label": "KZN292_13",
+      "viirs": {
+        "ward_id": "52902013",
+        "ward_label": "KZN292_13",
+        "viirs_cagr_pct": 4.932834301187028,
+        "viirs_trend_slope": 0.01633938708929269,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 0.9770667728244247,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 9.678846158278297
+      },
+      "ghsl": {
+        "ward_id": "52902013",
+        "ghsl_pop": 9816.600857833922,
+        "ghsl_pop_density": 4066.462695878254,
+        "ghsl_built_per_cap": 66.00135926713884,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Town-to-city transition"
+      },
+      "landcover": {
+        "ward_id": "52902013",
+        "landcover_agriculture_pct": 2.20999999999999,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5826292419433594,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 40,
+        "ghsl_pop_density_rank": 5,
+        "landcover_agriculture_rank": 22
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 4.9%",
+        "Settlement cluster: Slowing and density 4066 per km2",
+        "Settlement transition: Town-to-city transition (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902014",
+      "ward_label": "KZN292_14",
+      "viirs": {
+        "ward_id": "52902014",
+        "ward_label": "KZN292_14",
+        "viirs_cagr_pct": 8.436784123577334,
+        "viirs_trend_slope": 0.04111874689495702,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.5170040716706712,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 10.1086111333635
+      },
+      "ghsl": {
+        "ward_id": "52902014",
+        "ghsl_pop": 11044.19929767769,
+        "ghsl_pop_density": 5575.625578186044,
+        "ghsl_built_per_cap": 42.77566777514948,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902014",
+        "landcover_agriculture_pct": 4.01,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5292811959476794,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 16,
+        "ghsl_pop_density_rank": 4,
+        "landcover_agriculture_rank": 21
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 8.4%",
+        "Settlement cluster: Slowing and density 5576 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902015",
+      "ward_label": "KZN292_15",
+      "viirs": {
+        "ward_id": "52902015",
+        "ward_label": "KZN292_15",
+        "viirs_cagr_pct": 4.801533889635068,
+        "viirs_trend_slope": 0.03461611014115095,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.16450691458239244,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 11.30427777678879
+      },
+      "ghsl": {
+        "ward_id": "52902015",
+        "ghsl_pop": 12467.64301992391,
+        "ghsl_pop_density": 1481.730346398112,
+        "ghsl_built_per_cap": 74.95795303944334,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Town intensification"
+      },
+      "landcover": {
+        "ward_id": "52902015",
+        "landcover_agriculture_pct": 28.73,
+        "landcover_mining_pct": 0.18,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5974015045166016,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 44,
+        "ghsl_pop_density_rank": 16,
+        "landcover_agriculture_rank": 16
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 4.8%",
+        "Settlement cluster: Rapid Urbanisers and density 1482 per km2",
+        "Settlement transition: Town intensification (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902016",
+      "ward_label": "KZN292_16",
+      "viirs": {
+        "ward_id": "52902016",
+        "ward_label": "KZN292_16",
+        "viirs_cagr_pct": 2.4672991981658843,
+        "viirs_trend_slope": 0.009250659313636677,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.6396028222640016,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 17.58815474524385
+      },
+      "ghsl": {
+        "ward_id": "52902016",
+        "ghsl_pop": 13161.71093886922,
+        "ghsl_pop_density": 2610.547236012967,
+        "ghsl_built_per_cap": 90.42449006270684,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Town-to-city transition"
+      },
+      "landcover": {
+        "ward_id": "52902016",
+        "landcover_agriculture_pct": 0.03,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5567748091603053,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Mixed Urban"
+      },
+      "ranks": {
+        "viirs_growth_rank": 60,
+        "ghsl_pop_density_rank": 10,
+        "landcover_agriculture_rank": 25
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 2.5%",
+        "Settlement cluster: Slowing and density 2611 per km2",
+        "Settlement transition: Town-to-city transition (2020 to 2030)",
+        "Landcover story: Mixed Urban"
+      ]
+    },
+    {
+      "ward_id": "52902017",
+      "ward_label": "KZN292_17",
+      "viirs": {
+        "ward_id": "52902017",
+        "ward_label": "KZN292_17",
+        "viirs_cagr_pct": 3.2956313621650857,
+        "viirs_trend_slope": 0.005742677672967457,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 0.5206081508410967,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 4.093750004590763
+      },
+      "ghsl": {
+        "ward_id": "52902017",
+        "ghsl_pop": 8716.112551679294,
+        "ghsl_pop_density": 703.9426243688093,
+        "ghsl_built_per_cap": 75.53780381979462,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902017",
+        "landcover_agriculture_pct": 67.27,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.6227750543962445,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 54,
+        "ghsl_pop_density_rank": 19,
+        "landcover_agriculture_rank": 3
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 3.3%",
+        "Settlement cluster: Rapid Urbanisers and density 704 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902018",
+      "ward_label": "KZN292_18",
+      "viirs": {
+        "ward_id": "52902018",
+        "ward_label": "KZN292_18",
+        "viirs_cagr_pct": 5.9816345921114955,
+        "viirs_trend_slope": 0.05840186682083812,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 1.0379534496954568,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 21.95770835876465
+      },
+      "ghsl": {
+        "ward_id": "52902018",
+        "ghsl_pop": 10492.59658500947,
+        "ghsl_pop_density": 9721.650512454386,
+        "ghsl_built_per_cap": 40.61254014176085,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Town-to-city transition"
+      },
+      "landcover": {
+        "ward_id": "52902018",
+        "landcover_agriculture_pct": 0.0,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": null,
+        "landcover_ndvi_2024_mean": 0.5242962708344331,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 34,
+        "ghsl_pop_density_rank": 3,
+        "landcover_agriculture_rank": 29
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 6.0%",
+        "Settlement cluster: Slowing and density 9722 per km2",
+        "Settlement transition: Town-to-city transition (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902019",
+      "ward_label": "KZN292_19",
+      "viirs": {
+        "ward_id": "52902019",
+        "ward_label": "KZN292_19",
+        "viirs_cagr_pct": 4.026868803192407,
+        "viirs_trend_slope": 0.02677176374255224,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.8658148404752509,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 12.69416669069551
+      },
+      "ghsl": {
+        "ward_id": "52902019",
+        "ghsl_pop": 9691.028835150812,
+        "ghsl_pop_density": 1011.481067801595,
+        "ghsl_built_per_cap": 121.9441217338623,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902019",
+        "landcover_agriculture_pct": 41.78,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5661716377891307,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 48,
+        "ghsl_pop_density_rank": 18,
+        "landcover_agriculture_rank": 12
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 4.0%",
+        "Settlement cluster: Rapid Urbanisers and density 1011 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902020",
+      "ward_label": "KZN292_20",
+      "viirs": {
+        "ward_id": "52902020",
+        "ward_label": "KZN292_20",
+        "viirs_cagr_pct": 7.220426099217181,
+        "viirs_trend_slope": 0.01380295637728584,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 1.3321141428298369,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 3.696306957615366
+      },
+      "ghsl": {
+        "ward_id": "52902020",
+        "ghsl_pop": 7755.689925276014,
+        "ghsl_pop_density": 299.2574092930336,
+        "ghsl_built_per_cap": 117.6130052630408,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902020",
+        "landcover_agriculture_pct": 53.99,
+        "landcover_mining_pct": 0.62,
+        "landcover_irrigation_ratio": 0.0745770427129959,
+        "landcover_ndvi_2024_mean": 0.6146858284065315,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 26,
+        "ghsl_pop_density_rank": 20,
+        "landcover_agriculture_rank": 9
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 7.2%",
+        "Settlement cluster: Rapid Urbanisers and density 299 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902021",
+      "ward_label": "KZN292_21",
+      "viirs": {
+        "ward_id": "52902021",
+        "ward_label": "KZN292_21",
+        "viirs_cagr_pct": 7.2951229684477426,
+        "viirs_trend_slope": 0.004446495835012316,
+        "viirs_cluster": "Steadily Growing",
+        "viirs_z_score": 1.1304674179724166,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 1.258225092921037
+      },
+      "ghsl": {
+        "ward_id": "52902021",
+        "ghsl_pop": 11499.80226012718,
+        "ghsl_pop_density": 86.50151833204757,
+        "ghsl_built_per_cap": 64.52719648692407,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902021",
+        "landcover_agriculture_pct": 79.18,
+        "landcover_mining_pct": 0.33,
+        "landcover_irrigation_ratio": 0.01258665144632,
+        "landcover_ndvi_2024_mean": 0.6484791378075695,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "Emerging",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 24,
+        "ghsl_pop_density_rank": 30,
+        "landcover_agriculture_rank": 1
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Steadily Growing with CAGR 7.3%",
+        "Settlement cluster: Rapid Urbanisers and density 87 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902022",
+      "ward_label": "KZN292_22",
+      "viirs": {
+        "ward_id": "52902022",
+        "ward_label": "KZN292_22",
+        "viirs_cagr_pct": 4.572470393606309,
+        "viirs_trend_slope": 0.01739428818063019,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 0.8845689246290204,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 6.626433340390524
+      },
+      "ghsl": {
+        "ward_id": "52902022",
+        "ghsl_pop": 6208.068397797552,
+        "ghsl_pop_density": 267.8783482815273,
+        "ghsl_built_per_cap": 370.7103164031618,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902022",
+        "landcover_agriculture_pct": 27.98,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.6011128782539588,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "Emerging",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 46,
+        "ghsl_pop_density_rank": 23,
+        "landcover_agriculture_rank": 17
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 4.6%",
+        "Settlement cluster: Rapid Urbanisers and density 268 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902023",
+      "ward_label": "KZN292_23",
+      "viirs": {
+        "ward_id": "52902023",
+        "ward_label": "KZN292_23",
+        "viirs_cagr_pct": 4.834619559394859,
+        "viirs_trend_slope": 0.01383932214499952,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 0.6598254190301756,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 8.965000000264899
+      },
+      "ghsl": {
+        "ward_id": "52902023",
+        "ghsl_pop": 12253.27267637797,
+        "ghsl_pop_density": 14823.2534010541,
+        "ghsl_built_per_cap": 27.9899100475564,
+        "ghsl_cluster": "Declining",
+        "ghsl_cluster_raw": "Declining",
+        "ghsl_cluster_display": "Slowing",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902023",
+        "landcover_agriculture_pct": 0.0,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": null,
+        "landcover_ndvi_2024_mean": 0.5104056817513926,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 42,
+        "ghsl_pop_density_rank": 1,
+        "landcover_agriculture_rank": 30
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 4.8%",
+        "Settlement cluster: Slowing and density 14823 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902024",
+      "ward_label": "KZN292_24",
+      "viirs": {
+        "ward_id": "52902024",
+        "ward_label": "KZN292_24",
+        "viirs_cagr_pct": 7.9956016692380505,
+        "viirs_trend_slope": 0.0353678638332466,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.1993428361114127,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 8.701929818119925
+      },
+      "ghsl": {
+        "ward_id": "52902024",
+        "ghsl_pop": 13634.37390212245,
+        "ghsl_pop_density": 3795.033164779205,
+        "ghsl_built_per_cap": 43.33040917324654,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902024",
+        "landcover_agriculture_pct": 0.01,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5700944817584493,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 22,
+        "ghsl_pop_density_rank": 7,
+        "landcover_agriculture_rank": 26
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 8.0%",
+        "Settlement cluster: Rapid Urbanisers and density 3795 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902025",
+      "ward_label": "KZN292_25",
+      "viirs": {
+        "ward_id": "52902025",
+        "ward_label": "KZN292_25",
+        "viirs_cagr_pct": 10.363230098200882,
+        "viirs_trend_slope": 0.00767253048245929,
+        "viirs_cluster": "Volatile",
+        "viirs_z_score": 1.142208535283727,
+        "viirs_quintile": "Q4",
+        "viirs_avg_latest": 1.500912356511527
+      },
+      "ghsl": {
+        "ward_id": "52902025",
+        "ghsl_pop": 9265.357421295335,
+        "ghsl_pop_density": 213.8580434176351,
+        "ghsl_built_per_cap": 103.2959611250698,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902025",
+        "landcover_agriculture_pct": 32.96,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0543167838312829,
+        "landcover_ndvi_2024_mean": 0.6033689949879677,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 4,
+        "ghsl_pop_density_rank": 25,
+        "landcover_agriculture_rank": 14
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Volatile with CAGR 10.4%",
+        "Settlement cluster: Rapid Urbanisers and density 214 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902026",
+      "ward_label": "KZN292_26",
+      "viirs": {
+        "ward_id": "52902026",
+        "ward_label": "KZN292_26",
+        "viirs_cagr_pct": 5.490123364994903,
+        "viirs_trend_slope": 0.01402598242827643,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 1.3893804807811612,
+        "viirs_quintile": "Q3",
+        "viirs_avg_latest": 5.497435895296243
+      },
+      "ghsl": {
+        "ward_id": "52902026",
+        "ghsl_pop": 13231.1526063976,
+        "ghsl_pop_density": 1702.713441302574,
+        "ghsl_built_per_cap": 50.00101046979938,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Decentralisation signal"
+      },
+      "landcover": {
+        "ward_id": "52902026",
+        "landcover_agriculture_pct": 23.369999999999997,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.6026809290835732,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 38,
+        "ghsl_pop_density_rank": 14,
+        "landcover_agriculture_rank": 19
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 5.5%",
+        "Settlement cluster: Rapid Urbanisers and density 1703 per km2",
+        "Settlement transition: Decentralisation signal (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902027",
+      "ward_label": "KZN292_27",
+      "viirs": {
+        "ward_id": "52902027",
+        "ward_label": "KZN292_27",
+        "viirs_cagr_pct": 8.547499541683678,
+        "viirs_trend_slope": 0.00501519377891788,
+        "viirs_cluster": "Steadily Growing",
+        "viirs_z_score": 1.527435825890436,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 0.9903832237927784
+      },
+      "ghsl": {
+        "ward_id": "52902027",
+        "ghsl_pop": 8373.297947795707,
+        "ghsl_pop_density": 97.53384026693324,
+        "ghsl_built_per_cap": 81.8942553191385,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902027",
+        "landcover_agriculture_pct": 51.78,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.010548725063388,
+        "landcover_ndvi_2024_mean": 0.6621834129893044,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 14,
+        "ghsl_pop_density_rank": 28,
+        "landcover_agriculture_rank": 10
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Steadily Growing with CAGR 8.5%",
+        "Settlement cluster: Rapid Urbanisers and density 98 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902028",
+      "ward_label": "KZN292_28",
+      "viirs": {
+        "ward_id": "52902028",
+        "ward_label": "KZN292_28",
+        "viirs_cagr_pct": 5.948536529500048,
+        "viirs_trend_slope": 0.03169161736519235,
+        "viirs_cluster": "Declining",
+        "viirs_z_score": 0.9467614490529502,
+        "viirs_quintile": "Q1",
+        "viirs_avg_latest": 11.21532050768535
+      },
+      "ghsl": {
+        "ward_id": "52902028",
+        "ghsl_pop": 9160.889877138548,
+        "ghsl_pop_density": 3623.863569527462,
+        "ghsl_built_per_cap": 54.29046813903515,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902028",
+        "landcover_agriculture_pct": 0.33,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.581754347857307,
+        "landcover_agriculture_profile": "Non-Agricultural",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Urban Core"
+      },
+      "ranks": {
+        "viirs_growth_rank": 36,
+        "ghsl_pop_density_rank": 9,
+        "landcover_agriculture_rank": 24
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Declining with CAGR 5.9%",
+        "Settlement cluster: Rapid Urbanisers and density 3624 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Urban Core"
+      ]
+    },
+    {
+      "ward_id": "52902029",
+      "ward_label": "KZN292_29",
+      "viirs": {
+        "ward_id": "52902029",
+        "ward_label": "KZN292_29",
+        "viirs_cagr_pct": 10.909419662548236,
+        "viirs_trend_slope": 0.04126456041051751,
+        "viirs_cluster": "Rapidly Growing",
+        "viirs_z_score": 1.3062308762104111,
+        "viirs_quintile": "Q2",
+        "viirs_avg_latest": 8.502324565460812
+      },
+      "ghsl": {
+        "ward_id": "52902029",
+        "ghsl_pop": 8184.045381091809,
+        "ghsl_pop_density": 2288.994038121877,
+        "ghsl_built_per_cap": 59.89458478963206,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902029",
+        "landcover_agriculture_pct": 31.540000000000003,
+        "landcover_mining_pct": 0.0,
+        "landcover_irrigation_ratio": 0.0,
+        "landcover_ndvi_2024_mean": 0.5730630147088435,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "None",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 2,
+        "ghsl_pop_density_rank": 12,
+        "landcover_agriculture_rank": 15
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Rapidly Growing with CAGR 10.9%",
+        "Settlement cluster: Rapid Urbanisers and density 2289 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    },
+    {
+      "ward_id": "52902030",
+      "ward_label": "KZN292_30",
+      "viirs": {
+        "ward_id": "52902030",
+        "ward_label": "KZN292_30",
+        "viirs_cagr_pct": 3.9287696732128063,
+        "viirs_trend_slope": 0.005297631697608337,
+        "viirs_cluster": "Stable",
+        "viirs_z_score": 1.2517164120906792,
+        "viirs_quintile": "Q5",
+        "viirs_avg_latest": 3.209953540778187
+      },
+      "ghsl": {
+        "ward_id": "52902030",
+        "ghsl_pop": 7073.23669235554,
+        "ghsl_pop_density": 131.2031304452106,
+        "ghsl_built_per_cap": 257.3162866113394,
+        "ghsl_cluster": "Rapid Urbanisers",
+        "ghsl_cluster_raw": "Rapid Urbanisers",
+        "ghsl_cluster_display": "Rapid Urbanisers",
+        "smod_transition_class": "Stable settlement form"
+      },
+      "landcover": {
+        "ward_id": "52902030",
+        "landcover_agriculture_pct": 66.33,
+        "landcover_mining_pct": 0.03,
+        "landcover_irrigation_ratio": 0.0084070967492559,
+        "landcover_ndvi_2024_mean": 0.6183253582158144,
+        "landcover_agriculture_profile": "Commercial Rain-fed",
+        "landcover_tourism_class": "Moderate",
+        "landcover_story_class": "Productive Agriculture"
+      },
+      "ranks": {
+        "viirs_growth_rank": 50,
+        "ghsl_pop_density_rank": 27,
+        "landcover_agriculture_rank": 4
+      },
+      "why_this_ward": [
+        "VIIRS cluster: Stable with CAGR 3.9%",
+        "Settlement cluster: Rapid Urbanisers and density 131 per km2",
+        "Settlement transition: Stable settlement form (2020 to 2030)",
+        "Landcover story: Productive Agriculture"
+      ]
+    }
+  ]
+}

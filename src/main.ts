@@ -186,6 +186,14 @@ type Manifest = {
   ward_count: number;
 };
 
+type ViirsTimeseriesRow = {
+  ward_id: string;
+  date: string;
+  viirs_mean: number;
+  viirs_sum: number;
+  is_imputed: boolean;
+};
+
 type CityInsightKpi = {
   key: string;
   label: string;
@@ -291,6 +299,7 @@ type AppState = {
   wards: WardCollection;
   summary: Summary;
   manifest: Manifest;
+  wardViirsTimeseries: ViirsTimeseriesRow[];
   contentInsights: ContentInsights | null;
   wardInsightsById: Record<string, WardInsightRow>;
   ghslAnomalyAudit: GhslAnomalyAudit | null;
@@ -801,10 +810,11 @@ async function bootstrap(): Promise<void> {
   const trendContext = document.querySelector<HTMLDivElement>('#trendContext')!;
   const trendCanvasWrap = document.querySelector<HTMLDivElement>('#trendCanvasWrap')!;
 
-  const [manifest, wards, summary] = await Promise.all([
+  const [manifest, wards, summary, wardViirsTimeseries] = await Promise.all([
     fetchJson<Manifest>('/data/manifest.json'),
     fetchJson<WardCollection>('/data/kzn292_wards.geojson'),
     fetchJson<Summary>('/data/kzn292_summary.json'),
+    fetchJson<ViirsTimeseriesRow[]>('/data/kzn292_viirs_timeseries.json'),
   ]);
 
   let contentInsights: ContentInsights | null = null;
@@ -912,6 +922,7 @@ async function bootstrap(): Promise<void> {
     wards,
     summary,
     manifest,
+    wardViirsTimeseries,
     contentInsights,
     wardInsightsById,
     ghslAnomalyAudit,
@@ -2128,6 +2139,11 @@ async function bootstrap(): Promise<void> {
       let selectedSeries: Array<number | null> = viirsDates.map(() => null);
       let selectedLabel = 'Selected ward (choose a ward)';
       if (selectedFeature) {
+        const wardRows = state.wardViirsTimeseries.filter(
+          (row) => row.ward_id === selectedFeature.properties.ward_id,
+        );
+        const wardByDate = new Map(wardRows.map((row) => [row.date, row.viirs_mean]));
+        selectedSeries = buildIndexedSeries(viirsDates, wardByDate, baseMonth);
         selectedLabel = `${wardName(selectedFeature)} VIIRS index`;
       }
 

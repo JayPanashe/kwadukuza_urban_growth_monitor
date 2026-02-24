@@ -6,7 +6,7 @@
   "latest_viirs_month": "2025-10-01",
   "viirs_growth_window_start": "2014-01-01",
   "viirs_growth_window_end": "2025-10-01",
-  "viirs_index_base_month": "2024-01-01",
+  "viirs_index_base_month": "2014-01-01",
   "viirs_momentum_note": "Non-metro municipality: VIIRS momentum used as economic proxy (no S&P quarterly GDP available)",
   "tourism_active_ward_count": 7,
   "tourism_active_ward_share_pct": 23.33,

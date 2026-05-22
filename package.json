@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "build:data": "python3 scripts/build_data.py --sources config/sources.json",
+    "build:data:sem": "python3 scripts/build_sem_data.py",
     "dev": "vite",
     "build": "tsc && vite build",
-    "offline:validate": "npm run build:data && npm run test && npm run build",
+    "offline:validate": "npm run build:data:sem && npm run test && npm run build",
     "offline:smoke": "bash scripts/offline_smoke.sh",
     "test": "vitest run",
     "preview": "vite preview"

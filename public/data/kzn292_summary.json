@@ -1,1228 +1,1434 @@
 {
-  "dataset_version": "kzn292-v1.0.0",
-  "generated_at": "2026-02-19T14:36:30+00:00",
-  "ward_count": 30,
-  "city_display_name": "KwaDukuza",
-  "latest_viirs_month": "2025-10-01",
-  "viirs_growth_window_start": "2014-01-01",
-  "viirs_growth_window_end": "2025-10-01",
-  "viirs_index_base_month": "2014-01-01",
-  "viirs_momentum_note": "Non-metro municipality: VIIRS momentum used as economic proxy (no S&P quarterly GDP available)",
-  "tourism_active_ward_count": 7,
-  "tourism_active_ward_share_pct": 23.33,
-  "tourism_city_card_definition": "Active ward = POI>0 OR accommodation>0 OR attraction>0 (Airbnb excluded for cross-metro comparability)",
-  "comparability": {
-    "normalization_scope": "kzn292_percentile",
-    "cross_metro_comparable": false,
-    "metro_comparison_note": "Scores are percentile-normalized within KwaDukuza. Use for within-municipality prioritization; for cross-municipality comparison use pooled/common normalization."
-  },
-  "ghsl_cluster_semantics": {
-    "display_mapping": {
-      "Declining": "Slowing"
-    },
-    "display_definitions": {
-      "Slowing": "Lower relative growth momentum in this cluster model; not automatic population decline."
-    },
-    "note": "Display labels are interpretation-safe aliases; raw workbook labels are preserved in content insights."
-  },
-  "smod_transition_counts": {
-    "Stable settlement form": 24,
-    "Town-to-city transition": 4,
-    "Town intensification": 1,
-    "Decentralisation signal": 1
-  },
-  "smod_city_urban_share_2020": 22.176759410801964,
-  "smod_city_urban_share_2030": 22.749590834697216,
-  "smod_city_urban_share_change_pp": 0.5728314238952521,
-  "kpis": {
-    "high_risk_wards": 10,
-    "critical_triage_wards": 1,
-    "median_stress_score": 51.81,
-    "median_momentum_score": 51.38,
-    "median_constraint_score": 50.6,
-    "city_viirs_latest_mean": 6.560297572672363
-  },
-  "score_formula": {
-    "normalization": "kzn292_percentile_0_100",
-    "stress_score_weights": {
-      "ghsl_service_pressure_2030": 0.45,
-      "ghsl_pop_density_2030": 0.2,
-      "ghsl_pop_change_2020_2030": 0.2,
-      "ghsl_pressure_change": 0.15
-    },
-    "momentum_score_weights": {
-      "viirs_cagr_mean": 0.4,
-      "viirs_yoy_mean": 0.2,
-      "viirs_trend_slope": 0.2,
-      "viirs_proxy_momentum_component": 0.2
-    },
-    "constraint_score_weights": {
-      "lc_urban_pct": 0.35,
-      "protected_area_pct": 0.25,
-      "lc_mining_pct": 0.2,
-      "non_urban_econ_flag": 0.2
-    },
-    "priority_risk_weights": {
-      "stress_component": 0.55,
-      "inverse_momentum_component": 0.25,
-      "constraint_component": 0.2
-    }
-  },
-  "class_counts": {
-    "Low": {
-      "Low": 2,
-      "Medium": 5,
-      "High": 3
-    },
-    "Medium": {
-      "Low": 5,
-      "Medium": 3,
-      "High": 2
-    },
-    "High": {
-      "Low": 3,
-      "Medium": 2,
-      "High": 5
-    }
-  },
   "actions_summary": [
     {
       "action_tag": "Targeted ward review",
-      "count": 21
+      "count": 23
     },
     {
-      "action_tag": "Growth monitoring",
-      "count": 5
+      "action_tag": "Critical service triage",
+      "count": 4
     },
     {
       "action_tag": "Accelerate capacity",
       "count": 2
     },
     {
-      "action_tag": "Critical service triage",
-      "count": 1
-    },
-    {
-      "action_tag": "Near-term infrastructure investment",
+      "action_tag": "Growth monitoring",
       "count": 1
     }
   ],
-  "metric_options": [
+  "city_display_name": "KwaDukuza",
+  "city_gdp_growth_cagr_2014q1_latest": null,
+  "city_gdp_latest_quarter": null,
+  "city_gdp_quarterly": [],
+  "city_viirs_timeseries": [
     {
-      "id": "priority_risk_score",
-      "label": "Priority Risk Score"
+      "city_viirs_mean": 3.8857735971701763,
+      "date": "2014-01-01",
+      "viirs_mean": 3.8857735971701763,
+      "viirs_sum": 5414.730000063778
     },
     {
-      "id": "stress_score",
-      "label": "Stress Score"
+      "city_viirs_mean": 3.0667197725760005,
+      "date": "2014-02-01",
+      "viirs_mean": 3.0667197725760005,
+      "viirs_sum": 4266.710002919659
     },
     {
-      "id": "momentum_score",
-      "label": "Momentum Score"
+      "city_viirs_mean": 4.552123677783235,
+      "date": "2014-03-01",
+      "viirs_mean": 4.552123677783235,
+      "viirs_sum": 6364.8899905234575
     },
     {
-      "id": "constraint_score",
-      "label": "Constraint Score"
+      "city_viirs_mean": 3.8823595005748226,
+      "date": "2014-04-01",
+      "viirs_mean": 3.8823595005748226,
+      "viirs_sum": 5282.0899822711945
     },
     {
-      "id": "ghsl_service_pressure_2030",
-      "label": "Service Pressure (2030)"
+      "city_viirs_mean": 4.100206050354761,
+      "date": "2014-05-01",
+      "viirs_mean": 4.100206050354761,
+      "viirs_sum": 5275.220002394171
     },
     {
-      "id": "viirs_cagr_mean",
-      "label": "VIIRS Growth CAGR (%)"
+      "city_viirs_mean": 4.437680718726438,
+      "date": "2014-06-01",
+      "viirs_mean": 4.437680718726438,
+      "viirs_sum": 5703.420006610452
     },
     {
-      "id": "lc_urban_pct",
-      "label": "Land Cover Urban Share (%)"
+      "city_viirs_mean": 4.754058233319228,
+      "date": "2014-07-01",
+      "viirs_mean": 4.754058233319228,
+      "viirs_sum": 6016.399988569319
+    },
+    {
+      "city_viirs_mean": 4.122826109965332,
+      "date": "2014-08-01",
+      "viirs_mean": 4.122826109965332,
+      "viirs_sum": 5738.539998315276
+    },
+    {
+      "city_viirs_mean": 3.7369134259514003,
+      "date": "2014-09-01",
+      "viirs_mean": 3.7369134259514003,
+      "viirs_sum": 5260.569998808205
+    },
+    {
+      "city_viirs_mean": 4.056145179851937,
+      "date": "2014-10-01",
+      "viirs_mean": 4.056145179851937,
+      "viirs_sum": 5628.0700039565545
+    },
+    {
+      "city_viirs_mean": 4.189612088265734,
+      "date": "2014-11-01",
+      "viirs_mean": 4.189612088265734,
+      "viirs_sum": 5164.910000242291
+    },
+    {
+      "city_viirs_mean": 2.9769703373790315,
+      "date": "2014-12-01",
+      "viirs_mean": 2.9769703373790315,
+      "viirs_sum": 4461.9199969768515
+    },
+    {
+      "city_viirs_mean": 4.151347052778341,
+      "date": "2015-01-01",
+      "viirs_mean": 4.151347052778341,
+      "viirs_sum": 5350.799997055904
+    },
+    {
+      "city_viirs_mean": 4.2373642528854605,
+      "date": "2015-02-01",
+      "viirs_mean": 4.2373642528854605,
+      "viirs_sum": 5742.699999695645
+    },
+    {
+      "city_viirs_mean": 3.8319481398412747,
+      "date": "2015-03-01",
+      "viirs_mean": 3.8319481398412747,
+      "viirs_sum": 5504.890001552177
+    },
+    {
+      "city_viirs_mean": 5.351860303396388,
+      "date": "2015-04-01",
+      "viirs_mean": 5.351860303396388,
+      "viirs_sum": 6799.929992794989
+    },
+    {
+      "city_viirs_mean": 4.634216305117614,
+      "date": "2015-05-01",
+      "viirs_mean": 4.634216305117614,
+      "viirs_sum": 5599.920003471896
+    },
+    {
+      "city_viirs_mean": 5.451229226655519,
+      "date": "2015-06-01",
+      "viirs_mean": 5.451229226655519,
+      "viirs_sum": 6389.709997052329
+    },
+    {
+      "city_viirs_mean": 4.798132648522097,
+      "date": "2015-07-01",
+      "viirs_mean": 4.798132648522097,
+      "viirs_sum": 5655.420003658161
+    },
+    {
+      "city_viirs_mean": 4.47401024069099,
+      "date": "2015-08-01",
+      "viirs_mean": 4.47401024069099,
+      "viirs_sum": 5557.050006134435
+    },
+    {
+      "city_viirs_mean": 4.201903495614379,
+      "date": "2015-09-01",
+      "viirs_mean": 4.201903495614379,
+      "viirs_sum": 5311.939998872577
+    },
+    {
+      "city_viirs_mean": 4.1110514436123236,
+      "date": "2015-10-01",
+      "viirs_mean": 4.1110514436123236,
+      "viirs_sum": 5261.510006481781
+    },
+    {
+      "city_viirs_mean": 4.490039112670547,
+      "date": "2015-11-01",
+      "viirs_mean": 4.490039112670547,
+      "viirs_sum": 5699.640003008768
+    },
+    {
+      "city_viirs_mean": 3.0266525331162955,
+      "date": "2015-12-01",
+      "viirs_mean": 3.0266525331162955,
+      "viirs_sum": 4177.169996231794
+    },
+    {
+      "city_viirs_mean": 4.717085125266226,
+      "date": "2016-01-01",
+      "viirs_mean": 4.717085125266226,
+      "viirs_sum": 6042.679991414771
+    },
+    {
+      "city_viirs_mean": 4.554560296352008,
+      "date": "2016-02-01",
+      "viirs_mean": 4.554560296352008,
+      "viirs_sum": 5532.5600019786525
+    },
+    {
+      "city_viirs_mean": 3.911459937047601,
+      "date": "2016-03-01",
+      "viirs_mean": 3.911459937047601,
+      "viirs_sum": 4888.199994262307
+    },
+    {
+      "city_viirs_mean": 5.035904025870721,
+      "date": "2016-04-01",
+      "viirs_mean": 5.035904025870721,
+      "viirs_sum": 6309.390004038809
+    },
+    {
+      "city_viirs_mean": 4.995100619089838,
+      "date": "2016-05-01",
+      "viirs_mean": 4.995100619089838,
+      "viirs_sum": 6138.3699941709665
+    },
+    {
+      "city_viirs_mean": 5.316039053109401,
+      "date": "2016-06-01",
+      "viirs_mean": 5.316039053109401,
+      "viirs_sum": 6494.499994033946
+    },
+    {
+      "city_viirs_mean": 5.352864873336031,
+      "date": "2016-07-01",
+      "viirs_mean": 5.352864873336031,
+      "viirs_sum": 6751.309993276373
+    },
+    {
+      "city_viirs_mean": 5.607651748766083,
+      "date": "2016-08-01",
+      "viirs_mean": 5.607651748766083,
+      "viirs_sum": 6835.169995862989
+    },
+    {
+      "city_viirs_mean": 4.342034921348449,
+      "date": "2016-09-01",
+      "viirs_mean": 4.342034921348449,
+      "viirs_sum": 6001.110003197566
+    },
+    {
+      "city_viirs_mean": 3.122095556476318,
+      "date": "2016-10-01",
+      "viirs_mean": 3.122095556476318,
+      "viirs_sum": 4554.720008540898
+    },
+    {
+      "city_viirs_mean": 4.733772365614381,
+      "date": "2016-11-01",
+      "viirs_mean": 4.733772365614381,
+      "viirs_sum": 6511.410013452172
+    },
+    {
+      "city_viirs_mean": 6.267678671780772,
+      "date": "2016-12-01",
+      "viirs_mean": 6.267678671780772,
+      "viirs_sum": 7527.239985592664
+    },
+    {
+      "city_viirs_mean": 4.55287909882749,
+      "date": "2017-01-01",
+      "viirs_mean": 4.55287909882749,
+      "viirs_sum": 6170.439992025496
+    },
+    {
+      "city_viirs_mean": 5.20610980542981,
+      "date": "2017-02-01",
+      "viirs_mean": 5.20610980542981,
+      "viirs_sum": 7383.4200051128855
+    },
+    {
+      "city_viirs_mean": 4.838295887929076,
+      "date": "2017-03-01",
+      "viirs_mean": 4.838295887929076,
+      "viirs_sum": 6688.199998393653
+    },
+    {
+      "city_viirs_mean": 5.3018747276513,
+      "date": "2017-04-01",
+      "viirs_mean": 5.3018747276513,
+      "viirs_sum": 7351.179984927177
+    },
+    {
+      "city_viirs_mean": 4.937803746694291,
+      "date": "2017-05-01",
+      "viirs_mean": 4.937803746694291,
+      "viirs_sum": 6897.449993863702
+    },
+    {
+      "city_viirs_mean": 4.89790931183924,
+      "date": "2017-06-01",
+      "viirs_mean": 4.89790931183924,
+      "viirs_sum": 6811.299998193977
+    },
+    {
+      "city_viirs_mean": 4.948210566323484,
+      "date": "2017-07-01",
+      "viirs_mean": 4.948210566323484,
+      "viirs_sum": 6844.479993492363
+    },
+    {
+      "city_viirs_mean": 4.712292273955052,
+      "date": "2017-08-01",
+      "viirs_mean": 4.712292273955052,
+      "viirs_sum": 6726.090000167488
+    },
+    {
+      "city_viirs_mean": 3.6806583588069177,
+      "date": "2017-09-01",
+      "viirs_mean": 3.6806583588069177,
+      "viirs_sum": 6634.3600032031545
+    },
+    {
+      "city_viirs_mean": 4.072489977008568,
+      "date": "2017-10-01",
+      "viirs_mean": 4.072489977008568,
+      "viirs_sum": 6292.409987032413
+    },
+    {
+      "city_viirs_mean": 5.124399097398608,
+      "date": "2017-11-01",
+      "viirs_mean": 5.124399097398608,
+      "viirs_sum": 7552.589999020099
+    },
+    {
+      "city_viirs_mean": 4.483387221843409,
+      "date": "2017-12-01",
+      "viirs_mean": 4.483387221843409,
+      "viirs_sum": 6083.329994954166
+    },
+    {
+      "city_viirs_mean": 5.008811760956532,
+      "date": "2018-01-01",
+      "viirs_mean": 5.008811760956532,
+      "viirs_sum": 7001.089987814425
+    },
+    {
+      "city_viirs_mean": 4.810047733739766,
+      "date": "2018-02-01",
+      "viirs_mean": 4.810047733739766,
+      "viirs_sum": 6841.970001250505
+    },
+    {
+      "city_viirs_mean": 4.82306848776421,
+      "date": "2018-03-01",
+      "viirs_mean": 4.82306848776421,
+      "viirs_sum": 7293.120002418757
+    },
+    {
+      "city_viirs_mean": 3.997577038278858,
+      "date": "2018-04-01",
+      "viirs_mean": 3.997577038278858,
+      "viirs_sum": 6080.199985414743
+    },
+    {
+      "city_viirs_mean": 4.570366112855529,
+      "date": "2018-05-01",
+      "viirs_mean": 4.570366112855529,
+      "viirs_sum": 6580.519993394612
+    },
+    {
+      "city_viirs_mean": 5.495971273541376,
+      "date": "2018-06-01",
+      "viirs_mean": 5.495971273541376,
+      "viirs_sum": 7574.359993658961
+    },
+    {
+      "city_viirs_mean": 4.9083461309668674,
+      "date": "2018-07-01",
+      "viirs_mean": 4.9083461309668674,
+      "viirs_sum": 6586.330000966786
+    },
+    {
+      "city_viirs_mean": 5.5560165894983875,
+      "date": "2018-08-01",
+      "viirs_mean": 5.5560165894983875,
+      "viirs_sum": 7430.8099922686815
+    },
+    {
+      "city_viirs_mean": 5.249497409966134,
+      "date": "2018-09-01",
+      "viirs_mean": 5.249497409966134,
+      "viirs_sum": 7460.5000042021275
+    },
+    {
+      "city_viirs_mean": 4.57934738814004,
+      "date": "2018-10-01",
+      "viirs_mean": 4.57934738814004,
+      "viirs_sum": 6453.490002259613
+    },
+    {
+      "city_viirs_mean": 5.184901148204596,
+      "date": "2018-11-01",
+      "viirs_mean": 5.184901148204596,
+      "viirs_sum": 7401.759993106127
+    },
+    {
+      "city_viirs_mean": 5.258227824182429,
+      "date": "2018-12-01",
+      "viirs_mean": 5.258227824182429,
+      "viirs_sum": 7221.94000405073
+    },
+    {
+      "city_viirs_mean": 4.699117532044651,
+      "date": "2019-01-01",
+      "viirs_mean": 4.699117532044651,
+      "viirs_sum": 6852.8199934363365
+    },
+    {
+      "city_viirs_mean": 4.826203693722837,
+      "date": "2019-02-01",
+      "viirs_mean": 4.826203693722837,
+      "viirs_sum": 7045.269999206067
+    },
+    {
+      "city_viirs_mean": 4.681546952099622,
+      "date": "2019-03-01",
+      "viirs_mean": 4.681546952099622,
+      "viirs_sum": 6682.980006292465
+    },
+    {
+      "city_viirs_mean": 5.482891718599427,
+      "date": "2019-04-01",
+      "viirs_mean": 5.482891718599427,
+      "viirs_sum": 7728.599999696016
+    },
+    {
+      "city_viirs_mean": 5.643479534207512,
+      "date": "2019-05-01",
+      "viirs_mean": 5.643479534207512,
+      "viirs_sum": 7714.259992957115
+    },
+    {
+      "city_viirs_mean": 5.088641389526655,
+      "date": "2019-06-01",
+      "viirs_mean": 5.088641389526655,
+      "viirs_sum": 6981.28000512719
+    },
+    {
+      "city_viirs_mean": 5.732169115710295,
+      "date": "2019-07-01",
+      "viirs_mean": 5.732169115710295,
+      "viirs_sum": 7628.30001345277
+    },
+    {
+      "city_viirs_mean": 5.340209974538107,
+      "date": "2019-08-01",
+      "viirs_mean": 5.340209974538107,
+      "viirs_sum": 7546.370002776384
+    },
+    {
+      "city_viirs_mean": 5.558592576547308,
+      "date": "2019-09-01",
+      "viirs_mean": 5.558592576547308,
+      "viirs_sum": 7820.780001819134
+    },
+    {
+      "city_viirs_mean": 4.8350503842252825,
+      "date": "2019-10-01",
+      "viirs_mean": 4.8350503842252825,
+      "viirs_sum": 7200.420014351608
+    },
+    {
+      "city_viirs_mean": 4.385327363670936,
+      "date": "2019-11-01",
+      "viirs_mean": 4.385327363670936,
+      "viirs_sum": 6503.119994893668
+    },
+    {
+      "city_viirs_mean": 4.109343645510835,
+      "date": "2019-12-01",
+      "viirs_mean": 4.109343645510835,
+      "viirs_sum": 6205.599996253847
+    },
+    {
+      "city_viirs_mean": 3.5983261327733174,
+      "date": "2020-01-01",
+      "viirs_mean": 3.5983261327733174,
+      "viirs_sum": 5027.769998479635
+    },
+    {
+      "city_viirs_mean": 4.733963369728193,
+      "date": "2020-02-01",
+      "viirs_mean": 4.733963369728193,
+      "viirs_sum": 7095.179997593165
+    },
+    {
+      "city_viirs_mean": 5.397712159644229,
+      "date": "2020-03-01",
+      "viirs_mean": 5.397712159644229,
+      "viirs_sum": 7954.840000033378
+    },
+    {
+      "city_viirs_mean": 4.595001302082142,
+      "date": "2020-04-01",
+      "viirs_mean": 4.595001302082142,
+      "viirs_sum": 6798.050000846385
+    },
+    {
+      "city_viirs_mean": 5.357686987813007,
+      "date": "2020-05-01",
+      "viirs_mean": 5.357686987813007,
+      "viirs_sum": 7404.5300066769105
+    },
+    {
+      "city_viirs_mean": 4.966557771445169,
+      "date": "2020-06-01",
+      "viirs_mean": 4.966557771445169,
+      "viirs_sum": 6910.14999780059
+    },
+    {
+      "city_viirs_mean": 5.547053494285521,
+      "date": "2020-07-01",
+      "viirs_mean": 5.547053494285521,
+      "viirs_sum": 7422.550013124943
+    },
+    {
+      "city_viirs_mean": 5.038941427703975,
+      "date": "2020-08-01",
+      "viirs_mean": 5.038941427703975,
+      "viirs_sum": 7270.400000527501
+    },
+    {
+      "city_viirs_mean": 5.101839884821177,
+      "date": "2020-09-01",
+      "viirs_mean": 5.101839884821177,
+      "viirs_sum": 7548.8999976217765
+    },
+    {
+      "city_viirs_mean": 4.494931068610961,
+      "date": "2020-10-01",
+      "viirs_mean": 4.494931068610961,
+      "viirs_sum": 6811.589986175297
+    },
+    {
+      "city_viirs_mean": 4.894789017787476,
+      "date": "2020-11-01",
+      "viirs_mean": 4.894789017787476,
+      "viirs_sum": 7374.949993163348
+    },
+    {
+      "city_viirs_mean": 4.379271411570669,
+      "date": "2020-12-01",
+      "viirs_mean": 4.379271411570669,
+      "viirs_sum": 6356.0999994874
+    },
+    {
+      "city_viirs_mean": 4.535544586247421,
+      "date": "2021-01-01",
+      "viirs_mean": 4.535544586247421,
+      "viirs_sum": 6778.959995195269
+    },
+    {
+      "city_viirs_mean": 4.800940764639571,
+      "date": "2021-02-01",
+      "viirs_mean": 4.800940764639571,
+      "viirs_sum": 7165.829995259641
+    },
+    {
+      "city_viirs_mean": 4.5495352718409565,
+      "date": "2021-03-01",
+      "viirs_mean": 4.5495352718409565,
+      "viirs_sum": 6736.859995543957
+    },
+    {
+      "city_viirs_mean": 5.7851289390241885,
+      "date": "2021-04-01",
+      "viirs_mean": 5.7851289390241885,
+      "viirs_sum": 8447.150000631811
+    },
+    {
+      "city_viirs_mean": 5.612959980997355,
+      "date": "2021-05-01",
+      "viirs_mean": 5.612959980997355,
+      "viirs_sum": 7927.999987781047
+    },
+    {
+      "city_viirs_mean": 4.909026257790688,
+      "date": "2021-06-01",
+      "viirs_mean": 4.909026257790688,
+      "viirs_sum": 7114.299998968839
+    },
+    {
+      "city_viirs_mean": 6.816191219302013,
+      "date": "2021-07-01",
+      "viirs_mean": 6.816191219302013,
+      "viirs_sum": 9410.689998924732
+    },
+    {
+      "city_viirs_mean": 5.968166868071227,
+      "date": "2021-08-01",
+      "viirs_mean": 5.968166868071227,
+      "viirs_sum": 9208.519994348288
+    },
+    {
+      "city_viirs_mean": 5.924413995281918,
+      "date": "2021-09-01",
+      "viirs_mean": 5.924413995281918,
+      "viirs_sum": 8105.3799912035465
+    },
+    {
+      "city_viirs_mean": 4.1398794050488545,
+      "date": "2021-10-01",
+      "viirs_mean": 4.1398794050488545,
+      "viirs_sum": 6442.129996210337
+    },
+    {
+      "city_viirs_mean": 4.362069147258893,
+      "date": "2021-11-01",
+      "viirs_mean": 4.362069147258893,
+      "viirs_sum": 6640.59000648558
+    },
+    {
+      "city_viirs_mean": 4.767728126833489,
+      "date": "2021-12-01",
+      "viirs_mean": 4.767728126833489,
+      "viirs_sum": 6909.4199960529795
+    },
+    {
+      "city_viirs_mean": 4.256883192906574,
+      "date": "2022-01-01",
+      "viirs_mean": 4.256883192906574,
+      "viirs_sum": 6630.559982165694
+    },
+    {
+      "city_viirs_mean": 4.920838069118371,
+      "date": "2022-02-01",
+      "viirs_mean": 4.920838069118371,
+      "viirs_sum": 7274.089997261763
+    },
+    {
+      "city_viirs_mean": 5.117797809133521,
+      "date": "2022-03-01",
+      "viirs_mean": 5.117797809133521,
+      "viirs_sum": 7693.109997600319
+    },
+    {
+      "city_viirs_mean": 6.287196774557264,
+      "date": "2022-04-01",
+      "viirs_mean": 6.287196774557264,
+      "viirs_sum": 8852.959994852543
+    },
+    {
+      "city_viirs_mean": 6.977431969501316,
+      "date": "2022-05-01",
+      "viirs_mean": 6.977431969501316,
+      "viirs_sum": 9267.679994255304
+    },
+    {
+      "city_viirs_mean": 7.130090779823192,
+      "date": "2022-06-01",
+      "viirs_mean": 7.130090779823192,
+      "viirs_sum": 9467.710008323194
+    },
+    {
+      "city_viirs_mean": 5.753125094936168,
+      "date": "2022-07-01",
+      "viirs_mean": 5.753125094936168,
+      "viirs_sum": 7393.050009250643
+    },
+    {
+      "city_viirs_mean": 5.984380457972028,
+      "date": "2022-08-01",
+      "viirs_mean": 5.984380457972028,
+      "viirs_sum": 8301.610012948515
+    },
+    {
+      "city_viirs_mean": 4.860325625177496,
+      "date": "2022-09-01",
+      "viirs_mean": 4.860325625177496,
+      "viirs_sum": 7725.720006018877
+    },
+    {
+      "city_viirs_mean": 3.853908419939614,
+      "date": "2022-10-01",
+      "viirs_mean": 3.853908419939614,
+      "viirs_sum": 6399.589999049901
+    },
+    {
+      "city_viirs_mean": 5.300412879039442,
+      "date": "2022-11-01",
+      "viirs_mean": 5.300412879039442,
+      "viirs_sum": 7774.190007269381
+    },
+    {
+      "city_viirs_mean": 6.035236842576512,
+      "date": "2022-12-01",
+      "viirs_mean": 6.035236842576512,
+      "viirs_sum": 8464.940012291072
+    },
+    {
+      "city_viirs_mean": 7.442420884572501,
+      "date": "2023-01-01",
+      "viirs_mean": 7.442420884572501,
+      "viirs_sum": 10182.400007754568
+    },
+    {
+      "city_viirs_mean": 5.7567461045748605,
+      "date": "2023-02-01",
+      "viirs_mean": 5.7567461045748605,
+      "viirs_sum": 8050.489986196158
+    },
+    {
+      "city_viirs_mean": 5.505331870817031,
+      "date": "2023-03-01",
+      "viirs_mean": 5.505331870817031,
+      "viirs_sum": 7998.36999052763
+    },
+    {
+      "city_viirs_mean": 5.945723668926203,
+      "date": "2023-04-01",
+      "viirs_mean": 5.945723668926203,
+      "viirs_sum": 8692.509991526604
+    },
+    {
+      "city_viirs_mean": 6.548837184095419,
+      "date": "2023-05-01",
+      "viirs_mean": 6.548837184095419,
+      "viirs_sum": 9105.84999641776
+    },
+    {
+      "city_viirs_mean": 6.061504838938905,
+      "date": "2023-06-01",
+      "viirs_mean": 6.061504838938905,
+      "viirs_sum": 8915.699999988079
+    },
+    {
+      "city_viirs_mean": 5.683336974322121,
+      "date": "2023-07-01",
+      "viirs_mean": 5.683336974322121,
+      "viirs_sum": 8148.309987947347
+    },
+    {
+      "city_viirs_mean": 5.279997070312902,
+      "date": "2023-08-01",
+      "viirs_mean": 5.279997070312902,
+      "viirs_sum": 7986.650008112193
+    },
+    {
+      "city_viirs_mean": 5.110986261968915,
+      "date": "2023-09-01",
+      "viirs_mean": 5.110986261968915,
+      "viirs_sum": 7771.920004904268
+    },
+    {
+      "city_viirs_mean": 4.9065935205918985,
+      "date": "2023-10-01",
+      "viirs_mean": 4.9065935205918985,
+      "viirs_sum": 8285.229997605085
+    },
+    {
+      "city_viirs_mean": 3.794418237240276,
+      "date": "2023-11-01",
+      "viirs_mean": 3.794418237240276,
+      "viirs_sum": 6384.599993914367
+    },
+    {
+      "city_viirs_mean": 5.774691683498389,
+      "date": "2023-12-01",
+      "viirs_mean": 5.774691683498389,
+      "viirs_sum": 8078.900002099572
+    },
+    {
+      "city_viirs_mean": 5.474289871559297,
+      "date": "2024-01-01",
+      "viirs_mean": 5.474289871559297,
+      "viirs_sum": 8128.620003342628
+    },
+    {
+      "city_viirs_mean": 5.026965000615568,
+      "date": "2024-02-01",
+      "viirs_mean": 5.026965000615568,
+      "viirs_sum": 7570.3199921399355
+    },
+    {
+      "city_viirs_mean": 4.659501334842659,
+      "date": "2024-03-01",
+      "viirs_mean": 4.659501334842659,
+      "viirs_sum": 7933.679993331433
+    },
+    {
+      "city_viirs_mean": 7.948242746355166,
+      "date": "2024-04-01",
+      "viirs_mean": 7.948242746355166,
+      "viirs_sum": 11816.509988874195
+    },
+    {
+      "city_viirs_mean": 5.580322217913502,
+      "date": "2024-05-01",
+      "viirs_mean": 5.580322217913502,
+      "viirs_sum": 8500.389996111393
+    },
+    {
+      "city_viirs_mean": 7.889416853801336,
+      "date": "2024-06-01",
+      "viirs_mean": 7.889416853801336,
+      "viirs_sum": 11128.609980136158
+    },
+    {
+      "city_viirs_mean": 8.493913695526839,
+      "date": "2024-07-01",
+      "viirs_mean": 8.493913695526839,
+      "viirs_sum": 14931.859990209343
+    },
+    {
+      "city_viirs_mean": 7.451378068186624,
+      "date": "2024-08-01",
+      "viirs_mean": 7.451378068186624,
+      "viirs_sum": 11103.469999104738
+    },
+    {
+      "city_viirs_mean": 5.129821592912794,
+      "date": "2024-09-01",
+      "viirs_mean": 5.129821592912794,
+      "viirs_sum": 7884.039987891915
+    },
+    {
+      "city_viirs_mean": 7.0342078176251555,
+      "date": "2024-10-01",
+      "viirs_mean": 7.0342078176251555,
+      "viirs_sum": 10531.290001928806
+    },
+    {
+      "city_viirs_mean": 6.787775522434705,
+      "date": "2024-11-01",
+      "viirs_mean": 6.787775522434705,
+      "viirs_sum": 10671.070000886917
+    },
+    {
+      "city_viirs_mean": 6.604646009431319,
+      "date": "2024-12-01",
+      "viirs_mean": 6.604646009431319,
+      "viirs_sum": 9616.409995734692
+    },
+    {
+      "city_viirs_mean": 7.252365046989029,
+      "date": "2025-01-01",
+      "viirs_mean": 7.252365046989029,
+      "viirs_sum": 9908.020012944937
+    },
+    {
+      "city_viirs_mean": 7.959732168791871,
+      "date": "2025-02-01",
+      "viirs_mean": 7.959732168791871,
+      "viirs_sum": 11889.440003395079
+    },
+    {
+      "city_viirs_mean": 6.100645001508829,
+      "date": "2025-03-01",
+      "viirs_mean": 6.100645001508829,
+      "viirs_sum": 9336.100000858309
+    },
+    {
+      "city_viirs_mean": 6.920752806117296,
+      "date": "2025-04-01",
+      "viirs_mean": 6.920752806117296,
+      "viirs_sum": 10432.429991185667
+    },
+    {
+      "city_viirs_mean": 8.638109695336919,
+      "date": "2025-05-01",
+      "viirs_mean": 8.638109695336919,
+      "viirs_sum": 11946.03000441194
+    },
+    {
+      "city_viirs_mean": 8.07437099928863,
+      "date": "2025-06-01",
+      "viirs_mean": 8.07437099928863,
+      "viirs_sum": 11205.54000288248
+    },
+    {
+      "city_viirs_mean": 8.80536529181399,
+      "date": "2025-07-01",
+      "viirs_mean": 8.80536529181399,
+      "viirs_sum": 12297.080000638964
+    },
+    {
+      "city_viirs_mean": 7.24826506252423,
+      "date": "2025-08-01",
+      "viirs_mean": 7.24826506252423,
+      "viirs_sum": 10855.199999958277
+    },
+    {
+      "city_viirs_mean": 7.860677494150036,
+      "date": "2025-09-01",
+      "viirs_mean": 7.860677494150036,
+      "viirs_sum": 12160.779989659784
+    },
+    {
+      "city_viirs_mean": 6.560297572672364,
+      "date": "2025-10-01",
+      "viirs_mean": 6.560297572672364,
+      "viirs_sum": 9762.340005338192
+    },
+    {
+      "city_viirs_mean": 7.903589173582741,
+      "date": "2025-11-01",
+      "viirs_mean": 7.903589173582741,
+      "viirs_sum": 11293.999914169312
+    },
+    {
+      "city_viirs_mean": 8.05141659180962,
+      "date": "2025-12-01",
+      "viirs_mean": 8.05141659180962,
+      "viirs_sum": 11302.219947814941
+    },
+    {
+      "city_viirs_mean": 6.668565312413154,
+      "date": "2026-01-01",
+      "viirs_mean": 6.668565312413154,
+      "viirs_sum": 9505.14016342163
+    },
+    {
+      "city_viirs_mean": 5.893312633472089,
+      "date": "2026-02-01",
+      "viirs_mean": 5.893312633472089,
+      "viirs_sum": 8756.009874343872
     }
   ],
-  "top10_by_metric": {
-    "priority_risk_score": [
+  "class_counts": {
+    "High": {
+      "High": 2,
+      "Low": 8,
+      "Medium": 5
+    },
+    "Low": {
+      "High": 1,
+      "Low": 1,
+      "Medium": 3
+    },
+    "Medium": {
+      "High": 0,
+      "Low": 7,
+      "Medium": 3
+    },
+    "constraint_band": [
       {
-        "ward_id": "52902008",
-        "ward_label": "KZN292_8",
-        "value": 78.45
+        "band": "Low",
+        "count": 22
       },
       {
-        "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 70.63
-      },
-      {
-        "ward_id": "52902002",
-        "ward_label": "KZN292_2",
-        "value": 66.86
-      },
-      {
-        "ward_id": "52902011",
-        "ward_label": "KZN292_11",
-        "value": 66.29
-      },
-      {
-        "ward_id": "52902016",
-        "ward_label": "KZN292_16",
-        "value": 65.76
-      },
-      {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 62.5
-      },
-      {
-        "ward_id": "52902020",
-        "ward_label": "KZN292_20",
-        "value": 62.4
-      },
-      {
-        "ward_id": "52902015",
-        "ward_label": "KZN292_15",
-        "value": 61.2
-      },
-      {
-        "ward_id": "52902022",
-        "ward_label": "KZN292_22",
-        "value": 60.03
-      },
-      {
-        "ward_id": "52902001",
-        "ward_label": "KZN292_1",
-        "value": 58.07
+        "band": "Medium",
+        "count": 8
       }
     ],
-    "stress_score": [
+    "momentum_band": [
       {
-        "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 90.86
+        "band": "Low",
+        "count": 16
       },
       {
-        "ward_id": "52902008",
-        "ward_label": "KZN292_8",
-        "value": 89.66
+        "band": "Medium",
+        "count": 11
       },
       {
+        "band": "High",
+        "count": 3
+      }
+    ],
+    "priority_band": [
+      {
+        "band": "Medium",
+        "count": 19
+      },
+      {
+        "band": "High",
+        "count": 8
+      },
+      {
+        "band": "Low",
+        "count": 3
+      }
+    ],
+    "stress_band": [
+      {
+        "band": "High",
+        "count": 15
+      },
+      {
+        "band": "Medium",
+        "count": 10
+      },
+      {
+        "band": "Low",
+        "count": 5
+      }
+    ]
+  },
+  "comparability": {
+    "cross_metro_comparable": false,
+    "normalization": "national_comparable",
+    "normalization_scope": "kzn292_percentile",
+    "source": "SEM DuckDB static UGM contract"
+  },
+  "dataset_version": "sem-ugm-kzn292-20260522T143656Z",
+  "expected_ward_count": 30,
+  "gdp_index_base_quarter": "2014-Q1",
+  "gdp_latest_quarter": null,
+  "generated_at": "2026-05-22T14:36:56.156422+00:00",
+  "geo_code": "KZN292",
+  "ghsl_cluster_semantics": {
+    "display_definitions": {
+      "Growing": "Population and density indicators show material growth.",
+      "Slowing": "Census-to-forecast population is below the current baseline.",
+      "Stable": "Population and density indicators are broadly steady."
+    },
+    "display_mapping": {
+      "Declining": "Slowing",
+      "Growing": "Growing",
+      "Stable": "Stable"
+    }
+  },
+  "kpis": {
+    "city_viirs_latest_mean": 5.8933,
+    "critical_triage_wards": 4,
+    "high_risk_wards": 8,
+    "median_constraint_score": 31.8,
+    "median_momentum_score": 38.5,
+    "median_stress_score": 59.5
+  },
+  "landcover_latest_period": "2022",
+  "landcover_source": {
+    "issues": [],
+    "latest_period": "2022",
+    "source_authority": "DFFE/GTI SANLC 2022",
+    "source_filename": "SA_NLC_2022_ALBERS.tif",
+    "source_product_id": "SA_NLC_2022_ALBERS",
+    "source_table": "sanlc_all_ward_indicators_2022",
+    "status": "pass",
+    "ward_count": 30
+  },
+  "latest_viirs_month": "2026-02-01",
+  "latest_viirs_month_source": "viirs_ward_monthly_national",
+  "metric_options": [
+    "priority_risk_score",
+    "stress_score",
+    "momentum_score",
+    "constraint_score"
+  ],
+  "momentum_profile": {
+    "message": "VIIRS ward momentum profile",
+    "profile": "viirs",
+    "source_table": "viirs_ward_monthly_national",
+    "status": "available"
+  },
+  "score_formula": {
+    "constraint_score_weights": {
+      "lc_mining_pct": 0.2,
+      "lc_urban_pct": 0.35,
+      "non_urban_econ_flag": 0.2,
+      "protected_area_pct": 0.25
+    },
+    "momentum_score_weights": {
+      "viirs_cagr_mean": 0.4,
+      "viirs_proxy_momentum_component": 0.2,
+      "viirs_trend_slope": 0.2,
+      "viirs_yoy_mean": 0.2
+    },
+    "priority_risk_weights": {
+      "constraint_component": 0.2,
+      "inverse_momentum_component": 0.25,
+      "stress_component": 0.55
+    },
+    "stress_score_weights": {
+      "ghsl_pop_change_2020_2030": 0.2,
+      "ghsl_pop_density_2030": 0.2,
+      "ghsl_pressure_change": 0.15,
+      "ghsl_service_pressure_2030": 0.45
+    }
+  },
+  "smod_city_urban_share_2020": 25.35,
+  "smod_city_urban_share_2030": 35.08,
+  "smod_city_urban_share_change_pp": 9.73,
+  "smod_transition_counts": {
+    "Emerging node transition": 5,
+    "Stable settlement form": 9,
+    "Town intensification": 8,
+    "Town-to-city transition": 8
+  },
+  "source_mode": "sem_duckdb",
+  "top10_by_metric": {
+    "constraint_score": [
+      {
+        "value": 50.1,
         "ward_id": "52902011",
-        "ward_label": "KZN292_11",
-        "value": 81.72
+        "ward_label": "KZN292_11"
       },
       {
-        "ward_id": "52902020",
-        "ward_label": "KZN292_20",
-        "value": 78.28
+        "value": 47.5,
+        "ward_id": "52902012",
+        "ward_label": "KZN292_12"
       },
       {
-        "ward_id": "52902005",
-        "ward_label": "KZN292_5",
-        "value": 74.48
+        "value": 43.8,
+        "ward_id": "52902003",
+        "ward_label": "KZN292_3"
       },
       {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 74.14
+        "value": 43.6,
+        "ward_id": "52902025",
+        "ward_label": "KZN292_25"
       },
       {
-        "ward_id": "52902016",
-        "ward_label": "KZN292_16",
-        "value": 73.1
+        "value": 43.0,
+        "ward_id": "52902026",
+        "ward_label": "KZN292_26"
       },
       {
-        "ward_id": "52902002",
-        "ward_label": "KZN292_2",
-        "value": 70.34
+        "value": 42.2,
+        "ward_id": "52902027",
+        "ward_label": "KZN292_27"
       },
       {
-        "ward_id": "52902029",
-        "ward_label": "KZN292_29",
-        "value": 68.28
-      },
-      {
+        "value": 41.8,
         "ward_id": "52902009",
-        "ward_label": "KZN292_9",
-        "value": 64.48
+        "ward_label": "KZN292_9"
+      },
+      {
+        "value": 40.3,
+        "ward_id": "52902006",
+        "ward_label": "KZN292_6"
+      },
+      {
+        "value": 39.6,
+        "ward_id": "52902022",
+        "ward_label": "KZN292_22"
+      },
+      {
+        "value": 36.1,
+        "ward_id": "52902020",
+        "ward_label": "KZN292_20"
       }
     ],
     "momentum_score": [
       {
-        "ward_id": "52902029",
-        "ward_label": "KZN292_29",
-        "value": 92.41
-      },
-      {
-        "ward_id": "52902005",
-        "ward_label": "KZN292_5",
-        "value": 84.83
-      },
-      {
-        "ward_id": "52902004",
-        "ward_label": "KZN292_4",
-        "value": 77.24
-      },
-      {
-        "ward_id": "52902018",
-        "ward_label": "KZN292_18",
-        "value": 76.55
-      },
-      {
-        "ward_id": "52902003",
-        "ward_label": "KZN292_3",
-        "value": 66.21
-      },
-      {
-        "ward_id": "52902009",
-        "ward_label": "KZN292_9",
-        "value": 62.07
-      },
-      {
-        "ward_id": "52902024",
-        "ward_label": "KZN292_24",
-        "value": 61.38
-      },
-      {
-        "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 60.0
-      },
-      {
-        "ward_id": "52902014",
-        "ward_label": "KZN292_14",
-        "value": 60.0
-      },
-      {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 58.62
-      }
-    ],
-    "constraint_score": [
-      {
-        "ward_id": "52902006",
-        "ward_label": "KZN292_6",
-        "value": 67.24
-      },
-      {
-        "ward_id": "52902029",
-        "ward_label": "KZN292_29",
-        "value": 57.59
-      },
-      {
-        "ward_id": "52902008",
-        "ward_label": "KZN292_8",
-        "value": 56.9
-      },
-      {
-        "ward_id": "52902014",
-        "ward_label": "KZN292_14",
-        "value": 56.9
-      },
-      {
-        "ward_id": "52902018",
-        "ward_label": "KZN292_18",
-        "value": 56.9
-      },
-      {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 56.9
-      },
-      {
-        "ward_id": "52902004",
-        "ward_label": "KZN292_4",
-        "value": 55.17
-      },
-      {
-        "ward_id": "52902022",
-        "ward_label": "KZN292_22",
-        "value": 53.97
-      },
-      {
-        "ward_id": "52902011",
-        "ward_label": "KZN292_11",
-        "value": 53.28
-      },
-      {
-        "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 53.28
-      }
-    ],
-    "ghsl_service_pressure_2030": [
-      {
-        "ward_id": "52902008",
-        "ward_label": "KZN292_8",
-        "value": 87.4
-      },
-      {
-        "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 81.3
-      },
-      {
-        "ward_id": "52902011",
-        "ward_label": "KZN292_11",
-        "value": 77.1
-      },
-      {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 76.8
-      },
-      {
-        "ward_id": "52902020",
-        "ward_label": "KZN292_20",
-        "value": 76.7
-      },
-      {
-        "ward_id": "52902005",
-        "ward_label": "KZN292_5",
-        "value": 75.5
-      },
-      {
-        "ward_id": "52902002",
-        "ward_label": "KZN292_2",
-        "value": 75.3
-      },
-      {
-        "ward_id": "52902029",
-        "ward_label": "KZN292_29",
-        "value": 74.5
-      },
-      {
-        "ward_id": "52902009",
-        "ward_label": "KZN292_9",
-        "value": 73.0
-      },
-      {
-        "ward_id": "52902001",
-        "ward_label": "KZN292_1",
-        "value": 72.1
-      }
-    ],
-    "viirs_cagr_mean": [
-      {
-        "ward_id": "52902029",
-        "ward_label": "KZN292_29",
-        "value": 10.91
-      },
-      {
-        "ward_id": "52902025",
-        "ward_label": "KZN292_25",
-        "value": 10.36
-      },
-      {
-        "ward_id": "52902009",
-        "ward_label": "KZN292_9",
-        "value": 10.14
-      },
-      {
-        "ward_id": "52902001",
-        "ward_label": "KZN292_1",
-        "value": 9.72
-      },
-      {
-        "ward_id": "52902011",
-        "ward_label": "KZN292_11",
-        "value": 9.27
-      },
-      {
-        "ward_id": "52902003",
-        "ward_label": "KZN292_3",
-        "value": 8.98
-      },
-      {
+        "value": 69.6,
         "ward_id": "52902027",
-        "ward_label": "KZN292_27",
-        "value": 8.55
+        "ward_label": "KZN292_27"
       },
       {
-        "ward_id": "52902014",
-        "ward_label": "KZN292_14",
-        "value": 8.44
+        "value": 65.7,
+        "ward_id": "52902009",
+        "ward_label": "KZN292_9"
       },
       {
-        "ward_id": "52902005",
-        "ward_label": "KZN292_5",
-        "value": 8.21
+        "value": 63.5,
+        "ward_id": "52902029",
+        "ward_label": "KZN292_29"
       },
       {
-        "ward_id": "52902010",
-        "ward_label": "KZN292_10",
-        "value": 8.17
+        "value": 56.6,
+        "ward_id": "52902006",
+        "ward_label": "KZN292_6"
+      },
+      {
+        "value": 56.0,
+        "ward_id": "52902025",
+        "ward_label": "KZN292_25"
+      },
+      {
+        "value": 52.3,
+        "ward_id": "52902023",
+        "ward_label": "KZN292_23"
+      },
+      {
+        "value": 52.1,
+        "ward_id": "52902003",
+        "ward_label": "KZN292_3"
+      },
+      {
+        "value": 50.5,
+        "ward_id": "52902020",
+        "ward_label": "KZN292_20"
+      },
+      {
+        "value": 47.5,
+        "ward_id": "52902028",
+        "ward_label": "KZN292_28"
+      },
+      {
+        "value": 46.4,
+        "ward_id": "52902021",
+        "ward_label": "KZN292_21"
       }
     ],
-    "lc_urban_pct": [
+    "priority_risk_score": [
       {
-        "ward_id": "52902006",
-        "ward_label": "KZN292_6",
-        "value": 100.0
-      },
-      {
-        "ward_id": "52902008",
-        "ward_label": "KZN292_8",
-        "value": 100.0
-      },
-      {
-        "ward_id": "52902014",
-        "ward_label": "KZN292_14",
-        "value": 100.0
-      },
-      {
-        "ward_id": "52902018",
-        "ward_label": "KZN292_18",
-        "value": 100.0
-      },
-      {
-        "ward_id": "52902023",
-        "ward_label": "KZN292_23",
-        "value": 100.0
-      },
-      {
+        "value": 70.6,
         "ward_id": "52902013",
-        "ward_label": "KZN292_13",
-        "value": 88.37
+        "ward_label": "KZN292_13"
       },
       {
-        "ward_id": "52902010",
-        "ward_label": "KZN292_10",
-        "value": 77.24
+        "value": 70.3,
+        "ward_id": "52902008",
+        "ward_label": "KZN292_8"
       },
       {
-        "ward_id": "52902028",
-        "ward_label": "KZN292_28",
-        "value": 75.16
-      },
-      {
-        "ward_id": "52902024",
-        "ward_label": "KZN292_24",
-        "value": 75.03
-      },
-      {
+        "value": 70.1,
         "ward_id": "52902016",
-        "ward_label": "KZN292_16",
-        "value": 71.44
+        "ward_label": "KZN292_16"
+      },
+      {
+        "value": 68.9,
+        "ward_id": "52902015",
+        "ward_label": "KZN292_15"
+      },
+      {
+        "value": 66.7,
+        "ward_id": "52902011",
+        "ward_label": "KZN292_11"
+      },
+      {
+        "value": 63.0,
+        "ward_id": "52902002",
+        "ward_label": "KZN292_2"
+      },
+      {
+        "value": 62.7,
+        "ward_id": "52902005",
+        "ward_label": "KZN292_5"
+      },
+      {
+        "value": 60.6,
+        "ward_id": "52902020",
+        "ward_label": "KZN292_20"
+      },
+      {
+        "value": 58.6,
+        "ward_id": "52902007",
+        "ward_label": "KZN292_7"
+      },
+      {
+        "value": 57.7,
+        "ward_id": "52902019",
+        "ward_label": "KZN292_19"
+      }
+    ],
+    "stress_score": [
+      {
+        "value": 84.3,
+        "ward_id": "52902013",
+        "ward_label": "KZN292_13"
+      },
+      {
+        "value": 84.3,
+        "ward_id": "52902008",
+        "ward_label": "KZN292_8"
+      },
+      {
+        "value": 77.7,
+        "ward_id": "52902016",
+        "ward_label": "KZN292_16"
+      },
+      {
+        "value": 75.0,
+        "ward_id": "52902011",
+        "ward_label": "KZN292_11"
+      },
+      {
+        "value": 74.5,
+        "ward_id": "52902020",
+        "ward_label": "KZN292_20"
+      },
+      {
+        "value": 71.8,
+        "ward_id": "52902005",
+        "ward_label": "KZN292_5"
+      },
+      {
+        "value": 69.2,
+        "ward_id": "52902002",
+        "ward_label": "KZN292_2"
+      },
+      {
+        "value": 69.1,
+        "ward_id": "52902023",
+        "ward_label": "KZN292_23"
+      },
+      {
+        "value": 68.9,
+        "ward_id": "52902015",
+        "ward_label": "KZN292_15"
+      },
+      {
+        "value": 68.4,
+        "ward_id": "52902029",
+        "ward_label": "KZN292_29"
       }
     ]
   },
   "top_priority_wards": [
     {
-      "ward_id": "52902008",
-      "ward_label": "KZN292_8",
+      "action_tag": "Critical service triage",
+      "constraint_score": 23.5,
+      "momentum_score": 21.9,
       "priority_rank": 1,
-      "priority_risk_score": 78.45,
-      "stress_score": 89.66,
-      "momentum_score": 28.97,
-      "constraint_score": 56.9,
-      "action_tag": "Critical service triage"
-    },
-    {
+      "priority_risk_score": 70.6,
+      "stress_score": 84.3,
       "ward_id": "52902013",
-      "ward_label": "KZN292_13",
+      "ward_label": "KZN292_13"
+    },
+    {
+      "action_tag": "Critical service triage",
+      "constraint_score": 17.9,
+      "momentum_score": 18.7,
       "priority_rank": 2,
-      "priority_risk_score": 70.63,
-      "stress_score": 90.86,
-      "momentum_score": 60.0,
-      "constraint_score": 53.28,
-      "action_tag": "Targeted ward review"
+      "priority_risk_score": 70.3,
+      "stress_score": 84.3,
+      "ward_id": "52902008",
+      "ward_label": "KZN292_8"
     },
     {
-      "ward_id": "52902002",
-      "ward_label": "KZN292_2",
+      "action_tag": "Critical service triage",
+      "constraint_score": 29.4,
+      "momentum_score": 14.1,
       "priority_rank": 3,
-      "priority_risk_score": 66.86,
-      "stress_score": 70.34,
-      "momentum_score": 27.59,
-      "constraint_score": 50.34,
-      "action_tag": "Targeted ward review"
-    },
-    {
-      "ward_id": "52902011",
-      "ward_label": "KZN292_11",
-      "priority_rank": 4,
-      "priority_risk_score": 66.29,
-      "stress_score": 81.72,
-      "momentum_score": 57.24,
-      "constraint_score": 53.28,
-      "action_tag": "Targeted ward review"
-    },
-    {
+      "priority_risk_score": 70.1,
+      "stress_score": 77.7,
       "ward_id": "52902016",
-      "ward_label": "KZN292_16",
-      "priority_rank": 5,
-      "priority_risk_score": 65.76,
-      "stress_score": 73.1,
-      "momentum_score": 36.55,
-      "constraint_score": 48.45,
-      "action_tag": "Targeted ward review"
+      "ward_label": "KZN292_16"
     },
     {
-      "ward_id": "52902023",
-      "ward_label": "KZN292_23",
-      "priority_rank": 6,
-      "priority_risk_score": 62.5,
-      "stress_score": 74.14,
-      "momentum_score": 58.62,
-      "constraint_score": 56.9,
-      "action_tag": "Targeted ward review"
-    },
-    {
-      "ward_id": "52902020",
-      "ward_label": "KZN292_20",
-      "priority_rank": 7,
-      "priority_risk_score": 62.4,
-      "stress_score": 78.28,
-      "momentum_score": 55.17,
-      "constraint_score": 40.69,
-      "action_tag": "Near-term infrastructure investment"
-    },
-    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 35.3,
+      "momentum_score": 4.3,
+      "priority_rank": 4,
+      "priority_risk_score": 68.9,
+      "stress_score": 68.9,
       "ward_id": "52902015",
-      "ward_label": "KZN292_15",
-      "priority_rank": 8,
-      "priority_risk_score": 61.2,
-      "stress_score": 62.93,
-      "momentum_score": 35.86,
-      "constraint_score": 52.76,
-      "action_tag": "Targeted ward review"
+      "ward_label": "KZN292_15"
     },
     {
-      "ward_id": "52902022",
-      "ward_label": "KZN292_22",
-      "priority_rank": 9,
-      "priority_risk_score": 60.03,
-      "stress_score": 57.24,
-      "momentum_score": 28.97,
-      "constraint_score": 53.97,
-      "action_tag": "Targeted ward review"
+      "action_tag": "Critical service triage",
+      "constraint_score": 50.1,
+      "momentum_score": 38.4,
+      "priority_rank": 5,
+      "priority_risk_score": 66.7,
+      "stress_score": 75.0,
+      "ward_id": "52902011",
+      "ward_label": "KZN292_11"
     },
     {
-      "ward_id": "52902001",
-      "ward_label": "KZN292_1",
-      "priority_rank": 10,
-      "priority_risk_score": 58.07,
-      "stress_score": 62.76,
-      "momentum_score": 39.31,
-      "constraint_score": 41.9,
-      "action_tag": "Targeted ward review"
+      "action_tag": "Targeted ward review",
+      "constraint_score": 31.7,
+      "momentum_score": 25.7,
+      "priority_rank": 6,
+      "priority_risk_score": 63.0,
+      "stress_score": 69.2,
+      "ward_id": "52902002",
+      "ward_label": "KZN292_2"
     },
     {
-      "ward_id": "52902007",
-      "ward_label": "KZN292_7",
-      "priority_rank": 11,
-      "priority_risk_score": 55.85,
-      "stress_score": 52.59,
-      "momentum_score": 29.66,
-      "constraint_score": 46.72,
-      "action_tag": "Targeted ward review"
-    },
-    {
-      "ward_id": "52902028",
-      "ward_label": "KZN292_28",
-      "priority_rank": 12,
-      "priority_risk_score": 55.78,
-      "stress_score": 62.24,
-      "momentum_score": 54.48,
-      "constraint_score": 50.86,
-      "action_tag": "Targeted ward review"
-    },
-    {
-      "ward_id": "52902009",
-      "ward_label": "KZN292_9",
-      "priority_rank": 13,
-      "priority_risk_score": 54.53,
-      "stress_score": 64.48,
-      "momentum_score": 62.07,
-      "constraint_score": 47.93,
-      "action_tag": "Accelerate capacity"
-    },
-    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 27.6,
+      "momentum_score": 29.1,
+      "priority_rank": 7,
+      "priority_risk_score": 62.7,
+      "stress_score": 71.8,
       "ward_id": "52902005",
-      "ward_label": "KZN292_5",
-      "priority_rank": 14,
-      "priority_risk_score": 53.97,
-      "stress_score": 74.48,
-      "momentum_score": 84.83,
-      "constraint_score": 46.03,
-      "action_tag": "Accelerate capacity"
+      "ward_label": "KZN292_5"
     },
     {
-      "ward_id": "52902029",
-      "ward_label": "KZN292_29",
+      "action_tag": "Targeted ward review",
+      "constraint_score": 36.1,
+      "momentum_score": 50.5,
+      "priority_rank": 8,
+      "priority_risk_score": 60.6,
+      "stress_score": 74.5,
+      "ward_id": "52902020",
+      "ward_label": "KZN292_20"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 31.2,
+      "momentum_score": 23.3,
+      "priority_rank": 9,
+      "priority_risk_score": 58.6,
+      "stress_score": 60.4,
+      "ward_id": "52902007",
+      "ward_label": "KZN292_7"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 33.6,
+      "momentum_score": 6.8,
+      "priority_rank": 10,
+      "priority_risk_score": 57.7,
+      "stress_score": 50.3,
+      "ward_id": "52902019",
+      "ward_label": "KZN292_19"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 39.6,
+      "momentum_score": 43.4,
+      "priority_rank": 11,
+      "priority_risk_score": 57.5,
+      "stress_score": 64.5,
+      "ward_id": "52902022",
+      "ward_label": "KZN292_22"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 34.9,
+      "momentum_score": 42.4,
+      "priority_rank": 12,
+      "priority_risk_score": 57.1,
+      "stress_score": 64.9,
+      "ward_id": "52902001",
+      "ward_label": "KZN292_1"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 27.8,
+      "momentum_score": 47.5,
+      "priority_rank": 13,
+      "priority_risk_score": 54.9,
+      "stress_score": 65.8,
+      "ward_id": "52902028",
+      "ward_label": "KZN292_28"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 31.9,
+      "momentum_score": 32.1,
+      "priority_rank": 14,
+      "priority_risk_score": 53.7,
+      "stress_score": 55.2,
+      "ward_id": "52902030",
+      "ward_label": "KZN292_30"
+    },
+    {
+      "action_tag": "Targeted ward review",
+      "constraint_score": 15.8,
+      "momentum_score": 52.3,
       "priority_rank": 15,
-      "priority_risk_score": 50.97,
-      "stress_score": 68.28,
-      "momentum_score": 92.41,
-      "constraint_score": 57.59,
-      "action_tag": "Targeted ward review"
+      "priority_risk_score": 53.1,
+      "stress_score": 69.1,
+      "ward_id": "52902023",
+      "ward_label": "KZN292_23"
     }
   ],
-  "city_viirs_timeseries": [
-    {
-      "date": "2014-01-01",
-      "city_viirs_mean": 3.885773597170177
-    },
-    {
-      "date": "2014-02-01",
-      "city_viirs_mean": 3.0667197725760005
-    },
-    {
-      "date": "2014-03-01",
-      "city_viirs_mean": 4.552123677783234
-    },
-    {
-      "date": "2014-04-01",
-      "city_viirs_mean": 3.882359500574823
-    },
-    {
-      "date": "2014-05-01",
-      "city_viirs_mean": 4.100206050354761
-    },
-    {
-      "date": "2014-06-01",
-      "city_viirs_mean": 4.437680718726437
-    },
-    {
-      "date": "2014-07-01",
-      "city_viirs_mean": 4.754058233319227
-    },
-    {
-      "date": "2014-08-01",
-      "city_viirs_mean": 4.122826109965332
-    },
-    {
-      "date": "2014-09-01",
-      "city_viirs_mean": 3.7369134259514007
-    },
-    {
-      "date": "2014-10-01",
-      "city_viirs_mean": 4.056145179851938
-    },
-    {
-      "date": "2014-11-01",
-      "city_viirs_mean": 4.189612088265733
-    },
-    {
-      "date": "2014-12-01",
-      "city_viirs_mean": 2.976970337379032
-    },
-    {
-      "date": "2015-01-01",
-      "city_viirs_mean": 4.151347052778341
-    },
-    {
-      "date": "2015-02-01",
-      "city_viirs_mean": 4.237364252885461
-    },
-    {
-      "date": "2015-03-01",
-      "city_viirs_mean": 3.8319481398412747
-    },
-    {
-      "date": "2015-04-01",
-      "city_viirs_mean": 5.351860303396388
-    },
-    {
-      "date": "2015-05-01",
-      "city_viirs_mean": 4.634216305117612
-    },
-    {
-      "date": "2015-06-01",
-      "city_viirs_mean": 5.451229226655519
-    },
-    {
-      "date": "2015-07-01",
-      "city_viirs_mean": 4.798132648522097
-    },
-    {
-      "date": "2015-08-01",
-      "city_viirs_mean": 4.474010240690989
-    },
-    {
-      "date": "2015-09-01",
-      "city_viirs_mean": 4.20190349561438
-    },
-    {
-      "date": "2015-10-01",
-      "city_viirs_mean": 4.1110514436123236
-    },
-    {
-      "date": "2015-11-01",
-      "city_viirs_mean": 4.490039112670547
-    },
-    {
-      "date": "2015-12-01",
-      "city_viirs_mean": 3.026652533116295
-    },
-    {
-      "date": "2016-01-01",
-      "city_viirs_mean": 4.717085125266226
-    },
-    {
-      "date": "2016-02-01",
-      "city_viirs_mean": 4.554560296352008
-    },
-    {
-      "date": "2016-03-01",
-      "city_viirs_mean": 3.9114599370476
-    },
-    {
-      "date": "2016-04-01",
-      "city_viirs_mean": 5.03590402587072
-    },
-    {
-      "date": "2016-05-01",
-      "city_viirs_mean": 4.995100619089839
-    },
-    {
-      "date": "2016-06-01",
-      "city_viirs_mean": 5.316039053109401
-    },
-    {
-      "date": "2016-07-01",
-      "city_viirs_mean": 5.3528648733360304
-    },
-    {
-      "date": "2016-08-01",
-      "city_viirs_mean": 5.607651748766082
-    },
-    {
-      "date": "2016-09-01",
-      "city_viirs_mean": 4.342034921348449
-    },
-    {
-      "date": "2016-10-01",
-      "city_viirs_mean": 3.122095556476319
-    },
-    {
-      "date": "2016-11-01",
-      "city_viirs_mean": 4.73377236561438
-    },
-    {
-      "date": "2016-12-01",
-      "city_viirs_mean": 6.267678671780773
-    },
-    {
-      "date": "2017-01-01",
-      "city_viirs_mean": 4.55287909882749
-    },
-    {
-      "date": "2017-02-01",
-      "city_viirs_mean": 5.2061098054298105
-    },
-    {
-      "date": "2017-03-01",
-      "city_viirs_mean": 4.8382958879290765
-    },
-    {
-      "date": "2017-04-01",
-      "city_viirs_mean": 5.301874727651301
-    },
-    {
-      "date": "2017-05-01",
-      "city_viirs_mean": 4.937803746694291
-    },
-    {
-      "date": "2017-06-01",
-      "city_viirs_mean": 4.897909311839239
-    },
-    {
-      "date": "2017-07-01",
-      "city_viirs_mean": 4.9482105663234845
-    },
-    {
-      "date": "2017-08-01",
-      "city_viirs_mean": 4.712292273955052
-    },
-    {
-      "date": "2017-09-01",
-      "city_viirs_mean": 3.6806583588069177
-    },
-    {
-      "date": "2017-10-01",
-      "city_viirs_mean": 4.072489977008567
-    },
-    {
-      "date": "2017-11-01",
-      "city_viirs_mean": 5.124399097398607
-    },
-    {
-      "date": "2017-12-01",
-      "city_viirs_mean": 4.48338722184341
-    },
-    {
-      "date": "2018-01-01",
-      "city_viirs_mean": 5.008811760956531
-    },
-    {
-      "date": "2018-02-01",
-      "city_viirs_mean": 4.810047733739767
-    },
-    {
-      "date": "2018-03-01",
-      "city_viirs_mean": 4.82306848776421
-    },
-    {
-      "date": "2018-04-01",
-      "city_viirs_mean": 3.9975770382788576
-    },
-    {
-      "date": "2018-05-01",
-      "city_viirs_mean": 4.57036611285553
-    },
-    {
-      "date": "2018-06-01",
-      "city_viirs_mean": 5.495971273541374
-    },
-    {
-      "date": "2018-07-01",
-      "city_viirs_mean": 4.9083461309668674
-    },
-    {
-      "date": "2018-08-01",
-      "city_viirs_mean": 5.556016589498388
-    },
-    {
-      "date": "2018-09-01",
-      "city_viirs_mean": 5.249497409966135
-    },
-    {
-      "date": "2018-10-01",
-      "city_viirs_mean": 4.57934738814004
-    },
-    {
-      "date": "2018-11-01",
-      "city_viirs_mean": 5.184901148204596
-    },
-    {
-      "date": "2018-12-01",
-      "city_viirs_mean": 5.258227824182428
-    },
-    {
-      "date": "2019-01-01",
-      "city_viirs_mean": 4.69911753204465
-    },
-    {
-      "date": "2019-02-01",
-      "city_viirs_mean": 4.826203693722837
-    },
-    {
-      "date": "2019-03-01",
-      "city_viirs_mean": 4.681546952099622
-    },
-    {
-      "date": "2019-04-01",
-      "city_viirs_mean": 5.482891718599427
-    },
-    {
-      "date": "2019-05-01",
-      "city_viirs_mean": 5.64347953420751
-    },
-    {
-      "date": "2019-06-01",
-      "city_viirs_mean": 5.088641389526656
-    },
-    {
-      "date": "2019-07-01",
-      "city_viirs_mean": 5.732169115710295
-    },
-    {
-      "date": "2019-08-01",
-      "city_viirs_mean": 5.340209974538106
-    },
-    {
-      "date": "2019-09-01",
-      "city_viirs_mean": 5.5585925765473085
-    },
-    {
-      "date": "2019-10-01",
-      "city_viirs_mean": 4.835050384225282
-    },
-    {
-      "date": "2019-11-01",
-      "city_viirs_mean": 4.385327363670936
-    },
-    {
-      "date": "2019-12-01",
-      "city_viirs_mean": 4.109343645510835
-    },
-    {
-      "date": "2020-01-01",
-      "city_viirs_mean": 3.5983261327733165
-    },
-    {
-      "date": "2020-02-01",
-      "city_viirs_mean": 4.733963369728192
-    },
-    {
-      "date": "2020-03-01",
-      "city_viirs_mean": 5.397712159644229
-    },
-    {
-      "date": "2020-04-01",
-      "city_viirs_mean": 4.595001302082142
-    },
-    {
-      "date": "2020-05-01",
-      "city_viirs_mean": 5.357686987813007
-    },
-    {
-      "date": "2020-06-01",
-      "city_viirs_mean": 4.966557771445169
-    },
-    {
-      "date": "2020-07-01",
-      "city_viirs_mean": 5.547053494285521
-    },
-    {
-      "date": "2020-08-01",
-      "city_viirs_mean": 5.038941427703977
-    },
-    {
-      "date": "2020-09-01",
-      "city_viirs_mean": 5.101839884821176
-    },
-    {
-      "date": "2020-10-01",
-      "city_viirs_mean": 4.494931068610962
-    },
-    {
-      "date": "2020-11-01",
-      "city_viirs_mean": 4.894789017787476
-    },
-    {
-      "date": "2020-12-01",
-      "city_viirs_mean": 4.37927141157067
-    },
-    {
-      "date": "2021-01-01",
-      "city_viirs_mean": 4.535544586247421
-    },
-    {
-      "date": "2021-02-01",
-      "city_viirs_mean": 4.800940764639572
-    },
-    {
-      "date": "2021-03-01",
-      "city_viirs_mean": 4.5495352718409565
-    },
-    {
-      "date": "2021-04-01",
-      "city_viirs_mean": 5.7851289390241885
-    },
-    {
-      "date": "2021-05-01",
-      "city_viirs_mean": 5.612959980997355
-    },
-    {
-      "date": "2021-06-01",
-      "city_viirs_mean": 4.909026257790688
-    },
-    {
-      "date": "2021-07-01",
-      "city_viirs_mean": 6.816191219302013
-    },
-    {
-      "date": "2021-08-01",
-      "city_viirs_mean": 5.96816686807123
-    },
-    {
-      "date": "2021-09-01",
-      "city_viirs_mean": 5.924413995281918
-    },
-    {
-      "date": "2021-10-01",
-      "city_viirs_mean": 4.1398794050488545
-    },
-    {
-      "date": "2021-11-01",
-      "city_viirs_mean": 4.362069147258893
-    },
-    {
-      "date": "2021-12-01",
-      "city_viirs_mean": 4.767728126833488
-    },
-    {
-      "date": "2022-01-01",
-      "city_viirs_mean": 4.2568831929065745
-    },
-    {
-      "date": "2022-02-01",
-      "city_viirs_mean": 4.920838069118371
-    },
-    {
-      "date": "2022-03-01",
-      "city_viirs_mean": 5.1177978091335214
-    },
-    {
-      "date": "2022-04-01",
-      "city_viirs_mean": 6.287196774557267
-    },
-    {
-      "date": "2022-05-01",
-      "city_viirs_mean": 6.977431969501315
-    },
-    {
-      "date": "2022-06-01",
-      "city_viirs_mean": 7.130090779823192
-    },
-    {
-      "date": "2022-07-01",
-      "city_viirs_mean": 5.753125094936168
-    },
-    {
-      "date": "2022-08-01",
-      "city_viirs_mean": 5.984380457972029
-    },
-    {
-      "date": "2022-09-01",
-      "city_viirs_mean": 4.860325625177496
-    },
-    {
-      "date": "2022-10-01",
-      "city_viirs_mean": 3.853908419939614
-    },
-    {
-      "date": "2022-11-01",
-      "city_viirs_mean": 5.300412879039442
-    },
-    {
-      "date": "2022-12-01",
-      "city_viirs_mean": 6.035236842576511
-    },
-    {
-      "date": "2023-01-01",
-      "city_viirs_mean": 7.4424208845725
-    },
-    {
-      "date": "2023-02-01",
-      "city_viirs_mean": 5.756746104574861
-    },
-    {
-      "date": "2023-03-01",
-      "city_viirs_mean": 5.505331870817032
-    },
-    {
-      "date": "2023-04-01",
-      "city_viirs_mean": 5.945723668926203
-    },
-    {
-      "date": "2023-05-01",
-      "city_viirs_mean": 6.548837184095419
-    },
-    {
-      "date": "2023-06-01",
-      "city_viirs_mean": 6.061504838938904
-    },
-    {
-      "date": "2023-07-01",
-      "city_viirs_mean": 5.683336974322123
-    },
-    {
-      "date": "2023-08-01",
-      "city_viirs_mean": 5.279997070312903
-    },
-    {
-      "date": "2023-09-01",
-      "city_viirs_mean": 5.110986261968915
-    },
-    {
-      "date": "2023-10-01",
-      "city_viirs_mean": 4.906593520591898
-    },
-    {
-      "date": "2023-11-01",
-      "city_viirs_mean": 3.7944182372402753
-    },
-    {
-      "date": "2023-12-01",
-      "city_viirs_mean": 5.774691683498388
-    },
-    {
-      "date": "2024-01-01",
-      "city_viirs_mean": 5.474289871559298
-    },
-    {
-      "date": "2024-02-01",
-      "city_viirs_mean": 5.026965000615568
-    },
-    {
-      "date": "2024-03-01",
-      "city_viirs_mean": 4.65950133484266
-    },
-    {
-      "date": "2024-04-01",
-      "city_viirs_mean": 7.948242746355166
-    },
-    {
-      "date": "2024-05-01",
-      "city_viirs_mean": 5.580322217913501
-    },
-    {
-      "date": "2024-06-01",
-      "city_viirs_mean": 7.889416853801336
-    },
-    {
-      "date": "2024-07-01",
-      "city_viirs_mean": 8.49391369552684
-    },
-    {
-      "date": "2024-08-01",
-      "city_viirs_mean": 7.451378068186623
-    },
-    {
-      "date": "2024-09-01",
-      "city_viirs_mean": 5.129821592912793
-    },
-    {
-      "date": "2024-10-01",
-      "city_viirs_mean": 7.034207817625155
-    },
-    {
-      "date": "2024-11-01",
-      "city_viirs_mean": 6.787775522434705
-    },
-    {
-      "date": "2024-12-01",
-      "city_viirs_mean": 6.604646009431319
-    },
-    {
-      "date": "2025-01-01",
-      "city_viirs_mean": 7.252365046989028
-    },
-    {
-      "date": "2025-02-01",
-      "city_viirs_mean": 7.959732168791871
-    },
-    {
-      "date": "2025-03-01",
-      "city_viirs_mean": 6.100645001508828
-    },
-    {
-      "date": "2025-04-01",
-      "city_viirs_mean": 6.920752806117296
-    },
-    {
-      "date": "2025-05-01",
-      "city_viirs_mean": 8.638109695336917
-    },
-    {
-      "date": "2025-06-01",
-      "city_viirs_mean": 8.074370999288632
-    },
-    {
-      "date": "2025-07-01",
-      "city_viirs_mean": 8.805365291813988
-    },
-    {
-      "date": "2025-08-01",
-      "city_viirs_mean": 7.248265062524231
-    },
-    {
-      "date": "2025-09-01",
-      "city_viirs_mean": 7.860677494150036
-    },
-    {
-      "date": "2025-10-01",
-      "city_viirs_mean": 6.560297572672363
-    }
-  ]
+  "tourism_active_ward_count": 0,
+  "tourism_active_ward_share_pct": 0.0,
+  "tourism_city_card_definition": "Tourism activity from SEM tourism/land-use surfaces; Airbnb excluded.",
+  "viirs_growth_window_end": "2026-02-01",
+  "viirs_growth_window_start": "2014-01-01",
+  "viirs_index_base_month": "2014-01-01",
+  "viirs_mean_cagr_pct": 3.5065,
+  "viirs_momentum_note": "VIIRS ward momentum profile",
+  "ward_count": 30
 }

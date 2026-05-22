@@ -1,62 +1,74 @@
 {
-  "dataset_version": "kzn292-v1.0.0",
-  "generated_at": "2026-02-19T14:36:30+00:00",
-  "latest_viirs_month": "2025-10-01",
-  "ward_count": 30,
+  "anomaly_status": "pass",
+  "city_display_name": "KwaDukuza",
+  "dataset_version": "sem-ugm-kzn292-20260522T143656Z",
+  "files": [
+    "manifest.json",
+    "kzn292_wards.geojson",
+    "kzn292_viirs_timeseries.json",
+    "kzn292_summary.json",
+    "kzn292_content_insights.json",
+    "kzn292_ghsl_anomaly_audit.json",
+    "qa_report.json"
+  ],
+  "gdp_latest_quarter": null,
+  "generated_at": "2026-05-22T14:36:56.156422+00:00",
+  "geo_code": "KZN292",
+  "latest_viirs_month": "2026-02-01",
+  "momentum_profile": "viirs",
+  "release_gate": {
+    "message": "Generated artifacts must pass parity, local visual QA, Azure staging QA, and rollback readiness before replacing live Azure Static Web App data.",
+    "status": "staged_only"
+  },
+  "run_id": "20260522T143656Z",
   "source_files": [
     {
-      "source_key": "ghsl_ward_outlook_csv",
-      "file_name": "ward_5yr_outlook.csv",
-      "size_bytes": 3795752,
-      "modified_at": "2026-02-10T11:45:59.420000+00:00"
+      "file_name": "national_wards",
+      "geo_code": "KZN292",
+      "latest_period": null,
+      "source_key": "national_wards"
     },
     {
-      "source_key": "landcover_ward_gpkg",
-      "file_name": "lc5_ward_indicators.gpkg",
-      "size_bytes": 65048576,
-      "modified_at": "2026-02-08T16:03:06.330000+00:00"
+      "file_name": "ghsl_all_ward_5yr_outlook",
+      "geo_code": "KZN292",
+      "latest_period": null,
+      "source_key": "ghsl_all_ward_5yr_outlook"
     },
     {
-      "source_key": "viirs_ward_summary_csv",
-      "file_name": "ward_summary_v1.csv",
-      "size_bytes": 2160861,
-      "modified_at": "2026-02-09T08:55:28.373831+00:00"
+      "file_name": "ghsl_all_ward_service_pressure",
+      "geo_code": "KZN292",
+      "latest_period": null,
+      "source_key": "ghsl_all_ward_service_pressure"
     },
     {
-      "source_key": "viirs_ward_monthly_csv",
-      "file_name": "ward_monthly_clean_v1.csv",
-      "size_bytes": 91141171,
-      "modified_at": "2026-02-09T08:55:18.458531+00:00"
+      "file_name": "viirs_ward_monthly_national",
+      "geo_code": "KZN292",
+      "latest_period": "2026-02-01",
+      "source_key": "viirs_ward_monthly_national"
     },
     {
-      "source_key": "ghsl_dashboard_xlsx",
-      "file_name": "GHSL_KwaDukuza_Local_Municipality_Dashboard.xlsx",
-      "size_bytes": 64241,
-      "modified_at": "2026-02-10T11:46:30.240000+00:00"
+      "file_name": "sanlc_all_ward_indicators_2022",
+      "geo_code": "KZN292",
+      "latest_period": "2022",
+      "source_authority": "DFFE/GTI SANLC 2022",
+      "source_filename": "SA_NLC_2022_ALBERS.tif",
+      "source_key": "sanlc_all_ward_indicators_2022",
+      "source_product_id": "SA_NLC_2022_ALBERS",
+      "ward_count": 30
     },
     {
-      "source_key": "landcover_dashboard_xlsx",
-      "file_name": "KwaDukuza_Local_Municipality_Dashboard.xlsx",
-      "size_bytes": 45140,
-      "modified_at": "2026-02-08T16:03:20.090000+00:00"
+      "file_name": "model_m7_urban_growth_ward_zaf",
+      "geo_code": "KZN292",
+      "latest_period": null,
+      "source_key": "model_m7_urban_growth_ward_zaf"
     },
     {
-      "source_key": "viirs_dashboard_xlsx",
-      "file_name": "VIIRS_Dashboard_KZN292.xlsx",
-      "size_bytes": 236004,
-      "modified_at": "2026-02-19T14:36:15.851608+00:00"
-    },
-    {
-      "source_key": "smod_zonal_csv",
-      "file_name": "smod_zonal.csv",
-      "size_bytes": 7580903,
-      "modified_at": "2026-02-07T14:40:57.300000+00:00"
-    },
-    {
-      "source_key": "protected_areas_gpkg",
-      "file_name": "WDPA_ZAF_merged.gpkg",
-      "size_bytes": 10125312,
-      "modified_at": "2026-02-07T23:43:55.360000+00:00"
+      "file_name": "run_manifest",
+      "geo_code": "KZN292",
+      "latest_period": null,
+      "source_key": "run_manifest"
     }
-  ]
+  ],
+  "source_mode": "sem_duckdb",
+  "ward_count": 30
 }

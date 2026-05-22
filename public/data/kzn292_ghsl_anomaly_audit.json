@@ -1,104 +1,45 @@
 {
-  "dataset_version": "kzn292-v1.0.0",
-  "generated_at": "2026-02-19T14:36:30+00:00",
+  "geo_code": "KZN292",
+  "issues": [],
   "negative_growth_ward_count": 6,
-  "base_definition": "ghsl_pop_2030 < census_pop_2022",
+  "source_mode": "sem_duckdb",
+  "status": "pass",
   "wards": [
     {
-      "ward_id": "52902001",
-      "ward_label": "KZN292_1",
-      "census_pop_2022": 12589.4339337,
-      "ghsl_pop_2030": 12458.345791732254,
-      "ghsl_pop_change_2022_2030": -131.0881419677462,
-      "ghsl_pop_pct_change_2022_2030": -1.041255251491835,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.2526757111592375,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 2.752864362511697,
-      "service_pressure_E2030": 72.1
-    },
-    {
-      "ward_id": "52902011",
-      "ward_label": "KZN292_11",
-      "census_pop_2022": 19965.654288,
-      "ghsl_pop_2030": 15844.107378578723,
       "ghsl_pop_change_2022_2030": -4121.5469094212785,
-      "ghsl_pop_pct_change_2022_2030": -20.643184791086266,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.475533100415558,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 4.269389697580999,
-      "service_pressure_E2030": 77.1
+      "ghsl_pop_pct_change_2022_2030": -20.6432,
+      "ward_id": "52902011",
+      "ward_label": "KZN292_11"
     },
     {
-      "ward_id": "52902013",
-      "ward_label": "KZN292_13",
-      "census_pop_2022": 13404.7075996,
-      "ghsl_pop_2030": 12857.792258874337,
-      "ghsl_pop_change_2022_2030": -546.9153407256636,
-      "ghsl_pop_pct_change_2022_2030": -4.080024399353432,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.298267678864239,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 2.8433232568916913,
-      "service_pressure_E2030": 81.3
-    },
-    {
-      "ward_id": "52902020",
-      "ward_label": "KZN292_20",
-      "census_pop_2022": 11577.4402437,
-      "ghsl_pop_2030": 11166.148877605327,
-      "ghsl_pop_change_2022_2030": -411.29136609467423,
-      "ghsl_pop_pct_change_2022_2030": -3.5525241973801913,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.3887410522566224,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 3.7146792240737803,
-      "service_pressure_E2030": 76.7
-    },
-    {
-      "ward_id": "52902022",
-      "ward_label": "KZN292_22",
-      "census_pop_2022": 12477.7471937,
-      "ghsl_pop_2030": 9535.669869497637,
       "ghsl_pop_change_2022_2030": -2942.0773242023624,
-      "ghsl_pop_pct_change_2022_2030": -23.57859378404311,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.475533100415558,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 4.2622119638514,
-      "service_pressure_E2030": 56.4
+      "ghsl_pop_pct_change_2022_2030": -23.5786,
+      "ward_id": "52902022",
+      "ward_label": "KZN292_22"
     },
     {
-      "ward_id": "52902030",
-      "ward_label": "KZN292_30",
-      "census_pop_2022": 9680.3641198,
-      "ghsl_pop_2030": 9523.415618174115,
+      "ghsl_pop_change_2022_2030": -546.9153407256636,
+      "ghsl_pop_pct_change_2022_2030": -4.08,
+      "ward_id": "52902013",
+      "ward_label": "KZN292_13"
+    },
+    {
+      "ghsl_pop_change_2022_2030": -411.29136609467423,
+      "ghsl_pop_pct_change_2022_2030": -3.5525,
+      "ward_id": "52902020",
+      "ward_label": "KZN292_20"
+    },
+    {
       "ghsl_pop_change_2022_2030": -156.9485016258859,
-      "ghsl_pop_pct_change_2022_2030": -1.6213078318497054,
-      "forecast_confidence": "High",
-      "reliability_tier": "High",
-      "anchor_ratio_final": 1.2976839398340305,
-      "anchor_fallback_level": "province_degurba_tier",
-      "momentum_label": "High Growth, Improving",
-      "momentum_signal": "High Growth, Improving",
-      "pp_change": 3.154018276371044,
-      "service_pressure_E2030": 52.6
+      "ghsl_pop_pct_change_2022_2030": -1.6213,
+      "ward_id": "52902030",
+      "ward_label": "KZN292_30"
+    },
+    {
+      "ghsl_pop_change_2022_2030": -131.0881419677462,
+      "ghsl_pop_pct_change_2022_2030": -1.0413,
+      "ward_id": "52902001",
+      "ward_label": "KZN292_1"
     }
   ]
 }

@@ -15,11 +15,91 @@ describe('generated data files', () => {
       'kzn292_summary.json',
       'kzn292_content_insights.json',
       'kzn292_ghsl_anomaly_audit.json',
+      'kzn292_demographics.json',
       'qa_report.json',
     ];
 
     for (const name of expected) {
       expect(fs.existsSync(path.join(dataDir, name))).toBe(true);
+    }
+  });
+
+
+
+
+
+  it('contains complete Census 2022 demographic context', () => {
+    const wards = JSON.parse(
+      fs.readFileSync(path.join(dataDir, 'kzn292_wards.geojson'), 'utf-8'),
+    ) as { features: Array<{ properties: { ward_id: string } }> };
+    const demographics = JSON.parse(
+      fs.readFileSync(path.join(dataDir, 'kzn292_demographics.json'), 'utf-8'),
+    ) as {
+      source?: {
+        label?: string;
+        scoring_influence?: string;
+        population_pyramid_scope?: string;
+        population_pyramid_method?: string;
+      };
+      ward_count?: number;
+      municipality?: {
+        age?: Array<{ label: string; value: number }>;
+        gender?: unknown[];
+        race?: unknown[];
+        population_pyramid?: Array<{
+          age_band: string;
+          male: number;
+          female: number;
+          total: number;
+          male_share_pct: number;
+          female_share_pct: number;
+          sample_total: number;
+        }>;
+      };
+      wards?: Array<{
+        ward_id?: string;
+        population_total?: number;
+        age?: unknown[];
+        gender?: unknown[];
+        race?: unknown[];
+        population_pyramid?: unknown;
+      }>;
+    };
+
+    expect(demographics.source?.label).toBe('Census 2022');
+    expect(demographics.source?.scoring_influence).toBe('none');
+    expect(demographics.source?.population_pyramid_scope).toBe('municipality_only');
+    expect(demographics.source?.population_pyramid_method).toContain('calibrated to official Census 2022 age-band totals');
+    expect(demographics.ward_count).toBe(30);
+    expect(demographics.wards).toHaveLength(wards.features.length);
+    expect(Array.isArray(demographics.municipality?.age)).toBe(true);
+    expect(Array.isArray(demographics.municipality?.gender)).toBe(true);
+    expect(Array.isArray(demographics.municipality?.race)).toBe(true);
+    expect(Array.isArray(demographics.municipality?.population_pyramid)).toBe(true);
+
+    const ageTotals = new Map(
+      (demographics.municipality?.age ?? []).map((row) => [row.label, Number(row.value)]),
+    );
+    expect(demographics.municipality?.population_pyramid).toHaveLength(ageTotals.size);
+    for (const row of demographics.municipality?.population_pyramid ?? []) {
+      expect(ageTotals.has(row.age_band)).toBe(true);
+      expect(row.total).toBeCloseTo(ageTotals.get(row.age_band) ?? 0, 1);
+      expect(row.male + row.female).toBeCloseTo(row.total, 1);
+      expect(row.male_share_pct + row.female_share_pct).toBeCloseTo(row.total > 0 ? 100 : 0, 1);
+      expect(Number(row.sample_total)).toBeGreaterThanOrEqual(0);
+    }
+
+    const expectedWardIds = new Set(wards.features.map((feature) => String(feature.properties.ward_id)));
+    for (const profile of demographics.wards ?? []) {
+      expect(expectedWardIds.has(String(profile.ward_id))).toBe(true);
+      expect(Number(profile.population_total)).toBeGreaterThan(0);
+      expect(Array.isArray(profile.age)).toBe(true);
+      expect((profile.age ?? []).length).toBeGreaterThan(0);
+      expect(Array.isArray(profile.gender)).toBe(true);
+      expect((profile.gender ?? []).length).toBeGreaterThan(0);
+      expect(Array.isArray(profile.race)).toBe(true);
+      expect((profile.race ?? []).length).toBeGreaterThan(0);
+      expect(profile.population_pyramid).toBeUndefined();
     }
   });
 

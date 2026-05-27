@@ -9,6 +9,7 @@
     "kzn292_summary.json",
     "kzn292_content_insights.json",
     "kzn292_ghsl_anomaly_audit.json",
+    "kzn292_demographics.json",
     "qa_report.json"
   ],
   "gdp_latest_quarter": null,

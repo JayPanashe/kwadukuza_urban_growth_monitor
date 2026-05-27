@@ -486,7 +486,7 @@ body {
 .ugm-side-panel {
   display: grid;
   gap: 0.72rem;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto;
   min-height: 0;
   align-content: start;
 }
@@ -506,6 +506,14 @@ body {
 .ugm-chart-panel h3 {
   margin: 0 0 0.5rem;
   font-size: 1.03rem;
+}
+
+.ugm-ranking-panel {
+  min-height: 320px;
+}
+
+.ugm-ranking-panel .ugm-canvas-sm {
+  height: 300px;
 }
 
 .ugm-ranking-head {
@@ -702,10 +710,10 @@ body {
 }
 
 .ugm-trend-panel {
-  min-height: 260px;
+  min-height: 320px;
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
-  align-content: stretch;
+  grid-template-rows: auto auto auto;
+  align-content: start;
 }
 
 .ugm-chart-sub {
@@ -723,8 +731,8 @@ body {
   line-height: 1.4;
   padding: 0.65rem 0.72rem;
   min-height: 0;
-  height: 100%;
-  overflow: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .ugm-trend-context p {
@@ -1047,6 +1055,200 @@ body {
   padding-right: 0.18rem;
 }
 
+.ugm-demographics-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ugm-demographics-head h3 {
+  margin: 0;
+}
+
+.ugm-experiment-badge {
+  border: 1px solid rgba(88, 72, 224, 0.24);
+  border-radius: 999px;
+  background: rgba(88, 72, 224, 0.1);
+  color: var(--se-primary-strong);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.22rem 0.52rem;
+}
+
+.ugm-demographic-summary {
+  border: 1px solid #d4e0eb;
+  border-radius: 10px;
+  background: #ffffffd8;
+  padding: 0.48rem 0.56rem;
+  display: grid;
+  gap: 0.12rem;
+}
+
+.ugm-demographic-summary span,
+.ugm-demographic-summary small {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.ugm-demographic-summary strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.ugm-demographic-grid {
+  margin-top: 0.56rem;
+  display: grid;
+  gap: 0.56rem;
+}
+
+.ugm-population-pyramid {
+  border: 1px solid #d4e0eb;
+  border-radius: 10px;
+  background: #f9fbfd;
+  padding: 0.52rem 0.56rem;
+  display: grid;
+  gap: 0.34rem;
+}
+
+.ugm-pyramid-title,
+.ugm-pyramid-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3.15rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.34rem;
+}
+
+.ugm-pyramid-title {
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ugm-pyramid-title strong {
+  color: #203a52;
+  font-size: 0.72rem;
+  text-transform: none;
+}
+
+.ugm-pyramid-rows {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.ugm-pyramid-side {
+  display: flex;
+  align-items: center;
+  gap: 0.22rem;
+  min-width: 0;
+}
+
+.ugm-pyramid-side span {
+  color: var(--ink-soft);
+  flex: 0 0 2.05rem;
+  font-size: 0.62rem;
+  line-height: 1;
+}
+
+.ugm-pyramid-side.is-male {
+  justify-content: flex-end;
+}
+
+.ugm-pyramid-side.is-male .ugm-pyramid-bar {
+  background: linear-gradient(90deg, #315f97, #58a6d6);
+}
+
+.ugm-pyramid-side.is-female {
+  justify-content: flex-start;
+}
+
+.ugm-pyramid-side.is-female .ugm-pyramid-bar {
+  background: linear-gradient(90deg, #d96c97, #8b3d79);
+}
+
+.ugm-pyramid-bar {
+  border-radius: 999px;
+  height: 7px;
+  min-width: 2px;
+}
+
+.ugm-pyramid-age {
+  color: #203a52;
+  font-size: 0.64rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ugm-pyramid-note {
+  color: var(--ink-soft);
+  font-size: 0.66rem;
+  line-height: 1.25;
+  margin: 0.1rem 0 0;
+}
+
+.ugm-demographic-group {
+  display: grid;
+  gap: 0.34rem;
+}
+
+.ugm-demographic-group h4 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #203a52;
+}
+
+.ugm-demographic-row {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.ugm-demographic-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.45rem;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.ugm-demographic-label strong {
+  color: var(--ink);
+}
+
+.ugm-demographic-track {
+  height: 7px;
+  border-radius: 999px;
+  background: #d6e0ea;
+  overflow: hidden;
+}
+
+.ugm-demographic-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.ugm-demographic-fill.is-age {
+  background: linear-gradient(90deg, #67c7c2, #167f8f);
+}
+
+.ugm-demographic-fill.is-gender {
+  background: linear-gradient(90deg, #b794f4, #6d4fd8);
+}
+
+.ugm-demographic-fill.is-race {
+  background: linear-gradient(90deg, #f2b66d, #c65d1e);
+}
+
+.ugm-demographic-row small {
+  color: var(--ink-soft);
+  font-size: 0.68rem;
+}
+
 .ugm-error {
   white-space: pre-wrap;
   background: #2e1111;
@@ -1090,7 +1292,8 @@ body {
 
   .ugm-trend-context {
     height: auto;
-    max-height: 360px;
+    max-height: none;
+    overflow: visible;
   }
 
   .ugm-depth-grid,

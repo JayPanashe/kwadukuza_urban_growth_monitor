@@ -1,0 +1,4432 @@
+{
+  "dataset_version": "census-2022-demographics-v2",
+  "generated_at": "2026-05-27T10:35:32+00:00",
+  "geo_code": "KZN292",
+  "city_display_name": "KwaDukuza",
+  "ward_count": 30,
+  "source": {
+    "label": "Census 2022",
+    "role": "descriptive_context_only",
+    "scoring_influence": "none",
+    "source_table": "census_ward_demographics_long",
+    "population_pyramid_source_table": "statssa_census_2022_person",
+    "population_pyramid_scope": "municipality_only",
+    "population_pyramid_method": "Municipality-level Census 2022 person-sample age-sex split calibrated to official Census 2022 age-band totals."
+  },
+  "municipality": {
+    "age": [
+      {
+        "label": "0 - 4",
+        "value": 27610.8507,
+        "share_pct": 8.498
+      },
+      {
+        "label": "5 - 9",
+        "value": 25235.8195,
+        "share_pct": 7.767
+      },
+      {
+        "label": "10 - 14",
+        "value": 27523.9243,
+        "share_pct": 8.4712
+      },
+      {
+        "label": "15 - 19",
+        "value": 25456.5462,
+        "share_pct": 7.8349
+      },
+      {
+        "label": "20 - 24",
+        "value": 27602.0441,
+        "share_pct": 8.4952
+      },
+      {
+        "label": "25 - 29",
+        "value": 30924.0402,
+        "share_pct": 9.5177
+      },
+      {
+        "label": "30 - 34",
+        "value": 31610.0231,
+        "share_pct": 9.7288
+      },
+      {
+        "label": "35 - 39",
+        "value": 30458.6748,
+        "share_pct": 9.3744
+      },
+      {
+        "label": "40 - 44",
+        "value": 23894.326,
+        "share_pct": 7.3541
+      },
+      {
+        "label": "45 - 49",
+        "value": 17971.047,
+        "share_pct": 5.5311
+      },
+      {
+        "label": "50 - 54",
+        "value": 13872.4241,
+        "share_pct": 4.2696
+      },
+      {
+        "label": "55 - 59",
+        "value": 12049.562,
+        "share_pct": 3.7086
+      },
+      {
+        "label": "60 - 64",
+        "value": 10001.4686,
+        "share_pct": 3.0782
+      },
+      {
+        "label": "65 - 69",
+        "value": 8030.997,
+        "share_pct": 2.4717
+      },
+      {
+        "label": "70 - 74",
+        "value": 5889.5431,
+        "share_pct": 1.8127
+      },
+      {
+        "label": "75 - 79",
+        "value": 3721.8227,
+        "share_pct": 1.1455
+      },
+      {
+        "label": "80 - 84",
+        "value": 1959.2381,
+        "share_pct": 0.603
+      },
+      {
+        "label": "85+",
+        "value": 1099.3021,
+        "share_pct": 0.3383
+      }
+    ],
+    "gender": [
+      {
+        "label": "Female",
+        "value": 168284.7073,
+        "share_pct": 51.794
+      },
+      {
+        "label": "Male",
+        "value": 156626.9462,
+        "share_pct": 48.206
+      }
+    ],
+    "race": [
+      {
+        "label": "Black African",
+        "value": 231939.1464,
+        "share_pct": 71.3853
+      },
+      {
+        "label": "Indian or Asian",
+        "value": 60377.0201,
+        "share_pct": 18.5826
+      },
+      {
+        "label": "White",
+        "value": 27935.4651,
+        "share_pct": 8.5979
+      },
+      {
+        "label": "Coloured",
+        "value": 3618.2195,
+        "share_pct": 1.1136
+      },
+      {
+        "label": "Other",
+        "value": 1041.8024,
+        "share_pct": 0.3206
+      }
+    ],
+    "population_total": 324911.6536,
+    "population_pyramid": [
+      {
+        "age_band": "0 - 4",
+        "male": 13594.7151,
+        "female": 14016.1356,
+        "total": 27610.8507,
+        "male_share_pct": 49.2369,
+        "female_share_pct": 50.7631,
+        "sample_male": 871,
+        "sample_female": 898,
+        "sample_total": 1769
+      },
+      {
+        "age_band": "5 - 9",
+        "male": 12074.8248,
+        "female": 13160.9947,
+        "total": 25235.8195,
+        "male_share_pct": 47.848,
+        "female_share_pct": 52.152,
+        "sample_male": 856,
+        "sample_female": 933,
+        "sample_total": 1789
+      },
+      {
+        "age_band": "10 - 14",
+        "male": 13175.7231,
+        "female": 14348.2012,
+        "total": 27523.9243,
+        "male_share_pct": 47.8701,
+        "female_share_pct": 52.1299,
+        "sample_male": 899,
+        "sample_female": 979,
+        "sample_total": 1878
+      },
+      {
+        "age_band": "15 - 19",
+        "male": 12816.5617,
+        "female": 12639.9845,
+        "total": 25456.5462,
+        "male_share_pct": 50.3468,
+        "female_share_pct": 49.6532,
+        "sample_male": 871,
+        "sample_female": 859,
+        "sample_total": 1730
+      },
+      {
+        "age_band": "20 - 24",
+        "male": 13349.9083,
+        "female": 14252.1358,
+        "total": 27602.0441,
+        "male_share_pct": 48.3657,
+        "female_share_pct": 51.6343,
+        "sample_male": 873,
+        "sample_female": 932,
+        "sample_total": 1805
+      },
+      {
+        "age_band": "25 - 29",
+        "male": 15550.9845,
+        "female": 15373.0557,
+        "total": 30924.0402,
+        "male_share_pct": 50.2877,
+        "female_share_pct": 49.7123,
+        "sample_male": 874,
+        "sample_female": 864,
+        "sample_total": 1738
+      },
+      {
+        "age_band": "30 - 34",
+        "male": 15333.6891,
+        "female": 16276.334,
+        "total": 31610.0231,
+        "male_share_pct": 48.5089,
+        "female_share_pct": 51.4911,
+        "sample_male": 732,
+        "sample_female": 777,
+        "sample_total": 1509
+      },
+      {
+        "age_band": "35 - 39",
+        "male": 14138.7944,
+        "female": 16319.8804,
+        "total": 30458.6748,
+        "male_share_pct": 46.4196,
+        "female_share_pct": 53.5804,
+        "sample_male": 739,
+        "sample_female": 853,
+        "sample_total": 1592
+      },
+      {
+        "age_band": "40 - 44",
+        "male": 10431.0256,
+        "female": 13463.3004,
+        "total": 23894.326,
+        "male_share_pct": 43.6548,
+        "female_share_pct": 56.3452,
+        "sample_male": 688,
+        "sample_female": 888,
+        "sample_total": 1576
+      },
+      {
+        "age_band": "45 - 49",
+        "male": 8967.6122,
+        "female": 9003.4348,
+        "total": 17971.047,
+        "male_share_pct": 49.9003,
+        "female_share_pct": 50.0997,
+        "sample_male": 751,
+        "sample_female": 754,
+        "sample_total": 1505
+      },
+      {
+        "age_band": "50 - 54",
+        "male": 6612.8301,
+        "female": 7259.594,
+        "total": 13872.4241,
+        "male_share_pct": 47.6689,
+        "female_share_pct": 52.3311,
+        "sample_male": 501,
+        "sample_female": 550,
+        "sample_total": 1051
+      },
+      {
+        "age_band": "55 - 59",
+        "male": 5168.7129,
+        "female": 6880.8491,
+        "total": 12049.562,
+        "male_share_pct": 42.8954,
+        "female_share_pct": 57.1046,
+        "sample_male": 320,
+        "sample_female": 426,
+        "sample_total": 746
+      },
+      {
+        "age_band": "60 - 64",
+        "male": 4436.4491,
+        "female": 5565.0195,
+        "total": 10001.4686,
+        "male_share_pct": 44.358,
+        "female_share_pct": 55.642,
+        "sample_male": 228,
+        "sample_female": 286,
+        "sample_total": 514
+      },
+      {
+        "age_band": "65 - 69",
+        "male": 3165.031,
+        "female": 4865.966,
+        "total": 8030.997,
+        "male_share_pct": 39.4102,
+        "female_share_pct": 60.5898,
+        "sample_male": 147,
+        "sample_female": 226,
+        "sample_total": 373
+      },
+      {
+        "age_band": "70 - 74",
+        "male": 2721.8606,
+        "female": 3167.6825,
+        "total": 5889.5431,
+        "male_share_pct": 46.2151,
+        "female_share_pct": 53.7849,
+        "sample_male": 116,
+        "sample_female": 135,
+        "sample_total": 251
+      },
+      {
+        "age_band": "75 - 79",
+        "male": 1469.1405,
+        "female": 2252.6822,
+        "total": 3721.8227,
+        "male_share_pct": 39.4737,
+        "female_share_pct": 60.5263,
+        "sample_male": 60,
+        "sample_female": 92,
+        "sample_total": 152
+      },
+      {
+        "age_band": "80 - 84",
+        "male": 788.7842,
+        "female": 1170.4539,
+        "total": 1959.2381,
+        "male_share_pct": 40.2597,
+        "female_share_pct": 59.7403,
+        "sample_male": 31,
+        "sample_female": 46,
+        "sample_total": 77
+      },
+      {
+        "age_band": "85+",
+        "male": 366.434,
+        "female": 732.8681,
+        "total": 1099.3021,
+        "male_share_pct": 33.3333,
+        "female_share_pct": 66.6667,
+        "sample_male": 18,
+        "sample_female": 36,
+        "sample_total": 54
+      }
+    ]
+  },
+  "wards": [
+    {
+      "ward_id": "52902001",
+      "ward_label": "KZN292_1",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1483.9355,
+          "share_pct": 11.7872
+        },
+        {
+          "label": "5 - 9",
+          "value": 1252.2359,
+          "share_pct": 9.9467
+        },
+        {
+          "label": "10 - 14",
+          "value": 1452.952,
+          "share_pct": 11.541
+        },
+        {
+          "label": "15 - 19",
+          "value": 1287.427,
+          "share_pct": 10.2263
+        },
+        {
+          "label": "20 - 24",
+          "value": 1090.2516,
+          "share_pct": 8.6601
+        },
+        {
+          "label": "25 - 29",
+          "value": 1114.4484,
+          "share_pct": 8.8523
+        },
+        {
+          "label": "30 - 34",
+          "value": 1036.0743,
+          "share_pct": 8.2297
+        },
+        {
+          "label": "35 - 39",
+          "value": 866.7511,
+          "share_pct": 6.8848
+        },
+        {
+          "label": "40 - 44",
+          "value": 627.9034,
+          "share_pct": 4.9875
+        },
+        {
+          "label": "45 - 49",
+          "value": 635.011,
+          "share_pct": 5.044
+        },
+        {
+          "label": "50 - 54",
+          "value": 432.2328,
+          "share_pct": 3.4333
+        },
+        {
+          "label": "55 - 59",
+          "value": 447.8117,
+          "share_pct": 3.557
+        },
+        {
+          "label": "60 - 64",
+          "value": 278.6879,
+          "share_pct": 2.2137
+        },
+        {
+          "label": "65 - 69",
+          "value": 238.3379,
+          "share_pct": 1.8932
+        },
+        {
+          "label": "70 - 74",
+          "value": 164.5392,
+          "share_pct": 1.307
+        },
+        {
+          "label": "75 - 79",
+          "value": 88.0909,
+          "share_pct": 0.6997
+        },
+        {
+          "label": "80 - 84",
+          "value": 43.65,
+          "share_pct": 0.3467
+        },
+        {
+          "label": "85+",
+          "value": 49.0933,
+          "share_pct": 0.39
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6565.7932,
+          "share_pct": 52.1532
+        },
+        {
+          "label": "Male",
+          "value": 6023.6408,
+          "share_pct": 47.8468
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 12027.2787,
+          "share_pct": 95.5347
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 416.9495,
+          "share_pct": 3.3119
+        },
+        {
+          "label": "White",
+          "value": 92.8142,
+          "share_pct": 0.7372
+        },
+        {
+          "label": "Other",
+          "value": 38.0845,
+          "share_pct": 0.3025
+        },
+        {
+          "label": "Coloured",
+          "value": 14.3069,
+          "share_pct": 0.1136
+        }
+      ],
+      "population_total": 12589.434
+    },
+    {
+      "ward_id": "52902002",
+      "ward_label": "KZN292_2",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 796.5667,
+          "share_pct": 7.0751
+        },
+        {
+          "label": "5 - 9",
+          "value": 879.0926,
+          "share_pct": 7.8081
+        },
+        {
+          "label": "10 - 14",
+          "value": 974.8038,
+          "share_pct": 8.6582
+        },
+        {
+          "label": "15 - 19",
+          "value": 985.3033,
+          "share_pct": 8.7515
+        },
+        {
+          "label": "20 - 24",
+          "value": 1013.4361,
+          "share_pct": 9.0013
+        },
+        {
+          "label": "25 - 29",
+          "value": 1111.2903,
+          "share_pct": 9.8705
+        },
+        {
+          "label": "30 - 34",
+          "value": 973.6504,
+          "share_pct": 8.648
+        },
+        {
+          "label": "35 - 39",
+          "value": 966.8444,
+          "share_pct": 8.5875
+        },
+        {
+          "label": "40 - 44",
+          "value": 775.9972,
+          "share_pct": 6.8924
+        },
+        {
+          "label": "45 - 49",
+          "value": 823.3612,
+          "share_pct": 7.3131
+        },
+        {
+          "label": "50 - 54",
+          "value": 638.9619,
+          "share_pct": 5.6753
+        },
+        {
+          "label": "55 - 59",
+          "value": 458.4749,
+          "share_pct": 4.0722
+        },
+        {
+          "label": "60 - 64",
+          "value": 306.694,
+          "share_pct": 2.7241
+        },
+        {
+          "label": "65 - 69",
+          "value": 246.5962,
+          "share_pct": 2.1903
+        },
+        {
+          "label": "70 - 74",
+          "value": 138.8831,
+          "share_pct": 1.2336
+        },
+        {
+          "label": "75 - 79",
+          "value": 90.1459,
+          "share_pct": 0.8007
+        },
+        {
+          "label": "80 - 84",
+          "value": 61.3948,
+          "share_pct": 0.5453
+        },
+        {
+          "label": "85+",
+          "value": 17.2373,
+          "share_pct": 0.1531
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5944.2188,
+          "share_pct": 52.7965
+        },
+        {
+          "label": "Male",
+          "value": 5314.5151,
+          "share_pct": 47.2035
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 8237.4187,
+          "share_pct": 73.1647
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 2676.3474,
+          "share_pct": 23.7713
+        },
+        {
+          "label": "White",
+          "value": 215.7989,
+          "share_pct": 1.9167
+        },
+        {
+          "label": "Coloured",
+          "value": 115.2897,
+          "share_pct": 1.024
+        },
+        {
+          "label": "Other",
+          "value": 13.8791,
+          "share_pct": 0.1233
+        }
+      ],
+      "population_total": 11258.7341
+    },
+    {
+      "ward_id": "52902003",
+      "ward_label": "KZN292_3",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 398.4274,
+          "share_pct": 5.7265
+        },
+        {
+          "label": "5 - 9",
+          "value": 464.084,
+          "share_pct": 6.6702
+        },
+        {
+          "label": "10 - 14",
+          "value": 546.6613,
+          "share_pct": 7.8571
+        },
+        {
+          "label": "15 - 19",
+          "value": 475.8855,
+          "share_pct": 6.8398
+        },
+        {
+          "label": "20 - 24",
+          "value": 533.6464,
+          "share_pct": 7.67
+        },
+        {
+          "label": "25 - 29",
+          "value": 572.9979,
+          "share_pct": 8.2356
+        },
+        {
+          "label": "30 - 34",
+          "value": 645.4299,
+          "share_pct": 9.2766
+        },
+        {
+          "label": "35 - 39",
+          "value": 619.2801,
+          "share_pct": 8.9008
+        },
+        {
+          "label": "40 - 44",
+          "value": 589.8922,
+          "share_pct": 8.4784
+        },
+        {
+          "label": "45 - 49",
+          "value": 483.5879,
+          "share_pct": 6.9505
+        },
+        {
+          "label": "50 - 54",
+          "value": 443.1616,
+          "share_pct": 6.3695
+        },
+        {
+          "label": "55 - 59",
+          "value": 363.8569,
+          "share_pct": 5.2296
+        },
+        {
+          "label": "60 - 64",
+          "value": 264.268,
+          "share_pct": 3.7983
+        },
+        {
+          "label": "65 - 69",
+          "value": 230.9824,
+          "share_pct": 3.3199
+        },
+        {
+          "label": "70 - 74",
+          "value": 174.7494,
+          "share_pct": 2.5116
+        },
+        {
+          "label": "75 - 79",
+          "value": 75.9318,
+          "share_pct": 1.0914
+        },
+        {
+          "label": "80 - 84",
+          "value": 52.0596,
+          "share_pct": 0.7482
+        },
+        {
+          "label": "85+",
+          "value": 22.6843,
+          "share_pct": 0.326
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 3433.8743,
+          "share_pct": 49.3544
+        },
+        {
+          "label": "Male",
+          "value": 3523.7124,
+          "share_pct": 50.6456
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 4162.8108,
+          "share_pct": 59.8312
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 2063.707,
+          "share_pct": 29.6612
+        },
+        {
+          "label": "White",
+          "value": 670.2547,
+          "share_pct": 9.6334
+        },
+        {
+          "label": "Coloured",
+          "value": 31.4692,
+          "share_pct": 0.4523
+        },
+        {
+          "label": "Other",
+          "value": 29.3451,
+          "share_pct": 0.4218
+        }
+      ],
+      "population_total": 6957.5868
+    },
+    {
+      "ward_id": "52902004",
+      "ward_label": "KZN292_4",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 513.0573,
+          "share_pct": 6.865
+        },
+        {
+          "label": "5 - 9",
+          "value": 397.5572,
+          "share_pct": 5.3195
+        },
+        {
+          "label": "10 - 14",
+          "value": 372.9223,
+          "share_pct": 4.9899
+        },
+        {
+          "label": "15 - 19",
+          "value": 409.3077,
+          "share_pct": 5.4767
+        },
+        {
+          "label": "20 - 24",
+          "value": 845.1005,
+          "share_pct": 11.3078
+        },
+        {
+          "label": "25 - 29",
+          "value": 1134.8144,
+          "share_pct": 15.1844
+        },
+        {
+          "label": "30 - 34",
+          "value": 1145.0725,
+          "share_pct": 15.3216
+        },
+        {
+          "label": "35 - 39",
+          "value": 914.3248,
+          "share_pct": 12.2341
+        },
+        {
+          "label": "40 - 44",
+          "value": 641.8054,
+          "share_pct": 8.5877
+        },
+        {
+          "label": "45 - 49",
+          "value": 445.1719,
+          "share_pct": 5.9566
+        },
+        {
+          "label": "50 - 54",
+          "value": 230.6247,
+          "share_pct": 3.0859
+        },
+        {
+          "label": "55 - 59",
+          "value": 146.1144,
+          "share_pct": 1.9551
+        },
+        {
+          "label": "60 - 64",
+          "value": 132.5346,
+          "share_pct": 1.7734
+        },
+        {
+          "label": "65 - 69",
+          "value": 68.5896,
+          "share_pct": 0.9178
+        },
+        {
+          "label": "70 - 74",
+          "value": 40.5793,
+          "share_pct": 0.543
+        },
+        {
+          "label": "75 - 79",
+          "value": 26.2434,
+          "share_pct": 0.3511
+        },
+        {
+          "label": "80 - 84",
+          "value": 6.5308,
+          "share_pct": 0.0874
+        },
+        {
+          "label": "85+",
+          "value": 3.2243,
+          "share_pct": 0.0431
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 3735.9865,
+          "share_pct": 49.9893
+        },
+        {
+          "label": "Male",
+          "value": 3737.5884,
+          "share_pct": 50.0107
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 6852.7366,
+          "share_pct": 91.6929
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 397.3793,
+          "share_pct": 5.3171
+        },
+        {
+          "label": "Other",
+          "value": 153.0999,
+          "share_pct": 2.0486
+        },
+        {
+          "label": "Coloured",
+          "value": 49.521,
+          "share_pct": 0.6626
+        },
+        {
+          "label": "White",
+          "value": 20.8381,
+          "share_pct": 0.2788
+        }
+      ],
+      "population_total": 7473.5751
+    },
+    {
+      "ward_id": "52902005",
+      "ward_label": "KZN292_5",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1095.4233,
+          "share_pct": 9.9135
+        },
+        {
+          "label": "5 - 9",
+          "value": 960.5201,
+          "share_pct": 8.6927
+        },
+        {
+          "label": "10 - 14",
+          "value": 973.7432,
+          "share_pct": 8.8123
+        },
+        {
+          "label": "15 - 19",
+          "value": 840.5613,
+          "share_pct": 7.6071
+        },
+        {
+          "label": "20 - 24",
+          "value": 1161.1238,
+          "share_pct": 10.5081
+        },
+        {
+          "label": "25 - 29",
+          "value": 1374.3508,
+          "share_pct": 12.4378
+        },
+        {
+          "label": "30 - 34",
+          "value": 1226.2868,
+          "share_pct": 11.0979
+        },
+        {
+          "label": "35 - 39",
+          "value": 1047.554,
+          "share_pct": 9.4803
+        },
+        {
+          "label": "40 - 44",
+          "value": 727.7469,
+          "share_pct": 6.5861
+        },
+        {
+          "label": "45 - 49",
+          "value": 479.4921,
+          "share_pct": 4.3394
+        },
+        {
+          "label": "50 - 54",
+          "value": 360.7679,
+          "share_pct": 3.2649
+        },
+        {
+          "label": "55 - 59",
+          "value": 301.2599,
+          "share_pct": 2.7264
+        },
+        {
+          "label": "60 - 64",
+          "value": 203.2099,
+          "share_pct": 1.839
+        },
+        {
+          "label": "65 - 69",
+          "value": 143.2223,
+          "share_pct": 1.2962
+        },
+        {
+          "label": "70 - 74",
+          "value": 76.8956,
+          "share_pct": 0.6959
+        },
+        {
+          "label": "75 - 79",
+          "value": 37.8713,
+          "share_pct": 0.3427
+        },
+        {
+          "label": "80 - 84",
+          "value": 19.0971,
+          "share_pct": 0.1728
+        },
+        {
+          "label": "85+",
+          "value": 20.634,
+          "share_pct": 0.1867
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5797.7813,
+          "share_pct": 52.4697
+        },
+        {
+          "label": "Male",
+          "value": 5251.9792,
+          "share_pct": 47.5303
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 10777.5764,
+          "share_pct": 97.5367
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 235.6816,
+          "share_pct": 2.1329
+        },
+        {
+          "label": "Coloured",
+          "value": 27.7241,
+          "share_pct": 0.2509
+        },
+        {
+          "label": "White",
+          "value": 5.3816,
+          "share_pct": 0.0487
+        },
+        {
+          "label": "Other",
+          "value": 3.3967,
+          "share_pct": 0.0307
+        }
+      ],
+      "population_total": 11049.7605
+    },
+    {
+      "ward_id": "52902006",
+      "ward_label": "KZN292_6",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 164.5647,
+          "share_pct": 2.5535
+        },
+        {
+          "label": "5 - 9",
+          "value": 318.0083,
+          "share_pct": 4.9345
+        },
+        {
+          "label": "10 - 14",
+          "value": 372.7299,
+          "share_pct": 5.7836
+        },
+        {
+          "label": "15 - 19",
+          "value": 233.9026,
+          "share_pct": 3.6294
+        },
+        {
+          "label": "20 - 24",
+          "value": 248.5471,
+          "share_pct": 3.8567
+        },
+        {
+          "label": "25 - 29",
+          "value": 253.5823,
+          "share_pct": 3.9348
+        },
+        {
+          "label": "30 - 34",
+          "value": 440.9481,
+          "share_pct": 6.8421
+        },
+        {
+          "label": "35 - 39",
+          "value": 524.0343,
+          "share_pct": 8.1314
+        },
+        {
+          "label": "40 - 44",
+          "value": 565.6171,
+          "share_pct": 8.7766
+        },
+        {
+          "label": "45 - 49",
+          "value": 400.7501,
+          "share_pct": 6.2184
+        },
+        {
+          "label": "50 - 54",
+          "value": 359.4099,
+          "share_pct": 5.5769
+        },
+        {
+          "label": "55 - 59",
+          "value": 427.7174,
+          "share_pct": 6.6368
+        },
+        {
+          "label": "60 - 64",
+          "value": 591.3439,
+          "share_pct": 9.1758
+        },
+        {
+          "label": "65 - 69",
+          "value": 450.1431,
+          "share_pct": 6.9848
+        },
+        {
+          "label": "70 - 74",
+          "value": 412.0265,
+          "share_pct": 6.3934
+        },
+        {
+          "label": "75 - 79",
+          "value": 360.0912,
+          "share_pct": 5.5875
+        },
+        {
+          "label": "80 - 84",
+          "value": 236.2442,
+          "share_pct": 3.6658
+        },
+        {
+          "label": "85+",
+          "value": 84.9483,
+          "share_pct": 1.3181
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 3399.4314,
+          "share_pct": 52.7485
+        },
+        {
+          "label": "Male",
+          "value": 3045.1774,
+          "share_pct": 47.2515
+        }
+      ],
+      "race": [
+        {
+          "label": "White",
+          "value": 5298.7718,
+          "share_pct": 82.2202
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 734.2334,
+          "share_pct": 11.393
+        },
+        {
+          "label": "Black African",
+          "value": 324.0365,
+          "share_pct": 5.028
+        },
+        {
+          "label": "Coloured",
+          "value": 60.5331,
+          "share_pct": 0.9393
+        },
+        {
+          "label": "Other",
+          "value": 27.0341,
+          "share_pct": 0.4195
+        }
+      ],
+      "population_total": 6444.609
+    },
+    {
+      "ward_id": "52902007",
+      "ward_label": "KZN292_7",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1182.5062,
+          "share_pct": 10.8534
+        },
+        {
+          "label": "5 - 9",
+          "value": 970.345,
+          "share_pct": 8.9061
+        },
+        {
+          "label": "10 - 14",
+          "value": 1076.4216,
+          "share_pct": 9.8797
+        },
+        {
+          "label": "15 - 19",
+          "value": 1044.202,
+          "share_pct": 9.584
+        },
+        {
+          "label": "20 - 24",
+          "value": 1078.8303,
+          "share_pct": 9.9018
+        },
+        {
+          "label": "25 - 29",
+          "value": 1050.7706,
+          "share_pct": 9.6443
+        },
+        {
+          "label": "30 - 34",
+          "value": 995.5942,
+          "share_pct": 9.1379
+        },
+        {
+          "label": "35 - 39",
+          "value": 1014.1254,
+          "share_pct": 9.3079
+        },
+        {
+          "label": "40 - 44",
+          "value": 814.3025,
+          "share_pct": 7.4739
+        },
+        {
+          "label": "45 - 49",
+          "value": 589.4809,
+          "share_pct": 5.4104
+        },
+        {
+          "label": "50 - 54",
+          "value": 327.9864,
+          "share_pct": 3.0104
+        },
+        {
+          "label": "55 - 59",
+          "value": 287.2793,
+          "share_pct": 2.6367
+        },
+        {
+          "label": "60 - 64",
+          "value": 167.5733,
+          "share_pct": 1.538
+        },
+        {
+          "label": "65 - 69",
+          "value": 149.7779,
+          "share_pct": 1.3747
+        },
+        {
+          "label": "70 - 74",
+          "value": 64.5463,
+          "share_pct": 0.5924
+        },
+        {
+          "label": "75 - 79",
+          "value": 46.7915,
+          "share_pct": 0.4295
+        },
+        {
+          "label": "80 - 84",
+          "value": 22.2031,
+          "share_pct": 0.2038
+        },
+        {
+          "label": "85+",
+          "value": 12.5374,
+          "share_pct": 0.1151
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5786.5504,
+          "share_pct": 53.1106
+        },
+        {
+          "label": "Male",
+          "value": 5108.7236,
+          "share_pct": 46.8894
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 9770.4917,
+          "share_pct": 89.6764
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 788.9207,
+          "share_pct": 7.2409
+        },
+        {
+          "label": "Coloured",
+          "value": 258.3642,
+          "share_pct": 2.3713
+        },
+        {
+          "label": "Other",
+          "value": 72.627,
+          "share_pct": 0.6666
+        },
+        {
+          "label": "White",
+          "value": 4.8704,
+          "share_pct": 0.0447
+        }
+      ],
+      "population_total": 10895.274
+    },
+    {
+      "ward_id": "52902008",
+      "ward_label": "KZN292_8",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1227.7164,
+          "share_pct": 10.8608
+        },
+        {
+          "label": "5 - 9",
+          "value": 924.9403,
+          "share_pct": 8.1823
+        },
+        {
+          "label": "10 - 14",
+          "value": 962.0986,
+          "share_pct": 8.511
+        },
+        {
+          "label": "15 - 19",
+          "value": 1015.9398,
+          "share_pct": 8.9873
+        },
+        {
+          "label": "20 - 24",
+          "value": 1167.5121,
+          "share_pct": 10.3282
+        },
+        {
+          "label": "25 - 29",
+          "value": 1293.2094,
+          "share_pct": 11.4402
+        },
+        {
+          "label": "30 - 34",
+          "value": 1323.4587,
+          "share_pct": 11.7078
+        },
+        {
+          "label": "35 - 39",
+          "value": 1101.0166,
+          "share_pct": 9.74
+        },
+        {
+          "label": "40 - 44",
+          "value": 788.3971,
+          "share_pct": 6.9744
+        },
+        {
+          "label": "45 - 49",
+          "value": 532.7507,
+          "share_pct": 4.7129
+        },
+        {
+          "label": "50 - 54",
+          "value": 327.001,
+          "share_pct": 2.8928
+        },
+        {
+          "label": "55 - 59",
+          "value": 285.3927,
+          "share_pct": 2.5247
+        },
+        {
+          "label": "60 - 64",
+          "value": 172.7039,
+          "share_pct": 1.5278
+        },
+        {
+          "label": "65 - 69",
+          "value": 73.6503,
+          "share_pct": 0.6515
+        },
+        {
+          "label": "70 - 74",
+          "value": 55.0565,
+          "share_pct": 0.487
+        },
+        {
+          "label": "75 - 79",
+          "value": 26.6395,
+          "share_pct": 0.2357
+        },
+        {
+          "label": "80 - 84",
+          "value": 15.6703,
+          "share_pct": 0.1386
+        },
+        {
+          "label": "85+",
+          "value": 10.9692,
+          "share_pct": 0.097
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5574.647,
+          "share_pct": 49.3152
+        },
+        {
+          "label": "Male",
+          "value": 5729.4759,
+          "share_pct": 50.6848
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 11129.8319,
+          "share_pct": 98.4582
+        },
+        {
+          "label": "Coloured",
+          "value": 90.5402,
+          "share_pct": 0.8009
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 54.3676,
+          "share_pct": 0.481
+        },
+        {
+          "label": "Other",
+          "value": 15.7582,
+          "share_pct": 0.1394
+        },
+        {
+          "label": "White",
+          "value": 13.625,
+          "share_pct": 0.1205
+        }
+      ],
+      "population_total": 11304.1231
+    },
+    {
+      "ward_id": "52902009",
+      "ward_label": "KZN292_9",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1191.1494,
+          "share_pct": 9.7896
+        },
+        {
+          "label": "5 - 9",
+          "value": 1022.2385,
+          "share_pct": 8.4014
+        },
+        {
+          "label": "10 - 14",
+          "value": 1083.5224,
+          "share_pct": 8.9051
+        },
+        {
+          "label": "15 - 19",
+          "value": 1055.346,
+          "share_pct": 8.6735
+        },
+        {
+          "label": "20 - 24",
+          "value": 1086.6277,
+          "share_pct": 8.9306
+        },
+        {
+          "label": "25 - 29",
+          "value": 1287.5252,
+          "share_pct": 10.5817
+        },
+        {
+          "label": "30 - 34",
+          "value": 1173.1781,
+          "share_pct": 9.6419
+        },
+        {
+          "label": "35 - 39",
+          "value": 1217.5157,
+          "share_pct": 10.0063
+        },
+        {
+          "label": "40 - 44",
+          "value": 887.0758,
+          "share_pct": 7.2905
+        },
+        {
+          "label": "45 - 49",
+          "value": 608.4457,
+          "share_pct": 5.0006
+        },
+        {
+          "label": "50 - 54",
+          "value": 465.1436,
+          "share_pct": 3.8228
+        },
+        {
+          "label": "55 - 59",
+          "value": 351.3032,
+          "share_pct": 2.8872
+        },
+        {
+          "label": "60 - 64",
+          "value": 288.3722,
+          "share_pct": 2.37
+        },
+        {
+          "label": "65 - 69",
+          "value": 206.4279,
+          "share_pct": 1.6966
+        },
+        {
+          "label": "70 - 74",
+          "value": 121.1243,
+          "share_pct": 0.9955
+        },
+        {
+          "label": "75 - 79",
+          "value": 54.9045,
+          "share_pct": 0.4512
+        },
+        {
+          "label": "80 - 84",
+          "value": 34.4746,
+          "share_pct": 0.2833
+        },
+        {
+          "label": "85+",
+          "value": 33.1212,
+          "share_pct": 0.2722
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6333.8173,
+          "share_pct": 52.0552
+        },
+        {
+          "label": "Male",
+          "value": 5833.6785,
+          "share_pct": 47.9448
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 12017.0662,
+          "share_pct": 98.7637
+        },
+        {
+          "label": "White",
+          "value": 59.4668,
+          "share_pct": 0.4887
+        },
+        {
+          "label": "Coloured",
+          "value": 57.4915,
+          "share_pct": 0.4725
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 20.0241,
+          "share_pct": 0.1646
+        },
+        {
+          "label": "Other",
+          "value": 13.4472,
+          "share_pct": 0.1105
+        }
+      ],
+      "population_total": 12167.496
+    },
+    {
+      "ward_id": "52902010",
+      "ward_label": "KZN292_10",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 703.7208,
+          "share_pct": 8.4932
+        },
+        {
+          "label": "5 - 9",
+          "value": 592.1569,
+          "share_pct": 7.1468
+        },
+        {
+          "label": "10 - 14",
+          "value": 612.3386,
+          "share_pct": 7.3903
+        },
+        {
+          "label": "15 - 19",
+          "value": 721.1365,
+          "share_pct": 8.7034
+        },
+        {
+          "label": "20 - 24",
+          "value": 787.0415,
+          "share_pct": 9.4988
+        },
+        {
+          "label": "25 - 29",
+          "value": 964.4722,
+          "share_pct": 11.6402
+        },
+        {
+          "label": "30 - 34",
+          "value": 871.0154,
+          "share_pct": 10.5123
+        },
+        {
+          "label": "35 - 39",
+          "value": 836.0047,
+          "share_pct": 10.0898
+        },
+        {
+          "label": "40 - 44",
+          "value": 609.6648,
+          "share_pct": 7.3581
+        },
+        {
+          "label": "45 - 49",
+          "value": 446.6495,
+          "share_pct": 5.3906
+        },
+        {
+          "label": "50 - 54",
+          "value": 318.8018,
+          "share_pct": 3.8476
+        },
+        {
+          "label": "55 - 59",
+          "value": 289.5262,
+          "share_pct": 3.4943
+        },
+        {
+          "label": "60 - 64",
+          "value": 170.1948,
+          "share_pct": 2.0541
+        },
+        {
+          "label": "65 - 69",
+          "value": 129.4218,
+          "share_pct": 1.562
+        },
+        {
+          "label": "70 - 74",
+          "value": 92.587,
+          "share_pct": 1.1174
+        },
+        {
+          "label": "75 - 79",
+          "value": 75.1482,
+          "share_pct": 0.907
+        },
+        {
+          "label": "80 - 84",
+          "value": 42.286,
+          "share_pct": 0.5104
+        },
+        {
+          "label": "85+",
+          "value": 23.5054,
+          "share_pct": 0.2837
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4288.1208,
+          "share_pct": 51.7534
+        },
+        {
+          "label": "Male",
+          "value": 3997.5513,
+          "share_pct": 48.2466
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 8218.3334,
+          "share_pct": 99.1873
+        },
+        {
+          "label": "Coloured",
+          "value": 36.2908,
+          "share_pct": 0.438
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 17.6621,
+          "share_pct": 0.2132
+        },
+        {
+          "label": "White",
+          "value": 9.6538,
+          "share_pct": 0.1165
+        },
+        {
+          "label": "Other",
+          "value": 3.7319,
+          "share_pct": 0.045
+        }
+      ],
+      "population_total": 8285.6721
+    },
+    {
+      "ward_id": "52902011",
+      "ward_label": "KZN292_11",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 2072.4075,
+          "share_pct": 10.3799
+        },
+        {
+          "label": "5 - 9",
+          "value": 1742.4007,
+          "share_pct": 8.727
+        },
+        {
+          "label": "10 - 14",
+          "value": 1852.2873,
+          "share_pct": 9.2774
+        },
+        {
+          "label": "15 - 19",
+          "value": 1716.8811,
+          "share_pct": 8.5992
+        },
+        {
+          "label": "20 - 24",
+          "value": 1796.0376,
+          "share_pct": 8.9956
+        },
+        {
+          "label": "25 - 29",
+          "value": 2017.8917,
+          "share_pct": 10.1068
+        },
+        {
+          "label": "30 - 34",
+          "value": 1837.7267,
+          "share_pct": 9.2044
+        },
+        {
+          "label": "35 - 39",
+          "value": 1888.2527,
+          "share_pct": 9.4575
+        },
+        {
+          "label": "40 - 44",
+          "value": 1473.1573,
+          "share_pct": 7.3785
+        },
+        {
+          "label": "45 - 49",
+          "value": 1069.6748,
+          "share_pct": 5.3576
+        },
+        {
+          "label": "50 - 54",
+          "value": 642.7004,
+          "share_pct": 3.219
+        },
+        {
+          "label": "55 - 59",
+          "value": 590.7838,
+          "share_pct": 2.959
+        },
+        {
+          "label": "60 - 64",
+          "value": 447.6658,
+          "share_pct": 2.2422
+        },
+        {
+          "label": "65 - 69",
+          "value": 371.3875,
+          "share_pct": 1.8601
+        },
+        {
+          "label": "70 - 74",
+          "value": 232.7755,
+          "share_pct": 1.1659
+        },
+        {
+          "label": "75 - 79",
+          "value": 123.8458,
+          "share_pct": 0.6203
+        },
+        {
+          "label": "80 - 84",
+          "value": 40.6659,
+          "share_pct": 0.2037
+        },
+        {
+          "label": "85+",
+          "value": 49.1122,
+          "share_pct": 0.246
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 10299.4132,
+          "share_pct": 51.5857
+        },
+        {
+          "label": "Male",
+          "value": 9666.2411,
+          "share_pct": 48.4143
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 17439.4471,
+          "share_pct": 87.3472
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 1168.9859,
+          "share_pct": 5.855
+        },
+        {
+          "label": "White",
+          "value": 1130.515,
+          "share_pct": 5.6623
+        },
+        {
+          "label": "Coloured",
+          "value": 164.9844,
+          "share_pct": 0.8263
+        },
+        {
+          "label": "Other",
+          "value": 61.7219,
+          "share_pct": 0.3091
+        }
+      ],
+      "population_total": 19965.6543
+    },
+    {
+      "ward_id": "52902012",
+      "ward_label": "KZN292_12",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 813.4278,
+          "share_pct": 8.9774
+        },
+        {
+          "label": "5 - 9",
+          "value": 680.8518,
+          "share_pct": 7.5142
+        },
+        {
+          "label": "10 - 14",
+          "value": 801.2722,
+          "share_pct": 8.8432
+        },
+        {
+          "label": "15 - 19",
+          "value": 675.4325,
+          "share_pct": 7.4544
+        },
+        {
+          "label": "20 - 24",
+          "value": 905.9946,
+          "share_pct": 9.999
+        },
+        {
+          "label": "25 - 29",
+          "value": 978.1664,
+          "share_pct": 10.7955
+        },
+        {
+          "label": "30 - 34",
+          "value": 795.9492,
+          "share_pct": 8.7845
+        },
+        {
+          "label": "35 - 39",
+          "value": 842.9036,
+          "share_pct": 9.3027
+        },
+        {
+          "label": "40 - 44",
+          "value": 637.086,
+          "share_pct": 7.0312
+        },
+        {
+          "label": "45 - 49",
+          "value": 496.1187,
+          "share_pct": 5.4754
+        },
+        {
+          "label": "50 - 54",
+          "value": 383.1335,
+          "share_pct": 4.2284
+        },
+        {
+          "label": "55 - 59",
+          "value": 359.3006,
+          "share_pct": 3.9654
+        },
+        {
+          "label": "60 - 64",
+          "value": 209.0648,
+          "share_pct": 2.3073
+        },
+        {
+          "label": "65 - 69",
+          "value": 203.5381,
+          "share_pct": 2.2463
+        },
+        {
+          "label": "70 - 74",
+          "value": 143.0396,
+          "share_pct": 1.5786
+        },
+        {
+          "label": "75 - 79",
+          "value": 71.3433,
+          "share_pct": 0.7874
+        },
+        {
+          "label": "80 - 84",
+          "value": 37.0923,
+          "share_pct": 0.4094
+        },
+        {
+          "label": "85+",
+          "value": 27.1648,
+          "share_pct": 0.2998
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4718.623,
+          "share_pct": 52.0769
+        },
+        {
+          "label": "Male",
+          "value": 4342.2569,
+          "share_pct": 47.9231
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 8007.0925,
+          "share_pct": 88.3699
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 679.9731,
+          "share_pct": 7.5045
+        },
+        {
+          "label": "White",
+          "value": 293.151,
+          "share_pct": 3.2353
+        },
+        {
+          "label": "Coloured",
+          "value": 49.1468,
+          "share_pct": 0.5424
+        },
+        {
+          "label": "Other",
+          "value": 31.5165,
+          "share_pct": 0.3478
+        }
+      ],
+      "population_total": 9060.8799
+    },
+    {
+      "ward_id": "52902013",
+      "ward_label": "KZN292_13",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 836.6725,
+          "share_pct": 6.2416
+        },
+        {
+          "label": "5 - 9",
+          "value": 917.9957,
+          "share_pct": 6.8483
+        },
+        {
+          "label": "10 - 14",
+          "value": 1103.3824,
+          "share_pct": 8.2313
+        },
+        {
+          "label": "15 - 19",
+          "value": 942.9803,
+          "share_pct": 7.0347
+        },
+        {
+          "label": "20 - 24",
+          "value": 1051.6382,
+          "share_pct": 7.8453
+        },
+        {
+          "label": "25 - 29",
+          "value": 1260.7006,
+          "share_pct": 9.4049
+        },
+        {
+          "label": "30 - 34",
+          "value": 1431.686,
+          "share_pct": 10.6805
+        },
+        {
+          "label": "35 - 39",
+          "value": 1272.8642,
+          "share_pct": 9.4957
+        },
+        {
+          "label": "40 - 44",
+          "value": 1071.5287,
+          "share_pct": 7.9937
+        },
+        {
+          "label": "45 - 49",
+          "value": 867.1926,
+          "share_pct": 6.4693
+        },
+        {
+          "label": "50 - 54",
+          "value": 777.7502,
+          "share_pct": 5.8021
+        },
+        {
+          "label": "55 - 59",
+          "value": 604.1573,
+          "share_pct": 4.5071
+        },
+        {
+          "label": "60 - 64",
+          "value": 499.0646,
+          "share_pct": 3.7231
+        },
+        {
+          "label": "65 - 69",
+          "value": 332.6655,
+          "share_pct": 2.4817
+        },
+        {
+          "label": "70 - 74",
+          "value": 241.7216,
+          "share_pct": 1.8033
+        },
+        {
+          "label": "75 - 79",
+          "value": 105.2311,
+          "share_pct": 0.785
+        },
+        {
+          "label": "80 - 84",
+          "value": 50.1629,
+          "share_pct": 0.3742
+        },
+        {
+          "label": "85+",
+          "value": 37.3133,
+          "share_pct": 0.2784
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6777.4954,
+          "share_pct": 50.5606
+        },
+        {
+          "label": "Male",
+          "value": 6627.2122,
+          "share_pct": 49.4394
+        }
+      ],
+      "race": [
+        {
+          "label": "Indian or Asian",
+          "value": 8294.4309,
+          "share_pct": 61.877
+        },
+        {
+          "label": "Black African",
+          "value": 4914.8727,
+          "share_pct": 36.6653
+        },
+        {
+          "label": "Coloured",
+          "value": 161.6396,
+          "share_pct": 1.2058
+        },
+        {
+          "label": "White",
+          "value": 30.3677,
+          "share_pct": 0.2265
+        },
+        {
+          "label": "Other",
+          "value": 3.3967,
+          "share_pct": 0.0253
+        }
+      ],
+      "population_total": 13404.7077
+    },
+    {
+      "ward_id": "52902014",
+      "ward_label": "KZN292_14",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1173.982,
+          "share_pct": 10.9066
+        },
+        {
+          "label": "5 - 9",
+          "value": 1014.8213,
+          "share_pct": 9.428
+        },
+        {
+          "label": "10 - 14",
+          "value": 971.6923,
+          "share_pct": 9.0273
+        },
+        {
+          "label": "15 - 19",
+          "value": 959.9869,
+          "share_pct": 8.9185
+        },
+        {
+          "label": "20 - 24",
+          "value": 1093.8318,
+          "share_pct": 10.162
+        },
+        {
+          "label": "25 - 29",
+          "value": 1083.0449,
+          "share_pct": 10.0618
+        },
+        {
+          "label": "30 - 34",
+          "value": 1103.4689,
+          "share_pct": 10.2515
+        },
+        {
+          "label": "35 - 39",
+          "value": 975.1093,
+          "share_pct": 9.059
+        },
+        {
+          "label": "40 - 44",
+          "value": 706.1808,
+          "share_pct": 6.5606
+        },
+        {
+          "label": "45 - 49",
+          "value": 572.2688,
+          "share_pct": 5.3165
+        },
+        {
+          "label": "50 - 54",
+          "value": 339.7626,
+          "share_pct": 3.1565
+        },
+        {
+          "label": "55 - 59",
+          "value": 277.2242,
+          "share_pct": 2.5755
+        },
+        {
+          "label": "60 - 64",
+          "value": 200.8201,
+          "share_pct": 1.8657
+        },
+        {
+          "label": "65 - 69",
+          "value": 112.9764,
+          "share_pct": 1.0496
+        },
+        {
+          "label": "70 - 74",
+          "value": 90.9778,
+          "share_pct": 0.8452
+        },
+        {
+          "label": "75 - 79",
+          "value": 36.0717,
+          "share_pct": 0.3351
+        },
+        {
+          "label": "80 - 84",
+          "value": 31.3706,
+          "share_pct": 0.2914
+        },
+        {
+          "label": "85+",
+          "value": 20.3714,
+          "share_pct": 0.1893
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5749.3088,
+          "share_pct": 53.4126
+        },
+        {
+          "label": "Male",
+          "value": 5014.6532,
+          "share_pct": 46.5874
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 10649.0241,
+          "share_pct": 98.9322
+        },
+        {
+          "label": "Coloured",
+          "value": 78.8214,
+          "share_pct": 0.7323
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 18.3747,
+          "share_pct": 0.1707
+        },
+        {
+          "label": "Other",
+          "value": 11.2758,
+          "share_pct": 0.1048
+        },
+        {
+          "label": "White",
+          "value": 6.466,
+          "share_pct": 0.0601
+        }
+      ],
+      "population_total": 10763.962
+    },
+    {
+      "ward_id": "52902015",
+      "ward_label": "KZN292_15",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1355.0908,
+          "share_pct": 9.1766
+        },
+        {
+          "label": "5 - 9",
+          "value": 1231.1872,
+          "share_pct": 8.3375
+        },
+        {
+          "label": "10 - 14",
+          "value": 1243.4215,
+          "share_pct": 8.4204
+        },
+        {
+          "label": "15 - 19",
+          "value": 1231.0268,
+          "share_pct": 8.3365
+        },
+        {
+          "label": "20 - 24",
+          "value": 1440.8505,
+          "share_pct": 9.7574
+        },
+        {
+          "label": "25 - 29",
+          "value": 1623.7606,
+          "share_pct": 10.996
+        },
+        {
+          "label": "30 - 34",
+          "value": 1456.6934,
+          "share_pct": 9.8647
+        },
+        {
+          "label": "35 - 39",
+          "value": 1500.9061,
+          "share_pct": 10.1641
+        },
+        {
+          "label": "40 - 44",
+          "value": 1044.0315,
+          "share_pct": 7.0701
+        },
+        {
+          "label": "45 - 49",
+          "value": 720.4148,
+          "share_pct": 4.8786
+        },
+        {
+          "label": "50 - 54",
+          "value": 495.7349,
+          "share_pct": 3.3571
+        },
+        {
+          "label": "55 - 59",
+          "value": 466.867,
+          "share_pct": 3.1616
+        },
+        {
+          "label": "60 - 64",
+          "value": 354.7871,
+          "share_pct": 2.4026
+        },
+        {
+          "label": "65 - 69",
+          "value": 206.072,
+          "share_pct": 1.3955
+        },
+        {
+          "label": "70 - 74",
+          "value": 184.132,
+          "share_pct": 1.2469
+        },
+        {
+          "label": "75 - 79",
+          "value": 115.4693,
+          "share_pct": 0.782
+        },
+        {
+          "label": "80 - 84",
+          "value": 59.7996,
+          "share_pct": 0.405
+        },
+        {
+          "label": "85+",
+          "value": 36.5379,
+          "share_pct": 0.2474
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 7450.2902,
+          "share_pct": 50.453
+        },
+        {
+          "label": "Male",
+          "value": 7316.4928,
+          "share_pct": 49.547
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 12135.682,
+          "share_pct": 82.1823
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 2272.624,
+          "share_pct": 15.3901
+        },
+        {
+          "label": "Other",
+          "value": 186.9275,
+          "share_pct": 1.2659
+        },
+        {
+          "label": "White",
+          "value": 109.7606,
+          "share_pct": 0.7433
+        },
+        {
+          "label": "Coloured",
+          "value": 61.7889,
+          "share_pct": 0.4184
+        }
+      ],
+      "population_total": 14766.783
+    },
+    {
+      "ward_id": "52902016",
+      "ward_label": "KZN292_16",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 835.6902,
+          "share_pct": 5.0433
+        },
+        {
+          "label": "5 - 9",
+          "value": 1087.9359,
+          "share_pct": 6.5655
+        },
+        {
+          "label": "10 - 14",
+          "value": 1300.5879,
+          "share_pct": 7.8488
+        },
+        {
+          "label": "15 - 19",
+          "value": 1245.2061,
+          "share_pct": 7.5146
+        },
+        {
+          "label": "20 - 24",
+          "value": 1133.0905,
+          "share_pct": 6.838
+        },
+        {
+          "label": "25 - 29",
+          "value": 1248.7723,
+          "share_pct": 7.5361
+        },
+        {
+          "label": "30 - 34",
+          "value": 1388.0172,
+          "share_pct": 8.3765
+        },
+        {
+          "label": "35 - 39",
+          "value": 1381.3252,
+          "share_pct": 8.3361
+        },
+        {
+          "label": "40 - 44",
+          "value": 1440.3763,
+          "share_pct": 8.6924
+        },
+        {
+          "label": "45 - 49",
+          "value": 1078.6031,
+          "share_pct": 6.5092
+        },
+        {
+          "label": "50 - 54",
+          "value": 1015.1013,
+          "share_pct": 6.126
+        },
+        {
+          "label": "55 - 59",
+          "value": 891.9554,
+          "share_pct": 5.3828
+        },
+        {
+          "label": "60 - 64",
+          "value": 775.2945,
+          "share_pct": 4.6788
+        },
+        {
+          "label": "65 - 69",
+          "value": 657.5914,
+          "share_pct": 3.9685
+        },
+        {
+          "label": "70 - 74",
+          "value": 466.4257,
+          "share_pct": 2.8148
+        },
+        {
+          "label": "75 - 79",
+          "value": 352.1814,
+          "share_pct": 2.1254
+        },
+        {
+          "label": "80 - 84",
+          "value": 188.4519,
+          "share_pct": 1.1373
+        },
+        {
+          "label": "85+",
+          "value": 83.8258,
+          "share_pct": 0.5059
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 8699.3054,
+          "share_pct": 52.499
+        },
+        {
+          "label": "Male",
+          "value": 7871.1267,
+          "share_pct": 47.501
+        }
+      ],
+      "race": [
+        {
+          "label": "Indian or Asian",
+          "value": 12154.4721,
+          "share_pct": 73.3504
+        },
+        {
+          "label": "Black African",
+          "value": 4040.1047,
+          "share_pct": 24.3814
+        },
+        {
+          "label": "Coloured",
+          "value": 157.7919,
+          "share_pct": 0.9522
+        },
+        {
+          "label": "White",
+          "value": 155.0304,
+          "share_pct": 0.9356
+        },
+        {
+          "label": "Other",
+          "value": 63.0329,
+          "share_pct": 0.3804
+        }
+      ],
+      "population_total": 16570.4321
+    },
+    {
+      "ward_id": "52902017",
+      "ward_label": "KZN292_17",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 310.4291,
+          "share_pct": 3.5215
+        },
+        {
+          "label": "5 - 9",
+          "value": 390.1997,
+          "share_pct": 4.4265
+        },
+        {
+          "label": "10 - 14",
+          "value": 603.3439,
+          "share_pct": 6.8444
+        },
+        {
+          "label": "15 - 19",
+          "value": 521.2039,
+          "share_pct": 5.9126
+        },
+        {
+          "label": "20 - 24",
+          "value": 536.4482,
+          "share_pct": 6.0855
+        },
+        {
+          "label": "25 - 29",
+          "value": 678.5116,
+          "share_pct": 7.6971
+        },
+        {
+          "label": "30 - 34",
+          "value": 805.4446,
+          "share_pct": 9.137
+        },
+        {
+          "label": "35 - 39",
+          "value": 853.015,
+          "share_pct": 9.6767
+        },
+        {
+          "label": "40 - 44",
+          "value": 657.8713,
+          "share_pct": 7.4629
+        },
+        {
+          "label": "45 - 49",
+          "value": 609.9185,
+          "share_pct": 6.919
+        },
+        {
+          "label": "50 - 54",
+          "value": 584.8427,
+          "share_pct": 6.6345
+        },
+        {
+          "label": "55 - 59",
+          "value": 574.3363,
+          "share_pct": 6.5153
+        },
+        {
+          "label": "60 - 64",
+          "value": 630.1295,
+          "share_pct": 7.1482
+        },
+        {
+          "label": "65 - 69",
+          "value": 436.1651,
+          "share_pct": 4.9479
+        },
+        {
+          "label": "70 - 74",
+          "value": 254.1301,
+          "share_pct": 2.8829
+        },
+        {
+          "label": "75 - 79",
+          "value": 217.1213,
+          "share_pct": 2.463
+        },
+        {
+          "label": "80 - 84",
+          "value": 113.1337,
+          "share_pct": 1.2834
+        },
+        {
+          "label": "85+",
+          "value": 38.931,
+          "share_pct": 0.4416
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4604.4186,
+          "share_pct": 52.2329
+        },
+        {
+          "label": "Male",
+          "value": 4210.7571,
+          "share_pct": 47.7671
+        }
+      ],
+      "race": [
+        {
+          "label": "Indian or Asian",
+          "value": 7154.8852,
+          "share_pct": 81.1655
+        },
+        {
+          "label": "Black African",
+          "value": 1516.2438,
+          "share_pct": 17.2004
+        },
+        {
+          "label": "Coloured",
+          "value": 83.2045,
+          "share_pct": 0.9439
+        },
+        {
+          "label": "White",
+          "value": 31.6368,
+          "share_pct": 0.3589
+        },
+        {
+          "label": "Other",
+          "value": 29.2054,
+          "share_pct": 0.3313
+        }
+      ],
+      "population_total": 8815.1757
+    },
+    {
+      "ward_id": "52902018",
+      "ward_label": "KZN292_18",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 598.6071,
+          "share_pct": 8.5392
+        },
+        {
+          "label": "5 - 9",
+          "value": 505.8647,
+          "share_pct": 7.2162
+        },
+        {
+          "label": "10 - 14",
+          "value": 581.7443,
+          "share_pct": 8.2986
+        },
+        {
+          "label": "15 - 19",
+          "value": 608.2993,
+          "share_pct": 8.6775
+        },
+        {
+          "label": "20 - 24",
+          "value": 714.384,
+          "share_pct": 10.1908
+        },
+        {
+          "label": "25 - 29",
+          "value": 834.6935,
+          "share_pct": 11.907
+        },
+        {
+          "label": "30 - 34",
+          "value": 845.0355,
+          "share_pct": 12.0545
+        },
+        {
+          "label": "35 - 39",
+          "value": 636.8083,
+          "share_pct": 9.0841
+        },
+        {
+          "label": "40 - 44",
+          "value": 461.7073,
+          "share_pct": 6.5863
+        },
+        {
+          "label": "45 - 49",
+          "value": 321.8574,
+          "share_pct": 4.5913
+        },
+        {
+          "label": "50 - 54",
+          "value": 238.8441,
+          "share_pct": 3.4071
+        },
+        {
+          "label": "55 - 59",
+          "value": 210.0118,
+          "share_pct": 2.9958
+        },
+        {
+          "label": "60 - 64",
+          "value": 167.7923,
+          "share_pct": 2.3936
+        },
+        {
+          "label": "65 - 69",
+          "value": 129.3246,
+          "share_pct": 1.8448
+        },
+        {
+          "label": "70 - 74",
+          "value": 64.2481,
+          "share_pct": 0.9165
+        },
+        {
+          "label": "75 - 79",
+          "value": 32.9076,
+          "share_pct": 0.4694
+        },
+        {
+          "label": "80 - 84",
+          "value": 34.4746,
+          "share_pct": 0.4918
+        },
+        {
+          "label": "85+",
+          "value": 23.5054,
+          "share_pct": 0.3353
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 3621.998,
+          "share_pct": 51.6682
+        },
+        {
+          "label": "Male",
+          "value": 3388.1119,
+          "share_pct": 48.3318
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 6948.8541,
+          "share_pct": 99.1262
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 34.169,
+          "share_pct": 0.4874
+        },
+        {
+          "label": "Coloured",
+          "value": 26.2147,
+          "share_pct": 0.374
+        },
+        {
+          "label": "White",
+          "value": 0.8722,
+          "share_pct": 0.0124
+        },
+        {
+          "label": "Other",
+          "value": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "population_total": 7010.11
+    },
+    {
+      "ward_id": "52902019",
+      "ward_label": "KZN292_19",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 537.9319,
+          "share_pct": 5.1695
+        },
+        {
+          "label": "5 - 9",
+          "value": 625.6814,
+          "share_pct": 6.0127
+        },
+        {
+          "label": "10 - 14",
+          "value": 680.5415,
+          "share_pct": 6.5399
+        },
+        {
+          "label": "15 - 19",
+          "value": 719.8588,
+          "share_pct": 6.9177
+        },
+        {
+          "label": "20 - 24",
+          "value": 674.3088,
+          "share_pct": 6.48
+        },
+        {
+          "label": "25 - 29",
+          "value": 831.9862,
+          "share_pct": 7.9953
+        },
+        {
+          "label": "30 - 34",
+          "value": 962.8813,
+          "share_pct": 9.2532
+        },
+        {
+          "label": "35 - 39",
+          "value": 1015.7014,
+          "share_pct": 9.7608
+        },
+        {
+          "label": "40 - 44",
+          "value": 897.4635,
+          "share_pct": 8.6245
+        },
+        {
+          "label": "45 - 49",
+          "value": 707.9974,
+          "share_pct": 6.8038
+        },
+        {
+          "label": "50 - 54",
+          "value": 687.3929,
+          "share_pct": 6.6058
+        },
+        {
+          "label": "55 - 59",
+          "value": 556.0725,
+          "share_pct": 5.3438
+        },
+        {
+          "label": "60 - 64",
+          "value": 428.4889,
+          "share_pct": 4.1177
+        },
+        {
+          "label": "65 - 69",
+          "value": 381.4249,
+          "share_pct": 3.6654
+        },
+        {
+          "label": "70 - 74",
+          "value": 301.3603,
+          "share_pct": 2.896
+        },
+        {
+          "label": "75 - 79",
+          "value": 195.3499,
+          "share_pct": 1.8773
+        },
+        {
+          "label": "80 - 84",
+          "value": 137.2674,
+          "share_pct": 1.3191
+        },
+        {
+          "label": "85+",
+          "value": 64.2589,
+          "share_pct": 0.6175
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5504.5201,
+          "share_pct": 52.8977
+        },
+        {
+          "label": "Male",
+          "value": 4901.4479,
+          "share_pct": 47.1023
+        }
+      ],
+      "race": [
+        {
+          "label": "Indian or Asian",
+          "value": 6580.861,
+          "share_pct": 63.2412
+        },
+        {
+          "label": "Black African",
+          "value": 2624.5704,
+          "share_pct": 25.2218
+        },
+        {
+          "label": "Coloured",
+          "value": 869.0699,
+          "share_pct": 8.3516
+        },
+        {
+          "label": "White",
+          "value": 287.7436,
+          "share_pct": 2.7652
+        },
+        {
+          "label": "Other",
+          "value": 43.723,
+          "share_pct": 0.4202
+        }
+      ],
+      "population_total": 10405.968
+    },
+    {
+      "ward_id": "52902020",
+      "ward_label": "KZN292_20",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 856.7599,
+          "share_pct": 7.4003
+        },
+        {
+          "label": "5 - 9",
+          "value": 746.404,
+          "share_pct": 6.4471
+        },
+        {
+          "label": "10 - 14",
+          "value": 801.9315,
+          "share_pct": 6.9267
+        },
+        {
+          "label": "15 - 19",
+          "value": 674.3655,
+          "share_pct": 5.8248
+        },
+        {
+          "label": "20 - 24",
+          "value": 717.4496,
+          "share_pct": 6.197
+        },
+        {
+          "label": "25 - 29",
+          "value": 906.2033,
+          "share_pct": 7.8273
+        },
+        {
+          "label": "30 - 34",
+          "value": 1204.7462,
+          "share_pct": 10.406
+        },
+        {
+          "label": "35 - 39",
+          "value": 1395.7688,
+          "share_pct": 12.0559
+        },
+        {
+          "label": "40 - 44",
+          "value": 962.6396,
+          "share_pct": 8.3148
+        },
+        {
+          "label": "45 - 49",
+          "value": 737.9656,
+          "share_pct": 6.3742
+        },
+        {
+          "label": "50 - 54",
+          "value": 501.9399,
+          "share_pct": 4.3355
+        },
+        {
+          "label": "55 - 59",
+          "value": 498.1723,
+          "share_pct": 4.303
+        },
+        {
+          "label": "60 - 64",
+          "value": 427.6629,
+          "share_pct": 3.6939
+        },
+        {
+          "label": "65 - 69",
+          "value": 480.2242,
+          "share_pct": 4.1479
+        },
+        {
+          "label": "70 - 74",
+          "value": 306.9589,
+          "share_pct": 2.6514
+        },
+        {
+          "label": "75 - 79",
+          "value": 271.7717,
+          "share_pct": 2.3474
+        },
+        {
+          "label": "80 - 84",
+          "value": 53.2969,
+          "share_pct": 0.4604
+        },
+        {
+          "label": "85+",
+          "value": 33.1793,
+          "share_pct": 0.2866
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6059.5961,
+          "share_pct": 52.3397
+        },
+        {
+          "label": "Male",
+          "value": 5517.8442,
+          "share_pct": 47.6603
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 5348.766,
+          "share_pct": 46.1999
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 3160.4766,
+          "share_pct": 27.2986
+        },
+        {
+          "label": "White",
+          "value": 2788.0001,
+          "share_pct": 24.0813
+        },
+        {
+          "label": "Coloured",
+          "value": 240.8876,
+          "share_pct": 2.0807
+        },
+        {
+          "label": "Other",
+          "value": 39.3099,
+          "share_pct": 0.3395
+        }
+      ],
+      "population_total": 11577.4403
+    },
+    {
+      "ward_id": "52902021",
+      "ward_label": "KZN292_21",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 809.9132,
+          "share_pct": 9.9977
+        },
+        {
+          "label": "5 - 9",
+          "value": 656.4233,
+          "share_pct": 8.103
+        },
+        {
+          "label": "10 - 14",
+          "value": 706.9022,
+          "share_pct": 8.7262
+        },
+        {
+          "label": "15 - 19",
+          "value": 662.3033,
+          "share_pct": 8.1756
+        },
+        {
+          "label": "20 - 24",
+          "value": 697.0603,
+          "share_pct": 8.6047
+        },
+        {
+          "label": "25 - 29",
+          "value": 835.7739,
+          "share_pct": 10.317
+        },
+        {
+          "label": "30 - 34",
+          "value": 886.8281,
+          "share_pct": 10.9472
+        },
+        {
+          "label": "35 - 39",
+          "value": 681.0591,
+          "share_pct": 8.4071
+        },
+        {
+          "label": "40 - 44",
+          "value": 575.5262,
+          "share_pct": 7.1044
+        },
+        {
+          "label": "45 - 49",
+          "value": 399.9601,
+          "share_pct": 4.9372
+        },
+        {
+          "label": "50 - 54",
+          "value": 297.9505,
+          "share_pct": 3.678
+        },
+        {
+          "label": "55 - 59",
+          "value": 294.3275,
+          "share_pct": 3.6332
+        },
+        {
+          "label": "60 - 64",
+          "value": 207.8879,
+          "share_pct": 2.5662
+        },
+        {
+          "label": "65 - 69",
+          "value": 152.4299,
+          "share_pct": 1.8816
+        },
+        {
+          "label": "70 - 74",
+          "value": 129.904,
+          "share_pct": 1.6036
+        },
+        {
+          "label": "75 - 79",
+          "value": 48.0161,
+          "share_pct": 0.5927
+        },
+        {
+          "label": "80 - 84",
+          "value": 40.8984,
+          "share_pct": 0.5049
+        },
+        {
+          "label": "85+",
+          "value": 17.7934,
+          "share_pct": 0.2196
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 3897.4418,
+          "share_pct": 48.1109
+        },
+        {
+          "label": "Male",
+          "value": 4203.5158,
+          "share_pct": 51.8891
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 7247.2598,
+          "share_pct": 89.4618
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 587.0344,
+          "share_pct": 7.2465
+        },
+        {
+          "label": "White",
+          "value": 206.3589,
+          "share_pct": 2.5473
+        },
+        {
+          "label": "Coloured",
+          "value": 60.3044,
+          "share_pct": 0.7444
+        },
+        {
+          "label": "Other",
+          "value": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "population_total": 8100.9576
+    },
+    {
+      "ward_id": "52902022",
+      "ward_label": "KZN292_22",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 583.4316,
+          "share_pct": 4.6758
+        },
+        {
+          "label": "5 - 9",
+          "value": 957.501,
+          "share_pct": 7.6737
+        },
+        {
+          "label": "10 - 14",
+          "value": 895.3748,
+          "share_pct": 7.1758
+        },
+        {
+          "label": "15 - 19",
+          "value": 619.009,
+          "share_pct": 4.9609
+        },
+        {
+          "label": "20 - 24",
+          "value": 482.6023,
+          "share_pct": 3.8677
+        },
+        {
+          "label": "25 - 29",
+          "value": 433.0936,
+          "share_pct": 3.4709
+        },
+        {
+          "label": "30 - 34",
+          "value": 794.5644,
+          "share_pct": 6.3679
+        },
+        {
+          "label": "35 - 39",
+          "value": 1201.1547,
+          "share_pct": 9.6264
+        },
+        {
+          "label": "40 - 44",
+          "value": 1198.0284,
+          "share_pct": 9.6013
+        },
+        {
+          "label": "45 - 49",
+          "value": 849.3164,
+          "share_pct": 6.8066
+        },
+        {
+          "label": "50 - 54",
+          "value": 777.5268,
+          "share_pct": 6.2313
+        },
+        {
+          "label": "55 - 59",
+          "value": 732.0993,
+          "share_pct": 5.8672
+        },
+        {
+          "label": "60 - 64",
+          "value": 697.0229,
+          "share_pct": 5.5861
+        },
+        {
+          "label": "65 - 69",
+          "value": 728.7902,
+          "share_pct": 5.8407
+        },
+        {
+          "label": "70 - 74",
+          "value": 735.7687,
+          "share_pct": 5.8966
+        },
+        {
+          "label": "75 - 79",
+          "value": 433.0275,
+          "share_pct": 3.4704
+        },
+        {
+          "label": "80 - 84",
+          "value": 240.5403,
+          "share_pct": 1.9278
+        },
+        {
+          "label": "85+",
+          "value": 118.8953,
+          "share_pct": 0.9529
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6471.4172,
+          "share_pct": 51.8637
+        },
+        {
+          "label": "Male",
+          "value": 6006.33,
+          "share_pct": 48.1363
+        }
+      ],
+      "race": [
+        {
+          "label": "White",
+          "value": 10067.3667,
+          "share_pct": 80.6826
+        },
+        {
+          "label": "Black African",
+          "value": 1137.1913,
+          "share_pct": 9.1138
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 1057.0493,
+          "share_pct": 8.4715
+        },
+        {
+          "label": "Coloured",
+          "value": 118.4192,
+          "share_pct": 0.949
+        },
+        {
+          "label": "Other",
+          "value": 97.7207,
+          "share_pct": 0.7832
+        }
+      ],
+      "population_total": 12477.7472
+    },
+    {
+      "ward_id": "52902023",
+      "ward_label": "KZN292_23",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1445.3046,
+          "share_pct": 11.3132
+        },
+        {
+          "label": "5 - 9",
+          "value": 1032.0304,
+          "share_pct": 8.0782
+        },
+        {
+          "label": "10 - 14",
+          "value": 1239.1406,
+          "share_pct": 9.6994
+        },
+        {
+          "label": "15 - 19",
+          "value": 1021.7716,
+          "share_pct": 7.9979
+        },
+        {
+          "label": "20 - 24",
+          "value": 1304.4669,
+          "share_pct": 10.2107
+        },
+        {
+          "label": "25 - 29",
+          "value": 1603.3203,
+          "share_pct": 12.55
+        },
+        {
+          "label": "30 - 34",
+          "value": 1417.23,
+          "share_pct": 11.0934
+        },
+        {
+          "label": "35 - 39",
+          "value": 1248.0716,
+          "share_pct": 9.7693
+        },
+        {
+          "label": "40 - 44",
+          "value": 879.0202,
+          "share_pct": 6.8806
+        },
+        {
+          "label": "45 - 49",
+          "value": 554.0516,
+          "share_pct": 4.3369
+        },
+        {
+          "label": "50 - 54",
+          "value": 395.5113,
+          "share_pct": 3.0959
+        },
+        {
+          "label": "55 - 59",
+          "value": 262.9487,
+          "share_pct": 2.0582
+        },
+        {
+          "label": "60 - 64",
+          "value": 155.8114,
+          "share_pct": 1.2196
+        },
+        {
+          "label": "65 - 69",
+          "value": 101.6547,
+          "share_pct": 0.7957
+        },
+        {
+          "label": "70 - 74",
+          "value": 56.5934,
+          "share_pct": 0.443
+        },
+        {
+          "label": "75 - 79",
+          "value": 18.8043,
+          "share_pct": 0.1472
+        },
+        {
+          "label": "80 - 84",
+          "value": 25.0724,
+          "share_pct": 0.1963
+        },
+        {
+          "label": "85+",
+          "value": 14.6286,
+          "share_pct": 0.1145
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6439.537,
+          "share_pct": 50.4056
+        },
+        {
+          "label": "Male",
+          "value": 6335.896,
+          "share_pct": 49.5944
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 12618.1268,
+          "share_pct": 98.7687
+        },
+        {
+          "label": "Coloured",
+          "value": 83.0976,
+          "share_pct": 0.6504
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 60.7971,
+          "share_pct": 0.4759
+        },
+        {
+          "label": "White",
+          "value": 13.4114,
+          "share_pct": 0.105
+        },
+        {
+          "label": "Other",
+          "value": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "population_total": 12775.433
+    },
+    {
+      "ward_id": "52902024",
+      "ward_label": "KZN292_24",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1320.6722,
+          "share_pct": 10.6985
+        },
+        {
+          "label": "5 - 9",
+          "value": 1057.8915,
+          "share_pct": 8.5697
+        },
+        {
+          "label": "10 - 14",
+          "value": 1176.9272,
+          "share_pct": 9.534
+        },
+        {
+          "label": "15 - 19",
+          "value": 1069.3966,
+          "share_pct": 8.6629
+        },
+        {
+          "label": "20 - 24",
+          "value": 1251.6601,
+          "share_pct": 10.1394
+        },
+        {
+          "label": "25 - 29",
+          "value": 1312.0426,
+          "share_pct": 10.6286
+        },
+        {
+          "label": "30 - 34",
+          "value": 1238.0104,
+          "share_pct": 10.0288
+        },
+        {
+          "label": "35 - 39",
+          "value": 1304.3481,
+          "share_pct": 10.5662
+        },
+        {
+          "label": "40 - 44",
+          "value": 874.8738,
+          "share_pct": 7.0872
+        },
+        {
+          "label": "45 - 49",
+          "value": 544.6812,
+          "share_pct": 4.4123
+        },
+        {
+          "label": "50 - 54",
+          "value": 374.4693,
+          "share_pct": 3.0335
+        },
+        {
+          "label": "55 - 59",
+          "value": 331.4749,
+          "share_pct": 2.6852
+        },
+        {
+          "label": "60 - 64",
+          "value": 183.7892,
+          "share_pct": 1.4888
+        },
+        {
+          "label": "65 - 69",
+          "value": 127.671,
+          "share_pct": 1.0342
+        },
+        {
+          "label": "70 - 74",
+          "value": 98.2159,
+          "share_pct": 0.7956
+        },
+        {
+          "label": "75 - 79",
+          "value": 26.6695,
+          "share_pct": 0.216
+        },
+        {
+          "label": "80 - 84",
+          "value": 31.3406,
+          "share_pct": 0.2539
+        },
+        {
+          "label": "85+",
+          "value": 20.3714,
+          "share_pct": 0.165
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 6446.6504,
+          "share_pct": 52.2228
+        },
+        {
+          "label": "Male",
+          "value": 5897.855,
+          "share_pct": 47.7772
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 12212.7678,
+          "share_pct": 98.9328
+        },
+        {
+          "label": "Coloured",
+          "value": 71.1337,
+          "share_pct": 0.5762
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 43.1294,
+          "share_pct": 0.3494
+        },
+        {
+          "label": "White",
+          "value": 17.4745,
+          "share_pct": 0.1416
+        },
+        {
+          "label": "Other",
+          "value": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "population_total": 12344.5055
+    },
+    {
+      "ward_id": "52902025",
+      "ward_label": "KZN292_25",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 1220.4385,
+          "share_pct": 12.1736
+        },
+        {
+          "label": "5 - 9",
+          "value": 1117.8246,
+          "share_pct": 11.1501
+        },
+        {
+          "label": "10 - 14",
+          "value": 1204.2017,
+          "share_pct": 12.0117
+        },
+        {
+          "label": "15 - 19",
+          "value": 1131.0867,
+          "share_pct": 11.2824
+        },
+        {
+          "label": "20 - 24",
+          "value": 891.4704,
+          "share_pct": 8.8923
+        },
+        {
+          "label": "25 - 29",
+          "value": 861.2502,
+          "share_pct": 8.5908
+        },
+        {
+          "label": "30 - 34",
+          "value": 715.6149,
+          "share_pct": 7.1381
+        },
+        {
+          "label": "35 - 39",
+          "value": 698.7858,
+          "share_pct": 6.9703
+        },
+        {
+          "label": "40 - 44",
+          "value": 492.696,
+          "share_pct": 4.9146
+        },
+        {
+          "label": "45 - 49",
+          "value": 417.2772,
+          "share_pct": 4.1623
+        },
+        {
+          "label": "50 - 54",
+          "value": 317.9976,
+          "share_pct": 3.172
+        },
+        {
+          "label": "55 - 59",
+          "value": 269.8214,
+          "share_pct": 2.6914
+        },
+        {
+          "label": "60 - 64",
+          "value": 237.4903,
+          "share_pct": 2.3689
+        },
+        {
+          "label": "65 - 69",
+          "value": 189.1561,
+          "share_pct": 1.8868
+        },
+        {
+          "label": "70 - 74",
+          "value": 129.2321,
+          "share_pct": 1.2891
+        },
+        {
+          "label": "75 - 79",
+          "value": 62.9945,
+          "share_pct": 0.6284
+        },
+        {
+          "label": "80 - 84",
+          "value": 34.1088,
+          "share_pct": 0.3402
+        },
+        {
+          "label": "85+",
+          "value": 33.8033,
+          "share_pct": 0.3372
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5451.2252,
+          "share_pct": 54.375
+        },
+        {
+          "label": "Male",
+          "value": 4574.0252,
+          "share_pct": 45.625
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 9877.3788,
+          "share_pct": 98.525
+        },
+        {
+          "label": "Coloured",
+          "value": 66.1137,
+          "share_pct": 0.6595
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 53.9749,
+          "share_pct": 0.5384
+        },
+        {
+          "label": "Other",
+          "value": 21.466,
+          "share_pct": 0.2141
+        },
+        {
+          "label": "White",
+          "value": 6.3169,
+          "share_pct": 0.063
+        }
+      ],
+      "population_total": 10025.2504
+    },
+    {
+      "ward_id": "52902026",
+      "ward_label": "KZN292_26",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 886.3538,
+          "share_pct": 8.141
+        },
+        {
+          "label": "5 - 9",
+          "value": 773.0035,
+          "share_pct": 7.0999
+        },
+        {
+          "label": "10 - 14",
+          "value": 816.9538,
+          "share_pct": 7.5035
+        },
+        {
+          "label": "15 - 19",
+          "value": 751.7428,
+          "share_pct": 6.9046
+        },
+        {
+          "label": "20 - 24",
+          "value": 919.1098,
+          "share_pct": 8.4418
+        },
+        {
+          "label": "25 - 29",
+          "value": 1015.6455,
+          "share_pct": 9.3285
+        },
+        {
+          "label": "30 - 34",
+          "value": 1257.5364,
+          "share_pct": 11.5502
+        },
+        {
+          "label": "35 - 39",
+          "value": 1133.1214,
+          "share_pct": 10.4075
+        },
+        {
+          "label": "40 - 44",
+          "value": 762.9231,
+          "share_pct": 7.0073
+        },
+        {
+          "label": "45 - 49",
+          "value": 526.8646,
+          "share_pct": 4.8391
+        },
+        {
+          "label": "50 - 54",
+          "value": 515.6531,
+          "share_pct": 4.7362
+        },
+        {
+          "label": "55 - 59",
+          "value": 444.5626,
+          "share_pct": 4.0832
+        },
+        {
+          "label": "60 - 64",
+          "value": 431.1279,
+          "share_pct": 3.9598
+        },
+        {
+          "label": "65 - 69",
+          "value": 289.2924,
+          "share_pct": 2.6571
+        },
+        {
+          "label": "70 - 74",
+          "value": 201.7143,
+          "share_pct": 1.8527
+        },
+        {
+          "label": "75 - 79",
+          "value": 79.6737,
+          "share_pct": 0.7318
+        },
+        {
+          "label": "80 - 84",
+          "value": 52.7716,
+          "share_pct": 0.4847
+        },
+        {
+          "label": "85+",
+          "value": 29.5199,
+          "share_pct": 0.2711
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5669.2913,
+          "share_pct": 52.0712
+        },
+        {
+          "label": "Male",
+          "value": 5218.2791,
+          "share_pct": 47.9288
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 7055.8831,
+          "share_pct": 64.8068
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 3573.588,
+          "share_pct": 32.8226
+        },
+        {
+          "label": "Coloured",
+          "value": 208.6682,
+          "share_pct": 1.9166
+        },
+        {
+          "label": "White",
+          "value": 38.1552,
+          "share_pct": 0.3504
+        },
+        {
+          "label": "Other",
+          "value": 11.2758,
+          "share_pct": 0.1036
+        }
+      ],
+      "population_total": 10887.5704
+    },
+    {
+      "ward_id": "52902027",
+      "ward_label": "KZN292_27",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 893.6039,
+          "share_pct": 10.1631
+        },
+        {
+          "label": "5 - 9",
+          "value": 875.7292,
+          "share_pct": 9.9598
+        },
+        {
+          "label": "10 - 14",
+          "value": 944.1864,
+          "share_pct": 10.7384
+        },
+        {
+          "label": "15 - 19",
+          "value": 794.6914,
+          "share_pct": 9.0381
+        },
+        {
+          "label": "20 - 24",
+          "value": 791.225,
+          "share_pct": 8.9987
+        },
+        {
+          "label": "25 - 29",
+          "value": 795.976,
+          "share_pct": 9.0527
+        },
+        {
+          "label": "30 - 34",
+          "value": 807.1795,
+          "share_pct": 9.1802
+        },
+        {
+          "label": "35 - 39",
+          "value": 669.9406,
+          "share_pct": 7.6193
+        },
+        {
+          "label": "40 - 44",
+          "value": 464.9869,
+          "share_pct": 5.2884
+        },
+        {
+          "label": "45 - 49",
+          "value": 433.4409,
+          "share_pct": 4.9296
+        },
+        {
+          "label": "50 - 54",
+          "value": 323.3012,
+          "share_pct": 3.6769
+        },
+        {
+          "label": "55 - 59",
+          "value": 323.01,
+          "share_pct": 3.6736
+        },
+        {
+          "label": "60 - 64",
+          "value": 213.2394,
+          "share_pct": 2.4252
+        },
+        {
+          "label": "65 - 69",
+          "value": 185.8725,
+          "share_pct": 2.114
+        },
+        {
+          "label": "70 - 74",
+          "value": 130.4179,
+          "share_pct": 1.4833
+        },
+        {
+          "label": "75 - 79",
+          "value": 72.299,
+          "share_pct": 0.8223
+        },
+        {
+          "label": "80 - 84",
+          "value": 39.1116,
+          "share_pct": 0.4448
+        },
+        {
+          "label": "85+",
+          "value": 34.4355,
+          "share_pct": 0.3916
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4570.2448,
+          "share_pct": 51.978
+        },
+        {
+          "label": "Male",
+          "value": 4222.402,
+          "share_pct": 48.022
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 8196.7572,
+          "share_pct": 93.2229
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 385.6886,
+          "share_pct": 4.3865
+        },
+        {
+          "label": "White",
+          "value": 129.5197,
+          "share_pct": 1.473
+        },
+        {
+          "label": "Coloured",
+          "value": 80.6813,
+          "share_pct": 0.9176
+        },
+        {
+          "label": "Other",
+          "value": 0.0,
+          "share_pct": 0.0
+        }
+      ],
+      "population_total": 8792.6469
+    },
+    {
+      "ward_id": "52902028",
+      "ward_label": "KZN292_28",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 827.709,
+          "share_pct": 8.3368
+        },
+        {
+          "label": "5 - 9",
+          "value": 716.8432,
+          "share_pct": 7.2202
+        },
+        {
+          "label": "10 - 14",
+          "value": 738.3466,
+          "share_pct": 7.4367
+        },
+        {
+          "label": "15 - 19",
+          "value": 727.022,
+          "share_pct": 7.3227
+        },
+        {
+          "label": "20 - 24",
+          "value": 894.9557,
+          "share_pct": 9.0141
+        },
+        {
+          "label": "25 - 29",
+          "value": 961.3596,
+          "share_pct": 9.683
+        },
+        {
+          "label": "30 - 34",
+          "value": 1022.6174,
+          "share_pct": 10.3
+        },
+        {
+          "label": "35 - 39",
+          "value": 949.7023,
+          "share_pct": 9.5656
+        },
+        {
+          "label": "40 - 44",
+          "value": 788.4773,
+          "share_pct": 7.9417
+        },
+        {
+          "label": "45 - 49",
+          "value": 582.9041,
+          "share_pct": 5.8711
+        },
+        {
+          "label": "50 - 54",
+          "value": 428.333,
+          "share_pct": 4.3142
+        },
+        {
+          "label": "55 - 59",
+          "value": 334.8777,
+          "share_pct": 3.3729
+        },
+        {
+          "label": "60 - 64",
+          "value": 307.9803,
+          "share_pct": 3.102
+        },
+        {
+          "label": "65 - 69",
+          "value": 251.9567,
+          "share_pct": 2.5377
+        },
+        {
+          "label": "70 - 74",
+          "value": 180.2486,
+          "share_pct": 1.8155
+        },
+        {
+          "label": "75 - 79",
+          "value": 151.802,
+          "share_pct": 1.529
+        },
+        {
+          "label": "80 - 84",
+          "value": 31.6122,
+          "share_pct": 0.3184
+        },
+        {
+          "label": "85+",
+          "value": 31.6122,
+          "share_pct": 0.3184
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4988.4509,
+          "share_pct": 50.2445
+        },
+        {
+          "label": "Male",
+          "value": 4939.9091,
+          "share_pct": 49.7555
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 6079.042,
+          "share_pct": 61.2291
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 3729.2876,
+          "share_pct": 37.562
+        },
+        {
+          "label": "Coloured",
+          "value": 72.0892,
+          "share_pct": 0.7261
+        },
+        {
+          "label": "White",
+          "value": 46.9412,
+          "share_pct": 0.4728
+        },
+        {
+          "label": "Other",
+          "value": 1.0,
+          "share_pct": 0.0101
+        }
+      ],
+      "population_total": 9928.36
+    },
+    {
+      "ward_id": "52902029",
+      "ward_label": "KZN292_29",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 992.3225,
+          "share_pct": 10.8671
+        },
+        {
+          "label": "5 - 9",
+          "value": 737.123,
+          "share_pct": 8.0724
+        },
+        {
+          "label": "10 - 14",
+          "value": 904.071,
+          "share_pct": 9.9006
+        },
+        {
+          "label": "15 - 19",
+          "value": 871.6313,
+          "share_pct": 9.5454
+        },
+        {
+          "label": "20 - 24",
+          "value": 931.5467,
+          "share_pct": 10.2015
+        },
+        {
+          "label": "25 - 29",
+          "value": 998.4883,
+          "share_pct": 10.9346
+        },
+        {
+          "label": "30 - 34",
+          "value": 847.0786,
+          "share_pct": 9.2765
+        },
+        {
+          "label": "35 - 39",
+          "value": 828.474,
+          "share_pct": 9.0728
+        },
+        {
+          "label": "40 - 44",
+          "value": 612.7192,
+          "share_pct": 6.71
+        },
+        {
+          "label": "45 - 49",
+          "value": 460.6948,
+          "share_pct": 5.0451
+        },
+        {
+          "label": "50 - 54",
+          "value": 332.1753,
+          "share_pct": 3.6377
+        },
+        {
+          "label": "55 - 59",
+          "value": 207.4685,
+          "share_pct": 2.272
+        },
+        {
+          "label": "60 - 64",
+          "value": 168.5883,
+          "share_pct": 1.8462
+        },
+        {
+          "label": "65 - 69",
+          "value": 94.8999,
+          "share_pct": 1.0393
+        },
+        {
+          "label": "70 - 74",
+          "value": 50.1449,
+          "share_pct": 0.5491
+        },
+        {
+          "label": "75 - 79",
+          "value": 51.7066,
+          "share_pct": 0.5662
+        },
+        {
+          "label": "80 - 84",
+          "value": 28.2065,
+          "share_pct": 0.3089
+        },
+        {
+          "label": "85+",
+          "value": 14.1032,
+          "share_pct": 0.1544
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 4880.0797,
+          "share_pct": 53.4426
+        },
+        {
+          "label": "Male",
+          "value": 4251.3628,
+          "share_pct": 46.5574
+        }
+      ],
+      "race": [
+        {
+          "label": "Black African",
+          "value": 9058.2852,
+          "share_pct": 99.1988
+        },
+        {
+          "label": "Other",
+          "value": 20.2406,
+          "share_pct": 0.2217
+        },
+        {
+          "label": "Coloured",
+          "value": 19.1503,
+          "share_pct": 0.2097
+        },
+        {
+          "label": "White",
+          "value": 18.1598,
+          "share_pct": 0.1989
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 15.6065,
+          "share_pct": 0.1709
+        }
+      ],
+      "population_total": 9131.4426
+    },
+    {
+      "ward_id": "52902030",
+      "ward_label": "KZN292_30",
+      "age": [
+        {
+          "label": "0 - 4",
+          "value": 483.035,
+          "share_pct": 4.9898
+        },
+        {
+          "label": "5 - 9",
+          "value": 586.9284,
+          "share_pct": 6.0631
+        },
+        {
+          "label": "10 - 14",
+          "value": 529.4213,
+          "share_pct": 5.469
+        },
+        {
+          "label": "15 - 19",
+          "value": 443.6386,
+          "share_pct": 4.5829
+        },
+        {
+          "label": "20 - 24",
+          "value": 361.7958,
+          "share_pct": 3.7374
+        },
+        {
+          "label": "25 - 29",
+          "value": 485.8976,
+          "share_pct": 5.0194
+        },
+        {
+          "label": "30 - 34",
+          "value": 961.0058,
+          "share_pct": 9.9274
+        },
+        {
+          "label": "35 - 39",
+          "value": 873.9113,
+          "share_pct": 9.0277
+        },
+        {
+          "label": "40 - 44",
+          "value": 864.6303,
+          "share_pct": 8.9318
+        },
+        {
+          "label": "45 - 49",
+          "value": 575.1434,
+          "share_pct": 5.9413
+        },
+        {
+          "label": "50 - 54",
+          "value": 538.212,
+          "share_pct": 5.5598
+        },
+        {
+          "label": "55 - 59",
+          "value": 461.3538,
+          "share_pct": 4.7659
+        },
+        {
+          "label": "60 - 64",
+          "value": 682.1781,
+          "share_pct": 7.047
+        },
+        {
+          "label": "65 - 69",
+          "value": 660.7544,
+          "share_pct": 6.8257
+        },
+        {
+          "label": "70 - 74",
+          "value": 550.5465,
+          "share_pct": 5.6872
+        },
+        {
+          "label": "75 - 79",
+          "value": 373.6781,
+          "share_pct": 3.8602
+        },
+        {
+          "label": "80 - 84",
+          "value": 156.2495,
+          "share_pct": 1.6141
+        },
+        {
+          "label": "85+",
+          "value": 91.9846,
+          "share_pct": 0.9502
+        }
+      ],
+      "gender": [
+        {
+          "label": "Female",
+          "value": 5125.1793,
+          "share_pct": 52.9441
+        },
+        {
+          "label": "Male",
+          "value": 4555.1848,
+          "share_pct": 47.0559
+        }
+      ],
+      "race": [
+        {
+          "label": "White",
+          "value": 6166.742,
+          "share_pct": 63.7036
+        },
+        {
+          "label": "Indian or Asian",
+          "value": 1946.3391,
+          "share_pct": 20.1061
+        },
+        {
+          "label": "Black African",
+          "value": 1314.2159,
+          "share_pct": 13.5761
+        },
+        {
+          "label": "Coloured",
+          "value": 203.4814,
+          "share_pct": 2.102
+        },
+        {
+          "label": "Other",
+          "value": 49.5858,
+          "share_pct": 0.5122
+        }
+      ],
+      "population_total": 9680.3645
+    }
+  ]
+}

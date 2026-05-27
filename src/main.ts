@@ -270,6 +270,59 @@ type ContentInsights = {
   ward_insights: WardInsightRow[];
 };
 
+type DemographicDatum = {
+  label: string;
+  value: number;
+  share_pct: number;
+};
+
+type DemographicProfile = {
+  population_total: number;
+  age: DemographicDatum[];
+  gender: DemographicDatum[];
+  race: DemographicDatum[];
+};
+
+type PopulationPyramidDatum = {
+  age_band: string;
+  male: number;
+  female: number;
+  total: number;
+  male_share_pct: number;
+  female_share_pct: number;
+  sample_male: number;
+  sample_female: number;
+  sample_total: number;
+};
+
+type MunicipalityDemographicProfile = DemographicProfile & {
+  population_pyramid: PopulationPyramidDatum[];
+};
+
+type WardDemographicProfile = DemographicProfile & {
+  ward_id: string;
+  ward_label: string;
+};
+
+type DemographicsPayload = {
+  dataset_version: string;
+  generated_at: string;
+  geo_code: string;
+  city_display_name: string;
+  ward_count: number;
+  source: {
+    label: string;
+    role: string;
+    scoring_influence: string;
+    source_table: string;
+    population_pyramid_source_table: string;
+    population_pyramid_scope: string;
+    population_pyramid_method: string;
+  };
+  municipality: MunicipalityDemographicProfile;
+  wards: WardDemographicProfile[];
+};
+
 type GhslAnomalyWard = {
   ward_id: string;
   ward_label: string;
@@ -299,6 +352,7 @@ type AppState = {
   wards: WardCollection;
   summary: Summary;
   manifest: Manifest;
+  demographics: DemographicsPayload;
   wardViirsTimeseries: ViirsTimeseriesRow[];
   contentInsights: ContentInsights | null;
   wardInsightsById: Record<string, WardInsightRow>;
@@ -414,6 +468,18 @@ const APP_HTML = `
         <div id="trendContext" class="ugm-trend-context" hidden></div>
         <div class="ugm-canvas ugm-canvas-lg" id="trendCanvasWrap"><canvas id="trendChart"></canvas></div>
       </section>
+
+      <article class="ugm-chart-panel ugm-ranking-panel">
+        <div class="ugm-ranking-head">
+          <h3 id="rankingTitle">Top 10 Service Pressure Wards</h3>
+          <div class="ugm-rank-toggle" id="rankToggle">
+            <button type="button" class="ugm-rank-btn is-active" data-ranking-direction="top">Top 10</button>
+            <button type="button" class="ugm-rank-btn" data-ranking-direction="bottom">Bottom 10</button>
+          </div>
+        </div>
+        <div class="ugm-chart-sub" id="rankingSubtitle"></div>
+        <div class="ugm-canvas ugm-canvas-sm"><canvas id="rankingChart"></canvas></div>
+      </article>
     </div>
 
     <aside class="ugm-side-panel">
@@ -425,16 +491,12 @@ const APP_HTML = `
         <h3>Drivers</h3>
         <div id="driverBars">Select a ward to see driver contributions.</div>
       </article>
-      <article class="ugm-panel">
-        <div class="ugm-ranking-head">
-          <h3 id="rankingTitle">Top 10 Service Pressure Wards</h3>
-          <div class="ugm-rank-toggle" id="rankToggle">
-            <button type="button" class="ugm-rank-btn is-active" data-ranking-direction="top">Top 10</button>
-            <button type="button" class="ugm-rank-btn" data-ranking-direction="bottom">Bottom 10</button>
-          </div>
+      <article class="ugm-panel ugm-demographics-panel">
+        <div class="ugm-demographics-head">
+          <h3 id="demographicsTitle">Demographic Context</h3>
+          <span class="ugm-experiment-badge">Experimental</span>
         </div>
-        <div class="ugm-chart-sub" id="rankingSubtitle"></div>
-        <div class="ugm-canvas ugm-canvas-sm"><canvas id="rankingChart"></canvas></div>
+        <div id="demographicsContent">Loading Census 2022 demographics...</div>
       </article>
     </aside>
   </section>
@@ -792,6 +854,8 @@ async function bootstrap(): Promise<void> {
   const legend = document.querySelector<HTMLDivElement>('#legend')!;
   const wardHeadline = document.querySelector<HTMLDivElement>('#wardHeadline')!;
   const driverBars = document.querySelector<HTMLDivElement>('#driverBars')!;
+  const demographicsTitle = document.querySelector<HTMLHeadingElement>('#demographicsTitle')!;
+  const demographicsContent = document.querySelector<HTMLDivElement>('#demographicsContent')!;
   const fallbackBadge = document.querySelector<HTMLDivElement>('#fallbackBadge')!;
   const leftCol = document.querySelector<HTMLDivElement>('.ugm-left-col')!;
   const sidePanel = document.querySelector<HTMLElement>('.ugm-side-panel')!;
@@ -810,11 +874,12 @@ async function bootstrap(): Promise<void> {
   const trendContext = document.querySelector<HTMLDivElement>('#trendContext')!;
   const trendCanvasWrap = document.querySelector<HTMLDivElement>('#trendCanvasWrap')!;
 
-  const [manifest, wards, summary, wardViirsTimeseries] = await Promise.all([
+  const [manifest, wards, summary, wardViirsTimeseries, demographics] = await Promise.all([
     fetchJson<Manifest>('/data/manifest.json'),
     fetchJson<WardCollection>('/data/kzn292_wards.geojson'),
     fetchJson<Summary>('/data/kzn292_summary.json'),
     fetchJson<ViirsTimeseriesRow[]>('/data/kzn292_viirs_timeseries.json'),
+    fetchJson<DemographicsPayload>('/data/kzn292_demographics.json'),
   ]);
 
   let contentInsights: ContentInsights | null = null;
@@ -922,6 +987,7 @@ async function bootstrap(): Promise<void> {
     wards,
     summary,
     manifest,
+    demographics,
     wardViirsTimeseries,
     contentInsights,
     wardInsightsById,
@@ -1049,34 +1115,7 @@ async function bootstrap(): Promise<void> {
   }
 
   function syncBottomPanelHeight(): void {
-    if (window.innerWidth <= 1180) {
-      clearBottomPanelHeight();
-      return;
-    }
-
-    const minTrendPanelHeight = 320;
-    const mapHeight = mapWrap.getBoundingClientRect().height;
-    const leftGap = Number.parseFloat(getComputedStyle(leftCol).rowGap || '0') || 0;
-    const minimumSideHeight = Math.round(mapHeight + leftGap + minTrendPanelHeight);
-    const sideMinHeight = `${minimumSideHeight}px`;
-    if (sidePanel.style.minHeight !== sideMinHeight) {
-      sidePanel.style.minHeight = sideMinHeight;
-    }
-
-    const measuredSideHeight = sidePanel.getBoundingClientRect().height;
-    const effectiveSideHeight = Math.max(measuredSideHeight, minimumSideHeight);
-    const targetHeight = effectiveSideHeight - mapHeight - leftGap;
-    if (!Number.isFinite(targetHeight) || targetHeight <= 0) {
-      clearBottomPanelHeight();
-      return;
-    }
-    const clampedHeight = `${Math.max(minTrendPanelHeight, Math.round(targetHeight))}px`;
-    if (trendPanel.style.height !== clampedHeight) {
-      trendPanel.style.height = clampedHeight;
-    }
-    if (trendPanel.style.minHeight !== clampedHeight) {
-      trendPanel.style.minHeight = clampedHeight;
-    }
+    clearBottomPanelHeight();
   }
 
   function scheduleBottomPanelSync(): void {
@@ -1515,6 +1554,145 @@ async function bootstrap(): Promise<void> {
     if (storyClass === 'Conservation-led') return 'Protected-area context is a dominant land-use constraint.';
     if (storyClass === 'Extractive Influence') return 'Mining-linked land use materially shapes constraints.';
     return 'Transitional peri-urban land-use context with mixed pressures.';
+  }
+
+  const AGE_GROUPS = [
+    { label: '0-14', min: 0, max: 14 },
+    { label: '15-24', min: 15, max: 24 },
+    { label: '25-34', min: 25, max: 34 },
+    { label: '35-44', min: 35, max: 44 },
+    { label: '45-59', min: 45, max: 59 },
+    { label: '60+', min: 60, max: 200 },
+  ];
+
+  function ageBandStart(label: string): number {
+    if (label.includes('85')) return 85;
+    const match = /^(\d+)/.exec(label);
+    return match ? Number(match[1]) : 999;
+  }
+
+  function rollupAgeBands(rows: DemographicDatum[]): DemographicDatum[] {
+    const totals = AGE_GROUPS.map((group) => ({ label: group.label, value: 0 }));
+    for (const row of rows) {
+      const start = ageBandStart(row.label);
+      const bucketIndex = AGE_GROUPS.findIndex((group) => start >= group.min && start <= group.max);
+      if (bucketIndex >= 0) {
+        totals[bucketIndex].value += Number(row.value) || 0;
+      }
+    }
+    const denominator = totals.reduce((sum, row) => sum + row.value, 0);
+    return totals
+      .filter((row) => row.value > 0)
+      .map((row) => ({
+        label: row.label,
+        value: row.value,
+        share_pct: denominator > 0 ? (row.value / denominator) * 100 : 0,
+      }));
+  }
+
+  function demographicToneClass(title: string): string {
+    if (title.includes('Gender')) return 'is-gender';
+    if (title.includes('Race')) return 'is-race';
+    return 'is-age';
+  }
+
+  function renderDemographicGroup(title: string, rows: DemographicDatum[], limit = 8): string {
+    const visibleRows = rows.slice(0, limit);
+    const maxShare = Math.max(...visibleRows.map((row) => Number(row.share_pct) || 0), 0);
+    const toneClass = demographicToneClass(title);
+    const bars = visibleRows
+      .map((row) => {
+        const share = Number(row.share_pct);
+        const scaledShare = maxShare > 0 && Number.isFinite(share) ? (share / maxShare) * 100 : 0;
+        const width = share > 0 ? Math.max(4, Math.min(100, scaledShare)) : 0;
+        return `
+          <div class="ugm-demographic-row">
+            <div class="ugm-demographic-label">
+              <span>${escapeHtml(row.label)}</span>
+              <strong>${safeRound(row.share_pct, 1)}%</strong>
+            </div>
+            <div class="ugm-demographic-track">
+              <div class="ugm-demographic-fill ${toneClass}" style="width:${width}%"></div>
+            </div>
+            <small>${safeRound(row.value, 0)} residents</small>
+          </div>
+        `;
+      })
+      .join('');
+    return `
+      <section class="ugm-demographic-group">
+        <h4>${escapeHtml(title)}</h4>
+        ${bars || '<p class="ugm-depth-empty">No demographic rows available.</p>'}
+      </section>
+    `;
+  }
+
+  function renderPopulationPyramid(rows: PopulationPyramidDatum[]): string {
+    const visibleRows = [...rows].reverse();
+    const maxValue = Math.max(...visibleRows.flatMap((row) => [Number(row.male) || 0, Number(row.female) || 0]), 0);
+    const bars = visibleRows
+      .map((row) => {
+        const maleWidth = maxValue > 0 ? Math.max(2, Math.min(100, (Number(row.male) / maxValue) * 100)) : 0;
+        const femaleWidth = maxValue > 0 ? Math.max(2, Math.min(100, (Number(row.female) / maxValue) * 100)) : 0;
+        return `
+          <div class="ugm-pyramid-row">
+            <div class="ugm-pyramid-side is-male">
+              <span>${safeRound(row.male_share_pct, 1)}%</span>
+              <div class="ugm-pyramid-bar" style="width:${maleWidth}%"></div>
+            </div>
+            <div class="ugm-pyramid-age">${escapeHtml(row.age_band)}</div>
+            <div class="ugm-pyramid-side is-female">
+              <div class="ugm-pyramid-bar" style="width:${femaleWidth}%"></div>
+              <span>${safeRound(row.female_share_pct, 1)}%</span>
+            </div>
+          </div>
+        `;
+      })
+      .join('');
+    return `
+      <section class="ugm-population-pyramid" aria-label="Municipality age-sex population pyramid">
+        <div class="ugm-pyramid-title">
+          <span>Male</span>
+          <strong>Municipality age-sex pyramid</strong>
+          <span>Female</span>
+        </div>
+        <div class="ugm-pyramid-rows">
+          ${bars || '<p class="ugm-depth-empty">No municipality pyramid rows available.</p>'}
+        </div>
+        <p class="ugm-pyramid-note">
+          Municipality-level only. Person-sample sex split calibrated to official Census 2022 age totals. Not used in scoring.
+        </p>
+      </section>
+    `;
+  }
+
+  function updateDemographicsPanel(): void {
+    const selectedFeature = getWardFeature(state.wards, state.selectedWardId);
+    const profile =
+      selectedFeature === undefined
+        ? state.demographics.municipality
+        : state.demographics.wards.find((row) => row.ward_id === selectedFeature.properties.ward_id) ??
+          state.demographics.municipality;
+    const title = selectedFeature ? `Demographic Context: ${wardName(selectedFeature)}` : 'Municipality Demographic Context';
+    demographicsTitle.textContent = title;
+
+    const contextLine = selectedFeature
+      ? `Selected ward compared against ${state.demographics.city_display_name} context.`
+      : `${state.demographics.city_display_name} roll-up across ${state.demographics.ward_count} wards.`;
+
+    demographicsContent.innerHTML = `
+      <div class="ugm-demographic-summary">
+        <span>${escapeHtml(state.demographics.source.label)}</span>
+        <strong>${safeRound(profile.population_total, 0)} residents</strong>
+        <small>${escapeHtml(contextLine)} Not used in scoring.</small>
+      </div>
+      <div class="ugm-demographic-grid">
+        ${renderPopulationPyramid(state.demographics.municipality.population_pyramid)}
+        ${renderDemographicGroup('Age Groups', rollupAgeBands(profile.age), 6)}
+        ${renderDemographicGroup('Gender Split', profile.gender, 4)}
+        ${renderDemographicGroup('Race Composition', profile.race, 6)}
+      </div>
+    `;
   }
 
   function actionTagPlanningNote(actionTag: string): string {
@@ -2358,6 +2536,7 @@ async function bootstrap(): Promise<void> {
     updateKpis();
     updateWardPanel();
     updateDriverBars();
+    updateDemographicsPanel();
     updateRankingChart();
     updateTrendChart();
     updateLegend();
@@ -2550,6 +2729,7 @@ async function bootstrap(): Promise<void> {
     updateKpis();
     updateWardPanel();
     updateDriverBars();
+    updateDemographicsPanel();
     updateTrendChart();
     updateRankingChart();
     updateSelectedWardChip();

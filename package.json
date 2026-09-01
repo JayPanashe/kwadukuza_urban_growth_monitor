@@ -7,9 +7,11 @@
     "build:data": "python3 scripts/build_data.py --sources config/sources.json",
     "build:data:sem": "python3 scripts/build_sem_data.py",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run verify:basemap-build",
     "offline:validate": "npm run build:data:sem && npm run test && npm run build",
     "offline:smoke": "bash scripts/offline_smoke.sh",
+    "verify:basemap-build": "node scripts/verify_basemap_build.mjs",
+    "verify:basemap-release": "node scripts/verify_basemap_build.mjs --release",
     "test": "vitest run",
     "preview": "vite preview"
   },

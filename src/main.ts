@@ -1,6 +1,11 @@
 import Chart from 'chart.js/auto';
 import { geoBounds, geoMercator, geoPath } from 'd3-geo';
 import maplibregl from 'maplibre-gl';
+import {
+  createMapboxComplianceControl,
+  initializeMapboxRenderer,
+  isMapboxBasemapError,
+} from './basemap';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './style.css';
 
@@ -32,6 +37,8 @@ const NON_STABLE_TRANSITION_CLASSES = [
 const DEFAULT_GHSL_CLUSTER_DISPLAY_MAP: Record<string, string> = {
   Declining: 'Slowing',
 };
+
+const MAP_LOAD_WARNING_TIMEOUT_MS = 10000;
 
 type WardProps = {
   ward_id: string;
@@ -873,6 +880,8 @@ async function bootstrap(): Promise<void> {
   const trendSubtitle = document.querySelector<HTMLParagraphElement>('#trendSubtitle')!;
   const trendContext = document.querySelector<HTMLDivElement>('#trendContext')!;
   const trendCanvasWrap = document.querySelector<HTMLDivElement>('#trendCanvasWrap')!;
+  const mapboxCompliance = createMapboxComplianceControl(document);
+  mapWrap.appendChild(mapboxCompliance.element);
 
   const [manifest, wards, summary, wardViirsTimeseries, demographics] = await Promise.all([
     fetchJson<Manifest>('/data/manifest.json'),
@@ -2633,6 +2642,7 @@ async function bootstrap(): Promise<void> {
     fallbackBadge.textContent = `Fallback mode active (offline-safe renderer): ${reason}. Basemap not shown in SVG fallback.`;
     mapCanvas.style.display = 'none';
     fallbackMap.style.display = 'block';
+    mapboxCompliance.hide();
 
     renderFallbackSvg();
     setRenderBadge();
@@ -2744,32 +2754,20 @@ async function bootstrap(): Promise<void> {
     scheduleBottomPanelSync();
   }
 
-  function isBasemapError(event: unknown): boolean {
-    const evt = event as {
-      sourceId?: string;
-      tile?: { tileID?: { canonical?: { z?: number; x?: number; y?: number } } };
-      error?: { message?: string };
-    };
-    const sourceId = String(evt?.sourceId ?? '');
-    const message = String(evt?.error?.message ?? '').toLowerCase();
-    if (sourceId === 'carto-base' || sourceId === 'carto-labels') return true;
-    if (message.includes('cartocdn.com')) return true;
-    if (message.includes('carto-base') || message.includes('carto-labels')) return true;
-    if (message.includes('raster') && message.includes('tile')) return true;
-    return false;
-  }
-
   function registerBasemapWarning(message: string): void {
     state.basemapStatus = 'warning';
     state.basemapWarning = message;
-    if (map?.getLayer('carto-base')) {
-      map.setLayoutProperty('carto-base', 'visibility', 'none');
-    }
-    if (map?.getLayer('carto-labels')) {
-      map.setLayoutProperty('carto-labels', 'visibility', 'none');
-    }
     setRenderBadge();
     updateRuntimeDiag();
+  }
+
+  function updateMapboxCompliancePosition(): void {
+    if (!map || state.fallbackActive) {
+      mapboxCompliance.hide();
+      return;
+    }
+    const center = map.getCenter();
+    mapboxCompliance.show({ lng: center.lng, lat: center.lat, zoom: map.getZoom() });
   }
 
   function initializeMap(): void {
@@ -2778,66 +2776,42 @@ async function bootstrap(): Promise<void> {
       return;
     }
 
-    const mapWatchdog = window.setTimeout(() => {
-      if (!mapLoaded) activateFallback('WebGL load timeout (>2s)');
-    }, 2000);
-
     try {
-      map = new maplibregl.Map({
-        container: 'mapCanvas',
-        style: {
-          version: 8,
-          sources: {
-            'carto-base': {
-              type: 'raster',
-              tiles: [
-                'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
-                'https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
-                'https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
-                'https://d.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
-              ],
-              tileSize: 256,
-              attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-              maxzoom: 20,
-            },
-            'carto-labels': {
-              type: 'raster',
-              tiles: [
-                'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
-                'https://b.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
-                'https://c.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
-                'https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
-              ],
-              tileSize: 256,
-              attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-              maxzoom: 20,
-            },
-          },
-          layers: [
-            { id: 'background', type: 'background', paint: { 'background-color': '#edf2f5' } },
-            {
-              id: 'carto-base',
-              type: 'raster',
-              source: 'carto-base',
-              minzoom: 0,
-              maxzoom: 22,
-              paint: { 'raster-opacity': 0.96 },
-            },
-          ],
+      map = initializeMapboxRenderer(
+        import.meta.env.VITE_MAPBOX_ACCESS_TOKEN,
+        (style) =>
+          new maplibregl.Map({
+            container: 'mapCanvas',
+            style,
+            center: [18.45, -33.92],
+            zoom: 9,
+            attributionControl: false,
+          }),
+        (warning) => {
+          console.warn(warning);
+          activateFallback(warning);
         },
-        center: [18.45, -33.92],
-        zoom: 9,
-      });
+      );
     } catch (error) {
-      window.clearTimeout(mapWatchdog);
       activateFallback(toErrorMessage(error, 'Map initialization error'));
       return;
     }
+    if (!map) return;
+
+    updateMapboxCompliancePosition();
+    const mapWatchdog = window.setTimeout(() => {
+      if (mapLoaded || state.fallbackActive) return;
+      registerBasemapWarning(
+        `Map style load is slow (>${MAP_LOAD_WARNING_TIMEOUT_MS / 1000}s); ` +
+          'keeping WebGL renderer active while tiles continue loading.',
+      );
+    }, MAP_LOAD_WARNING_TIMEOUT_MS);
 
     map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
+    map.on('moveend', updateMapboxCompliancePosition);
 
     map.on('error', (event) => {
-      if (isBasemapError(event)) {
+      if (isMapboxBasemapError(event)) {
         const message = toErrorMessage((event as { error?: unknown }).error, 'Basemap tile warning');
         registerBasemapWarning(message);
         return;
@@ -2853,6 +2827,7 @@ async function bootstrap(): Promise<void> {
       state.activeRenderer = 'webgl';
       state.basemapStatus = state.basemapStatus === 'warning' ? 'warning' : 'active';
       state.basemapWarning = state.basemapStatus === 'warning' ? state.basemapWarning : null;
+      updateMapboxCompliancePosition();
 
       if (!map) return;
 
@@ -2865,14 +2840,6 @@ async function bootstrap(): Promise<void> {
           'fill-color': modeColorExpression(state.selectedMode, state.modeBreaks[state.selectedMode]) as any,
           'fill-opacity': mapFillOpacity() as any,
         },
-      });
-      map.addLayer({
-        id: 'carto-labels',
-        type: 'raster',
-        source: 'carto-labels',
-        minzoom: 0,
-        maxzoom: 22,
-        paint: { 'raster-opacity': 0.86 },
       });
       map.addLayer({
         id: 'ward-outlines',

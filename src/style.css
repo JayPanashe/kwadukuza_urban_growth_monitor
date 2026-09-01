@@ -360,6 +360,50 @@ body {
   display: none;
 }
 
+.ugm-mapbox-compliance {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 6;
+  display: grid;
+  justify-items: end;
+  gap: 3px;
+  max-width: calc(100% - 16px);
+}
+
+.ugm-mapbox-compliance[hidden] {
+  display: none;
+}
+
+.ugm-mapbox-wordmark,
+.ugm-mapbox-wordmark svg {
+  display: block;
+  width: 81px;
+  height: 20px;
+}
+
+.ugm-mapbox-attribution {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0 0.42rem;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 2px 4px;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.ugm-mapbox-attribution a {
+  color: #202020;
+  text-decoration: none;
+}
+
+.ugm-mapbox-attribution a:hover,
+.ugm-mapbox-attribution a:focus-visible {
+  text-decoration: underline;
+}
+
 .ugm-fallback-path {
   cursor: pointer;
   transition: opacity 140ms ease-in, stroke-width 140ms ease-in;
